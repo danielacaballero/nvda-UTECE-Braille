@@ -39,18 +39,20 @@ NV Access YouTube 頻道上有一段簡短的影片展示[「What is NVDA?」](h
 
 ### 系統需求 {#SystemRequirements}
 
-#### 建議系統需求 {#MinimumSystemRequirements}
-* 作業系統：64 位元的 Windows 10、Windows 11 及 Windows Server 2022
-  * 支援 AMD64 與 ARM64 架構下執行的 Windows。
-* 至少 150 MB 的儲存空間。
-* 至少 4 GB 的記憶體。
-
 #### 最低系統需求 {#MinimumSystemRequirements}
+
 * 作業系統：32 和 64 位元的 Microsoft Windows 8.1、Windows 10、Windows 11 及 Windows Server 2012 R2 以上的所有伺服器作業系統。
   * 支援 AMD64 與 ARM64 架構下執行的 Windows。
-  * 不再主動支援 32 位元作業系統。
+  * Note that 32-bit operating systems are no longer under active support.
   * 不再主動支援 Windows 8.1 與 Windows Server 2022 以前的版本。
-* 至少 150 MB 的儲存空間。
+* at least 500 MB of storage space.
+
+#### Recommended System Requirements {#RecommendedSystemRequirements}
+
+* Operating Systems: 64-bit editions of Windows 10, Windows 11, and Windows Server 2022.
+  * both AMD64 and ARM64 variants of Windows are supported.
+* at least 500 MB of storage space.
+* at least 4 GB of RAM.
 
 ### 國際化 {#Internationalization}
 
@@ -1487,7 +1489,8 @@ NVDA 允許您在 Microsoft Word 使用瀏覽模式，類似於在網頁上的�
 #### 讀出註解 {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-要在目前游標位置讀出註解按 NVDA+Alt+C，
+To report any comments at the current caret position, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 <!-- KC:endInclude -->
 當在項目清單的「類型」選擇「註釋」這個選項，文件中所有的註解及追蹤修訂都可以被列出來。
 
@@ -1535,7 +1538,8 @@ NVDA 允許您在 Microsoft Word 使用瀏覽模式，類似於在網頁上的�
 #### 讀出附註 {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-要讀出目前焦點儲存格的附註按 NVDA+Alt+C，
+To report any notes for the currently focused cell, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 在 Microsoft 2016、365 及之後版本的 Microsoft Excel 已將傳統所稱的「註解」更名為「附註」。
 <!-- KC:endInclude -->
 按 NVDA+F7 可將工作表中所有的附註列在項目清單中。
@@ -1606,7 +1610,7 @@ Excel 工作表可以含有表單欄位，
 
 ### Poedit {#Poedit}
 
-NVDA 為 Poedit 3.4 或以上版本提供增強的支援。
+NVDA offers enhanced support for Poedit 3.5 or newer.
 
 <!-- KC:beginInclude -->
 
@@ -1619,7 +1623,7 @@ NVDA 為 Poedit 3.4 或以上版本提供增強的支援。
 
 <!-- KC:endInclude -->
 
-### Kindle for PC {#Kindle}
+### Kindle PC 版 {#Kindle}
 
 NVDA 支援在 Amazon Kindle for PC 中讀出和導覽書籍，
 這項功能僅在 Kindle 書籍有指定「Screen Reader: Supported」時才可用，您可以在書籍的祥細資料頁查詢。
@@ -2133,11 +2137,6 @@ NVDA 設定對話框中「點字」類別的「變更...」按鈕，會開啟[�
 
 ##### 定位檢閱游標時移動系統游標 {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|選項 |預設 (永不)、永不、僅當自動跟隨時、總是|
-|預設 |永不|
-
 此設定決定係統游標是否也要在按下游標定位鍵時移動，
 此選項預設「永不」，意即使用游標定位鍵移動檢閱游標時不會移動游標，
 
@@ -2153,6 +2152,11 @@ NVDA 設定對話框中「點字」類別的「變更...」按鈕，會開啟[�
 
 要在任何地方切換定位檢閱游標時移動系統游標，請使用[輸入手勢](#InputGestures)對話框來指派手勢。
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Never), Never, Only when tethered automatically, Always|
+|Default |Never|
+
 ##### 逐段閱讀 {#BrailleSettingsReadByParagraph}
 
 當啟用時，點字將會逐段顯示而非逐行顯示，
@@ -2161,30 +2165,18 @@ NVDA 設定對話框中「點字」類別的「變更...」按鈕，會開啟[�
 閱讀大量文字時會變得更順暢，
 此選項預設停用。
 
-##### 儘量避免斷字 {#BrailleSettingsWordWrap}
+##### Paragraph start marker {#BrailleParagraphStartMarkers}
 
-若啟用此選項，當一個單字過長而無法在點顯器的尾端顯示時，則會避免以斷字的方式顯示，
-在此情況下點顯器的尾端將出現一些空白，
-當您捲動點顯器將可摸讀到完整的單字，
-這有時稱為「自動換行」。
-不過，如果一個單字的長度確實大到無法在點顯器的一行中完整顯示，則斷字就不可避免了。
+If "Read by paragraph" is checked, the selected start marker will be displayed to indicate the start of a paragraph.
+This can be especially helpful in applications used to read large pieces of text, like structured documents or books.
+In such documents, knowing where paragraphs start may be useful to understand the structure of the content, or to set bookmarks or annotations based on paragraph position.
 
-若不啟用此選項則點顯器將儘可能顯示最多的字，而最後一個單字會被截斷，
-當您捲動點顯器仍然可摸讀到該單字的其餘部分。
+The options include using two spaces as a subtle paragraph break, and the paragraph symbol, pilcrow (¶), as a more obvious one.
 
-啟用此選項可讓摸讀起來更順暢，但通常需要多捲動數次來顯示。
-
-##### Unicode 正規化 {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|選項 |預設 (停用)、啟用、停用|
-|預設 |停用|
-
-當啟用此選項，將對點顯器上的點字文字進行 unicode 正規化，
-這在當遇到特定點字轉譯表中未知的點字字元且有相容的替代字元 (例如社交媒體上常用的粗體和斜體字元) 時非常有用。
-在[等價語音設定一節](#SpeechUnicodeNormalization)中更詳細地解釋了 unicode 正規化的其他效益。
-
-要在任何地方切換 Unicode 正規化，請使用[輸入手勢對話框](#InputGestures)來指派手勢。
+|Options |No paragraph start marker, Double space (  ), Pilcrow (¶)|
+|Default |No paragraph start marker|
 
 ##### 焦點脈絡呈現方式 {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ NVDA 設定對話框中「點字」類別的「變更...」按鈕，會開啟[�
 
 要在任何地方切換焦點脈絡呈現方式，請使用[輸入手勢](#InputGestures)對話框來指派手勢。
 
-##### 捲動時中斷語音 {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|選項 |預設 (啟用)、啟用、停用|
-|預設 |啟用|
-
-此設定決定當點顯器向上或向下捲動時是否應中斷語音，
-點字游標移到上一行或下一行的指令則始終會中斷語音。
-
-摸讀點字時持續的語音可能會使人分心，
-因此此選項預設啟用，當捲動點顯器時就會中斷語音。
-
-停用此選項允許在摸讀點字的同時聽到語音。
-
 ##### 顯示選取範圍 {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|選項 |預設 (啟用)、啟用、停用|
-|預設 |啟用|
 
 此設定決定選取範圍指示器 (第 7 和第 8 點) 是否顯示在點顯器上，
 此選項預設啟用，因此會顯示選取範圍指示器。
@@ -2241,6 +2213,91 @@ NVDA 設定對話框中「點字」類別的「變更...」按鈕，會開啟[�
 停用此選項可以提高可摸讀性。
 
 要在任何地方切換顯示選取範圍，請使用[輸入手勢對話框](#InputGestures)來指派手勢。
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
+
+##### Formatting display {#BrailleFormattingDisplay}
+
+This setting determines how NVDA will display text formatting in braille.
+This option only has an effect if NVDA is set to [display font attributes in braille](#DocumentFormattingFontAttributes).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| Options | Default (Liblouis), Liblouis, Tags |
+| Default | Liblouis |
+
+| Option | Behaviour |
+|---|---|
+| Liblouis | Use native Braille formatting. Note that this option will only indicate bold, italic and underlined text, and only if the selected braille table supports indicating these attributes. |
+| [Tags](#BrailleFormattingDisplayTags) | Use tags that describe how and where text formatting changes. |
+
+###### Tags {#BrailleFormattingDisplayTags}
+
+When "Formatting display" is set to "Tags", a formatting tag is displayed in braille when a change in formatting is detected.
+These tags start with ⣋ and end with ⣙.
+A formatting tag will contain one or more symbols which describe the text formatting.
+The following symbols are defined:
+
+| Symbol | Meaning |
+|---|---|
+| ⠃ ("b") | Start bold |
+| ⡃ ("b" with dot 7) | End bold |
+| ⠊ ("i") | Start italic |
+| ⡊ ("i" with dot 7) | End italic |
+| ⠥ ("u") | Start underline |
+| ⡥ ("u" with dot 7) | End underline |
+| ⠎ ("s")| Start strikethrough |
+| ⡎ ("s" with dot 7) | End strikethrough |
+
+##### Speak character when routing cursor in text {#BrailleSpeakOnRouting}
+
+If this is enabled, NVDA will automatically speak the character at the cursor when routing to it with braille cursor routing keys.
+
+To toggle this option from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+##### Avoid splitting words when possible {#BrailleSettingsWordWrap}
+
+If this is enabled, a word which is too large to fit at the end of the braille display will not be split.
+Instead, there will be some blank space at the end of the display.
+When you scroll the display, you will be able to read the entire word.
+This is sometimes called "word wrap".
+Note that if the word is too large to fit on the display even by itself, the word must still be split.
+
+If this is disabled, as much of the word as possible will be displayed, but the rest will be cut off.
+When you scroll the display, you will then be able to read the rest of the word.
+
+Enabling this may allow for more fluent reading, but generally requires you to scroll the display more.
+
+##### Unicode normalization {#BrailleUnicodeNormalization}
+
+When this option is enabled, unicode normalization is performed on the text that is brailled on the braille display.
+This is beneficial when coming across characters in braille that are unknown in a particular braille table and which have a compatible alternative, like the bold and italic characters commonly used on social media.
+Other benefits of unicode normalization are explained in greater detail in the [section for the equivalent speech setting](#SpeechUnicodeNormalization).
+
+To toggle Unicode normalization from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Disabled), Enabled, Disabled|
+|Default |Disabled|
+
+##### Interrupt speech while scrolling {#BrailleSettingsInterruptSpeech}
+
+This setting determines if speech should be interrupted when the Braille display is scrolled backwards/forwards.
+Previous/next line commands always interrupt speech.
+
+On-going speech might be a distraction while reading Braille.
+For this reason the option is enabled by default, interrupting speech when scrolling braille.
+
+Disabling this option allows speech to be heard while simultaneously reading Braille.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
 
 #### 選擇點顯器 {#SelectBrailleDisplay}
 
@@ -2513,6 +2570,16 @@ NVDA 設定對話框中的「鍵盤」類別包含一些選項用以設定當您
 
 此選項允許使用者控制由應用程式例如螢幕鍵盤及語音辨識軟體所產生的按鍵動作是否憗讓 NVDA 來處理，
 此選項預設是開啟的，不過某些使用者會想關掉它，例如那些利用 UniKey 輸入越南文的使用者，因為這會造成不正確的字元輸入。
+
+##### Multiple key press timeout {#MultiPressTimeout}
+
+Some NVDA keyboard gestures perform different actions based upon how many times the same key is pressed in rapid succession.
+An example of this is the "Report current character of navigator object" command.
+This command reports the character if pressed once, a phonetic description of the character if pressed twice, and the numeric value of the character if pressed three times.
+This option configures the timeout after which an additional press of the same key will start a new gesture, rather than being taken as a subsequent press of the first one.
+For the example command, a too short timeout will cause two presses to report the current character twice, rather than the phonetic description.
+The default timeout is 500 ms, i.e. half a second.
+Increasing this timeout may be especially useful for people using sticky keys, or who have a physical disability.
 
 #### 滑鼠 {#MouseSettings}
 
@@ -2841,7 +2908,7 @@ NVDA 設定對話框中的「瀏覽模式」類別用於設定當您閱讀和導
 * 「字型」群組
   * 字型名稱
   * 字型大小
-  * 字型屬性
+  * Font attributes [(Off, Speech, Braille, Speech and braille)](#DocumentFormattingFontAttributes)
   * 上標及下標
   * 強調
   * 高亮文字
@@ -2879,6 +2946,17 @@ NVDA 設定對話框中的「瀏覽模式」類別用於設定當您閱讀和導
   * 可點擊
 
 要在任何地方切換以上這些設定，請使用[輸入手勢](#InputGestures)對話框來指派手勢。
+
+##### Font attributes {#DocumentFormattingFontAttributes}
+
+This option allows you to select how certain font attributes, such as bold, italics, underline and strikethrough are reported.
+The font attributes combo box has four options:
+
+* Off: NVDA will not report these font attributes.
+* Speech: NVDA will announce when these font attributes change.
+* Braille: NVDA will display these attributes in braille.
+Exactly how they are displayed can be configured in [NVDA's braille settings](#BrailleFormattingDisplay).
+* Speech and braille: NVDA will report font attributes using both of the above methods.
 
 ##### 讀出游標經過後的格式變化 {#DocumentFormattingDetectFormatAfterCursor}
 
@@ -4300,6 +4378,8 @@ NVDA 支援 Nippon Telesoft 的 Seika 點顯器，依照不同功能分為以下
 |end key |space+LJ down|
 |control+home key |backspace+LJ up|
 |control+end key |backspace+LJ down|
+
+<!-- KC:endInclude -->
 
 ### Papenmeier BRAILLEX 新款型號 {#Papenmeier}
 

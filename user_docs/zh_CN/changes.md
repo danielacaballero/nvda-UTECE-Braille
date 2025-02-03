@@ -1,5 +1,116 @@
 # NVDA 更新日志
 
+## 2024.4
+
+This release includes a number of improvements in Microsoft Office, braille, and document formatting.
+
+In Word or Excel, it is now possible to double-press the comment gesture to read the comment or note in a browsable dialog.
+You can now use the review cursor selection command to select text in PowerPoint.
+NVDA also no longer brailles garbage characters when showing row or column header text in tables in Word when using the object model.
+
+NVDA can now be configured to report font attributes in speech and braille separately.
+
+A new setting has been added to configure the timeout to perform a multiple press gesture, such as the report time/date command.
+
+You can now configure how NVDA shows text formatting in braille, and set NVDA to show the start of paragraphs in braille.
+NVDA can now speak the character at the cursor when performing a braille cursor routing action.
+Cursor routing reliability has been improved, and support for routing keys in PowerPoint has been added.
+All lines of cells will now be used when using a multi-line braille display via HID braille.
+NVDA is no longer unstable after restarting NVDA during an automatic Braille Bluetooth scan.
+
+The minimum required version of Poedit that works with NVDA is now version 3.5.
+
+eSpeak NG has been updated, adding support for the Faroese and Xextan languages.
+
+LibLouis has been updated, adding new Braille tables for Thai and Greek international braille with single-cell accented letters.
+
+There have also been a number of fixes, including to mouse tracking in Firefox, and the on-demand speech mode.
+
+### New Features
+
+* New braille features:
+  * It is now possible to change the way NVDA displays certain text formatting attributes in braille.
+    The available options are:
+    * Liblouis (default): Uses formatting markers defined in the selected braille table.
+    * Tags: Uses start and end tags to denote where certain font attributes begin and end. (#16864)
+  * When the "Read by paragraph" option is enabled, NVDA can now be configured to indicate the start of paragraphs in braille. (#16895, @nvdaes)
+  * When performing a braille cursor routing action, NVDA can now automatically speak the character at the cursor. (#8072, @LeonarddeR)
+    * This option is disabled by default.
+      You can enable "Speak character when routing cursor in text" in NVDA's braille settings.
+* The comment command in Microsoft Word and notes command in Microsoft Excel can now be pressed twice to show the comment or note in a browsable message. (#16800, #16878, @Cary-Rowen)
+* NVDA can now be configured to report font attributes in speech and braille separately. (#16755)
+* The timeout to perform a multiple keypress is now configurable; this may be especially useful for people with dexterity impairment. (#11929, @CyrilleB79)
+
+### Changes
+
+* The `-c`/`--config-path` and `--disable-addons` command line options are now respected when launching an update from within NVDA. (#16937)
+* Component updates:
+  * Updated LibLouis Braille translator to [3.31.0](https://github.com/liblouis/liblouis/releases/tag/v3.31.0). (#17080, @LeonarddeR, @codeofdusk)
+    * Fixed translation of numbers in Spanish Braille.
+    * New Braille tables:
+      * Thai grade 1
+      * Greek international Braille (single-cell accented letters)
+    * Renamed tables:
+      * "Thai 6 dot" was renamed to "Thai grade 0" for consistency reasons.
+      * The existing "Greek international braille" table was renamed to "Greek international braille (2-cell accented letters)" to clarify the distinction between the two Greek systems.
+  * eSpeak NG has been updated to 1.52-dev commit `961454ff`. (#16775)
+    * Added new languages Faroese and Xextan.
+* When using a multi-line braille display via the standard HID braille driver, all lines of cells will be used. (#16993, @alexmoon)
+* The stability of NVDA's Poedit support has been improved with the side effect that the minimum required version of Poedit is now version 3.5. (#16889, @LeonarddeR)
+
+### Bug Fixes
+
+* Braille fixes:
+  * It is now possible to use braille display routing keys to move the text cursor in Microsoft PowerPoint. (#9101)
+  * When accessing Microsoft Word without UI Automation, NVDA no longer outputs garbage characters in table headers defined with the set row and column header commands. (#7212)
+  * The Seika Notetaker driver now correctly generates braille input for space, backspace and dots with space/backspace gestures. (#16642, @school510587)
+  * Cursor routing is now much more reliable when a line contains one or more Unicode variation selectors or decomposed characters. (#10960, @mltony, @LeonarddeR)
+  * NVDA no longer throws an error when panning the braille display forward in some empty edit controls. (#12885)
+  * NVDA is no longer unstable after restarting NVDA during an automatic Braille Bluetooth scan. (#16933)
+* It is now possible to use the review cursor selection commands to select text in Microsoft PowerPoint. (#17004)
+* In on-demand speech mode, NVDA does not talk any more when a message is opened in Outlook, when a new page is loaded in a browser, or when displaying a new slide in a PowerPoint slideshow. (#16825, @CyrilleB79)
+* In Mozilla Firefox, moving the mouse over text before or after a link now reliably reports the text. (#15990, @jcsteh)
+* NVDA no longer occasionally fails to open browsable messages (such as pressing `NVDA+f` twice). (#16806, @LeonarddeR)
+* Updating NVDA while add-on updates are pending no longer results in the add-on being removed. (#16837)
+* It is now possible to interact with Data validation dropdown lists in Microsoft Excel 365. (#15138)
+* NVDA is no longer as sluggish when arrowing up and down through large files in VS Code. (#17039)
+* NVDA no longer becomes unresponsive after holding down an arrow key for a long time while in browse mode, particularly in Microsoft Word and Microsoft Outlook. (#16812)
+* NVDA no longer reads the last line when the cursor is on the second-last line of a multiline edit control in Java applications. (#17027)
+
+### Changes for Developers
+
+Please refer to [the developer guide](https://www.nvaccess.org/files/nvda/documentation/developerGuide.html#API) for information on NVDA's API deprecation and removal process.
+
+* Component updates:
+  * Updated py2exe to 0.13.0.2 (#16907, @dpy013)
+  * Updated setuptools to 72.0 (#16907, @dpy013)
+  * Updated Ruff to 0.5.6. (#16868, @LeonarddeR)
+  * Updated nh3 to 0.2.18 (#17020, @dpy013)
+* Added a `.editorconfig` file to NVDA's repository in order for several IDEs to pick up basic NVDA code style rules by default. (#16795, @LeonarddeR)
+* Added support for custom speech symbol dictionaries. (#16739, #16823, @LeonarddeR)
+  * Dictionaries can be provided in locale specific folders in an add-on package, e.g. `locale\en`.
+  * Dictionary metadata can be added to an optional `symbolDictionaries` section in the add-on manifest.
+  * Please consult the [Custom speech symbol dictionaries section in the developer guide](https://www.nvaccess.org/files/nvda/documentation/developerGuide.html#AddonSymbolDictionaries) for more details.
+* It is now possible to redirect objects retrieved from on-screen coordinates, by using the `NVDAObject.objectFromPointRedirect` method. (#16788, @Emil-18)
+* Running SCons with the parameter `--all-cores` will automatically pick the maximum number of available CPU cores. (#16943, #16868, @LeonarddeR)
+* Developer info now includes information on app architecture (such as AMD64) for the navigator object. (#16488, @josephsl)
+
+#### Deprecations
+
+* The `bool` configuration key `[documentFormatting][reportFontAttributes]` is deprecated for removal in 2025.1, instead use `[fontAttributeReporting]`. (#16748)
+  * The new key has an `int` value matching an `OutputMode` `enum` with options for speech, braille, speech and braille and off.
+  * API consumers can use the `bool` value as previously, or check the `OutputMode` if handling speech or braille specifically.
+  * These keys are currently synchronized until 2025.1.
+* `NVDAObjects.UIA.InaccurateTextChangeEventEmittingEditableText` is deprecated with no replacement. (#16817, @LeonarddeR)
+
+## 2024.3.1
+
+This is a patch release to fix a bug with the automatic add-on update notification.
+
+### Bug Fixes
+
+* When automatically checking for add-on updates, NVDA no longer freezes on poor connections. (#17036)
+
 ## 2024.3
 
 插件商店现在会在 NVDA 启动时提示您是否有可用的插件更新。
@@ -424,33 +535,33 @@ LibLouis 更新后，增加了新的详细（以大写字母表示）白俄罗�
 * 以下应用模块已被删除。
 请从其相应替换模块中导入。 (#15618, @lukaszgo1)
 
-| 已删除的模块 | 用于替换的模块 |
-| --- | --- |
-| `azardi-2.0` | `azardi20` |
-| `azuredatastudio` | `code` |
-| `azuredatastudio-insiders` | `code` |
-| `calculatorapp` | `calculator` |
-| `code - insiders` | `code` |
-| `commsapps` | `hxmail` |
-| `dbeaver` | `eclipse` |
-| `digitaleditionspreview` | `digitaleditions` |
-| `esybraille` | `esysuite` |
-| `hxoutlook` | `hxmail` |
-| `miranda64` | `miranda32` |
-| `mpc-hc` | `mplayerc` |
-| `mpc-hc64` | `mplayerc` |
-| `notepad++` | `notepadPlusPlus` |
-| `searchapp` | `searchui` |
-| `searchhost` | `searchui` |
-| `springtoolsuite4` | `eclipse` |
-| `sts` | `eclipse` |
-| `teamtalk3` | `teamtalk4classic` |
-| `textinputhost` | `windowsinternal_composableshell_experiences_textinput_inputapp` |
-| `totalcmd64` | `totalcmd` |
-| `win32calc` | `calc` |
-| `winmail` | `msimn` |
-| `zend-eclipse-php` | `eclipse` |
-| `zendstudio` | `eclipse` |
+| 已删除的模块 | 用于替换的模块|
+|---|---|
+|`azardi-2.0` | `azardi20`|
+|`azuredatastudio` | `code`|
+|`azuredatastudio-insiders` | `code`|
+|`calculatorapp` | `calculator`|
+|`code - insiders` | `code`|
+|`commsapps` | `hxmail`|
+|`dbeaver` | `eclipse`|
+|`digitaleditionspreview` | `digitaleditions`|
+|`esybraille` | `esysuite`|
+|`hxoutlook` | `hxmail`|
+|`miranda64` | `miranda32`|
+|`mpc-hc` | `mplayerc`|
+|`mpc-hc64` | `mplayerc`|
+|`notepad++` | `notepadPlusPlus`|
+|`searchapp` | `searchui`|
+|`searchhost` | `searchui`|
+|`springtoolsuite4` | `eclipse`|
+|`sts` | `eclipse`|
+|`teamtalk3` | `teamtalk4classic`|
+|`textinputhost` | `windowsinternal_composableshell_experiences_textinput_inputapp`|
+|`totalcmd64` | `totalcmd`|
+|`win32calc` | `calc`|
+|`winmail` | `msimn`|
+|`zend-eclipse-php` | `eclipse`|
+|`zendstudio` | `eclipse`|
 
 #### 弃用
 
@@ -1311,32 +1422,32 @@ NVDA 会在按下更多命令时读出结果，例如科学计算器模式下的
 * 以下 appModules 已被标记为已弃用。
 要导入其中任意一项请从替代模块中导入。(#13366)
 
-| 弃用模块 | 替代模块 |
-| --- | --- |
-| azuredatastudio | code |
-| azuredatastudio-insiders | code |
-| calculatorapp | calculator |
-| code - insiders | code |
-| commsapps | hxmail |
-| dbeaver | eclipse |
-| digitaleditionspreview | digitaleditions |
-| esybraille | esysuite |
-| hxoutlook | hxmail |
-| miranda64 | miranda32 |
-| mpc-hc | mplayerc |
-| mpc-hc64 | mplayerc |
-| notepad++ | notepadPlusPlus |
-| searchapp | searchui |
-| searchhost | searchui |
-| springtoolsuite4 | eclipse |
-| sts | eclipse |
-| teamtalk3 | teamtalk4classic |
-| textinputhost | windowsinternal_composableshell_experiences_textinput_inputapp |
-| totalcmd64 | totalcmd |
-| win32calc | calc |
-| winmail | msimn |
-| zend-eclipse-php | eclipse |
-| zendstudio | eclipse |
+| 弃用模块 | 替代模块|
+|---|---|
+|azuredatastudio | code|
+|azuredatastudio-insiders | code|
+|calculatorapp | calculator|
+|code - insiders | code|
+|commsapps | hxmail|
+|dbeaver | eclipse|
+|digitaleditionspreview | digitaleditions|
+|esybraille | esysuite|
+|hxoutlook | hxmail|
+|miranda64 | miranda32|
+|mpc-hc | mplayerc|
+|mpc-hc64 | mplayerc|
+|notepad++ | notepadPlusPlus|
+|searchapp | searchui|
+|searchhost | searchui|
+|springtoolsuite4 | eclipse|
+|sts | eclipse|
+|teamtalk3 | teamtalk4classic|
+|textinputhost | windowsinternal_composableshell_experiences_textinput_inputapp|
+|totalcmd64 | totalcmd|
+|win32calc | calc|
+|winmail | msimn|
+|zend-eclipse-php | eclipse|
+|zendstudio | eclipse|
 
 ## 2022.1
 
@@ -3768,12 +3879,12 @@ The new layout uses the arrow keys in combination with the NVDA key and other mo
 
 Please note the following changes to commonly used commands:
 
-| Name | Key |
-| --- | --- |
-| Say all |NVDA+a |
-| Read current line | NVDA+l |
-| Read current text selection | NVDA+shift+s |
-| Report status bar | NVDA+shift+end |
+| Name | Key|
+|---|---|
+|Say all |NVDA+a|
+|Read current line | NVDA+l|
+|Read current text selection | NVDA+shift+s|
+|Report status bar | NVDA+shift+end|
 
 In addition, among other changes, all of the object navigation, text review, mouse click and synth settings ring commands have changed.
 Please see the [Commands Quick Reference](keyCommands.html) document for the new keys.

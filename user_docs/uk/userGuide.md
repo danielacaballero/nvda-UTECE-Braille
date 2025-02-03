@@ -39,18 +39,20 @@ NVDA дозволяє незрячим і слабозорим людям кор
 
 ### Системні вимоги {#SystemRequirements}
 
-#### Рекомендовані системні вимоги {#MinimumSystemRequirements}
-* Операційні системи: 64-розрядні редакції Windows 10, Windows 11 та Windows Server 2022
-  * підтримуються варіанти Windows як AMD64, так і ARM64.
-* щонайменше 150 мегабайтів місця на диску.
-* щонайменше 4 ГБ оперативної пам'яті.
-
 #### Мінімальні системні вимоги {#MinimumSystemRequirements}
+
 * Операційні системи: усі 32-та 64-розрядні редакції Windows 8.1, Windows 10 та Windows 11, включно із серверними версіями, починаючи з Windows Server 2012 R2.
   * підтримуються варіанти Windows як AMD64, так і ARM64.
-  * Зауважте, що 32-розрядні операційні системи більше не підтримуються.
+  * Note that 32-bit operating systems are no longer under active support.
   * Зауважте, що Windows 8.1 і Windows Server версій старіших за 2022 більше не підтримуються.
-* щонайменше 150 мегабайтів місця на диску.
+* at least 500 MB of storage space.
+
+#### Recommended System Requirements {#RecommendedSystemRequirements}
+
+* Operating Systems: 64-bit editions of Windows 10, Windows 11, and Windows Server 2022.
+  * both AMD64 and ARM64 variants of Windows are supported.
+* at least 500 MB of storage space.
+* at least 4 GB of RAM.
 
 ### Інтернаціоналізація {#Internationalization}
 
@@ -622,7 +624,7 @@ NVDA можна налаштувати так, щоб клавіші `insert`, `
 На клавіатурі без клавіші `контекст` натисніть замість неї `shift+f10`.
 * Клацнути правою кнопкою миші на піктограмі NVDA у системному лотку
 
-Коли меню з’явиться, для навігації в ньому ви зможете використовувати  клавіші зі стрілками, а `enter` — для активації обраного елемента. 
+Коли меню з’явиться, для навігації в ньому ви зможете використовувати  клавіші зі стрілками, а `enter` — для активації обраного елемента.
 
 ### Основні команди NVDA {#BasicNVDACommands}
 
@@ -759,7 +761,7 @@ NVDA підтримує такі команди для навігації за �
 Переважно ви працюватимете з програмами, використовуючи команди переміщення [системного фокуса](#SystemFocus) і [системної каретки](#SystemCaret).
 Можливо, ви захочете оглянути поточну програму або вікно операційної системи без переміщення системного фокуса чи системної каретки.
 Ймовірно, ви також захочете працювати з [об’єктами](#Objects), які недоступні стандартним шляхом, з клавіатури.
-У цьому випадку ви можете використати об’єктну навігацію. 
+У цьому випадку ви можете використати об’єктну навігацію.
 
 Об’єктна навігація дозволить вам рухатися між окремими [об’єктами](#Objects) та отримувати інформацію про них.
 Коли ви увійдете до об’єкта, NVDA повідомлятиме вам інформацію про нього так само, як і при використанні системного фокуса.
@@ -1487,7 +1489,8 @@ NVDA може автоматично повідомляти заголовки �
 #### Читання коментарів {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-Щоб прочитати будь-які коментарі у поточній позиції каретки, натисніть NVDA+alt+c.
+To report any comments at the current caret position, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 <!-- KC:endInclude -->
 Всі коментарі документа разом зі змінами, які відстежуються, можуть також бути вказані у списку елементів NVDA, якщо обрати як тип елементів примітки.
 
@@ -1535,7 +1538,8 @@ NVDA дозволяє вам відкрити список елементів д
 #### Читання нотаток {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-Для читання будь-яких нотаток для поточної комірки у фокусі натискайте NVDA+alt+c.
+To report any notes for the currently focused cell, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 У Microsoft 2016, 365 і новіших класичні коментарі в Microsoft Excel перейменовано на «нотатки».
 <!-- KC:endInclude -->
 Всі нотатки аркуша також можна переглянути у списку елементів NVDA після натискання NVDA+F7.
@@ -1606,7 +1610,7 @@ NVDA замінює стандартну область редагування �
 
 ### Poedit {#Poedit}
 
-NVDA пропонує поліпшену підтримку для Poedit 3.4 чи новіших.
+NVDA offers enhanced support for Poedit 3.5 or newer.
 
 <!-- KC:beginInclude -->
 
@@ -2133,11 +2137,6 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 
 ##### Переміщати системну каретку під час маршрутизації переглядового курсора {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|Параметри |Стандартно (Ніколи), Ніколи, Лише під час автоматичної прив’язки, Завжди|
-|Стандартно |Ніколи|
-
 Це налаштування визначає, чи має системна каретка переміщатися за допомогою натискання кнопки маршрутизації.
 Початково для цього параметра встановлено значення «Ніколи», що означає, що маршрутизація ніколи не чіпатиме каретку під час переміщення переглядового курсора.
 
@@ -2153,6 +2152,11 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 
 Щоб увімкнути переміщення системної каретки під час маршрутизації переглядового курсора з будь-якого місця, призначте на цей параметр бажаний жест у [діалозі «Жести вводу»](#InputGestures).
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Never), Never, Only when tethered automatically, Always|
+|Default |Never|
+
 ##### Читати по абзацах {#BrailleSettingsReadByParagraph}
 
 Якщо цей прапорець позначено, то брайль буде відображатися не рядками, а абзацами.
@@ -2161,30 +2165,18 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 Це, можливо, дозволить прискорити читання великої кількості тексту.
 Цю функцію початково вимкнено.
 
-##### Уникати розбивання слів, якщо можливо {#BrailleSettingsWordWrap}
+##### Paragraph start marker {#BrailleParagraphStartMarkers}
 
-Якщо цей прапорець позначено, то слово, яке є занадто великим, щоб уміститися в кінці брайлівського дисплея, не буде поділено.
-Замість цього, в кінці дисплея буде порожнє місце.
-При прокручуванні дисплея ви зможете прочитати ціле слово.
-Це іноді називають «перенесенням слів».
-Зверніть увагу, що якщо слово занадто велике для дисплея навіть саме по собі, то воно все одно буде розділеним.
+If "Read by paragraph" is checked, the selected start marker will be displayed to indicate the start of a paragraph.
+This can be especially helpful in applications used to read large pieces of text, like structured documents or books.
+In such documents, knowing where paragraphs start may be useful to understand the structure of the content, or to set bookmarks or annotations based on paragraph position.
 
-Якщо цей прапорець непозначено, то першу частину слова (залежить від вільного місця) буде показано, а решту буде обрізано.
-При прокручуванні дисплея ви зможете прочитати решту слова.
+The options include using two spaces as a subtle paragraph break, and the paragraph symbol, pilcrow (¶), as a more obvious one.
 
-Увімкнення цього параметра може зробити читання вільнішим, але вимагатиме частішого прокручування.
-
-##### Нормалізація юнікоду {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|Параметри |Стандартно (Вимкнено), Увімкнено, Вимкнено|
-|Стандартно |Вимкнено|
-
-Якщо цей параметр увімкнено, виконується нормалізація юнікоду для брайлівського тексту, показаного на брайлівському дисплеї.
-Це корисно, коли ви під час читання шрифтом Брайля зустрічаєте символи, які невідомі в конкретній брайлівській таблиці і які мають сумісну альтернативу, наприклад, напівжирні та курсивні символи, які зазвичай використовуються в соціальних мережах.
-Інші переваги нормалізації юнікоду детально пояснюються в [аналогічному розділі, який стосується налаштувань мовлення](#SpeechUnicodeNormalization).
-
-Щоб вмикати й вимикати нормалізацію юнікоду з будь-якого місця, призначте, будь ласка, користувацький жест, скориставшись діалогом [Жести вводу](#InputGestures).
+|Options |No paragraph start marker, Double space (  ), Pilcrow (¶)|
+|Default |No paragraph start marker|
 
 ##### Подання контексту {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 
 Для перемикання варіантів подання контекстної інформації з будь-якого місця, будь ласка, призначте бажаний жест на цю дію в діалозі [Жести вводу](#InputGestures).
 
-##### Переривати мовлення під час прокрутки {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Параметри |Стандартно (Увімкнено), Увімкнено, Вимкнено|
-|Стандартно |Увімкнено|
-
-Цей параметр визначає, чи потрібно переривати мовлення, коли брайлівський дисплей прокручується назад/вперед.
-Команди попереднього/наступного рядка завжди переривають мовлення.
-
-Під час читання шрифтом Брайля поточне мовлення може відвертати увагу.
-З цієї причини параметр початково увімкнено, і прокручування брайлівського дисплея перериває мовлення.
-
-Вимкнення цього параметра дозволяє чути мовлення під час одночасного читання шрифтом Брайля.
-
 ##### Показати виділення {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Параметри |Стандартно (Увімкнено), Увімкнено, Вимкнено|
-|Стандартно |Увімкнено|
 
 Цей параметр визначає, чи показуватиметься індикатор виділення (крапки 7 і 8) на брайлівському дисплеї.
 Початково параметр увімкнено, тому індикатор виділення показується.
@@ -2241,6 +2213,91 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 Вимкнення цього параметра може поліпшити читабельність.
 
 Щоб перемикати показ виділення з будь-якого місця у Windows, будь ласка, призначте бажаний жест у [діалозі «Жести вводу»](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
+
+##### Formatting display {#BrailleFormattingDisplay}
+
+This setting determines how NVDA will display text formatting in braille.
+This option only has an effect if NVDA is set to [display font attributes in braille](#DocumentFormattingFontAttributes).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| Options | Default (Liblouis), Liblouis, Tags |
+| Default | Liblouis |
+
+| Option | Behaviour |
+|---|---|
+| Liblouis | Use native Braille formatting. Note that this option will only indicate bold, italic and underlined text, and only if the selected braille table supports indicating these attributes. |
+| [Tags](#BrailleFormattingDisplayTags) | Use tags that describe how and where text formatting changes. |
+
+###### Tags {#BrailleFormattingDisplayTags}
+
+When "Formatting display" is set to "Tags", a formatting tag is displayed in braille when a change in formatting is detected.
+These tags start with ⣋ and end with ⣙.
+A formatting tag will contain one or more symbols which describe the text formatting.
+The following symbols are defined:
+
+| Symbol | Meaning |
+|---|---|
+| ⠃ ("b") | Start bold |
+| ⡃ ("b" with dot 7) | End bold |
+| ⠊ ("i") | Start italic |
+| ⡊ ("i" with dot 7) | End italic |
+| ⠥ ("u") | Start underline |
+| ⡥ ("u" with dot 7) | End underline |
+| ⠎ ("s")| Start strikethrough |
+| ⡎ ("s" with dot 7) | End strikethrough |
+
+##### Speak character when routing cursor in text {#BrailleSpeakOnRouting}
+
+If this is enabled, NVDA will automatically speak the character at the cursor when routing to it with braille cursor routing keys.
+
+To toggle this option from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+##### Avoid splitting words when possible {#BrailleSettingsWordWrap}
+
+If this is enabled, a word which is too large to fit at the end of the braille display will not be split.
+Instead, there will be some blank space at the end of the display.
+When you scroll the display, you will be able to read the entire word.
+This is sometimes called "word wrap".
+Note that if the word is too large to fit on the display even by itself, the word must still be split.
+
+If this is disabled, as much of the word as possible will be displayed, but the rest will be cut off.
+When you scroll the display, you will then be able to read the rest of the word.
+
+Enabling this may allow for more fluent reading, but generally requires you to scroll the display more.
+
+##### Unicode normalization {#BrailleUnicodeNormalization}
+
+When this option is enabled, unicode normalization is performed on the text that is brailled on the braille display.
+This is beneficial when coming across characters in braille that are unknown in a particular braille table and which have a compatible alternative, like the bold and italic characters commonly used on social media.
+Other benefits of unicode normalization are explained in greater detail in the [section for the equivalent speech setting](#SpeechUnicodeNormalization).
+
+To toggle Unicode normalization from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Disabled), Enabled, Disabled|
+|Default |Disabled|
+
+##### Interrupt speech while scrolling {#BrailleSettingsInterruptSpeech}
+
+This setting determines if speech should be interrupted when the Braille display is scrolled backwards/forwards.
+Previous/next line commands always interrupt speech.
+
+On-going speech might be a distraction while reading Braille.
+For this reason the option is enabled by default, interrupting speech when scrolling braille.
+
+Disabling this option allows speech to be heard while simultaneously reading Braille.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
 
 #### Вибір брайлівського дисплея {#SelectBrailleDisplay}
 
@@ -2494,7 +2551,7 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 
 Коли увімкнено, ви почуєте попереджувальний сигнал, якщо літера буде набрана із shift у режимі Caps Lock.
 Зазвичай, використання shift у режимі Caps Lock є неспеціальним і призводить до того, що режим Caps Lock не спрацьовує.
-Цей параметр призначений, аби попередити користувача про це. 
+Цей параметр призначений, аби попередити користувача про це.
 
 <!-- KC:setting -->
 
@@ -2513,6 +2570,16 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 
 За допомогою цього параметра користувачі можуть керувати тим, як NVDA має опрацьовувати натискання клавіш, які генерують такі додатки, як екранні клавіатури та програмне забезпечення для розпізнавання мовлення.
 Початково цей прапорець позначено, хоча певна частина користувачів, можливо, забажає вимкнути цей параметр, наприклад, ті користувачі, котрі набирають в’єтнамські тексти за допомогою програмного забезпечення UniKey, оскільки це призведе до некоректного ведення символів.
+
+##### Multiple key press timeout {#MultiPressTimeout}
+
+Some NVDA keyboard gestures perform different actions based upon how many times the same key is pressed in rapid succession.
+An example of this is the "Report current character of navigator object" command.
+This command reports the character if pressed once, a phonetic description of the character if pressed twice, and the numeric value of the character if pressed three times.
+This option configures the timeout after which an additional press of the same key will start a new gesture, rather than being taken as a subsequent press of the first one.
+For the example command, a too short timeout will cause two presses to report the current character twice, rather than the phonetic description.
+The default timeout is 500 ms, i.e. half a second.
+Increasing this timeout may be especially useful for people using sticky keys, or who have a physical disability.
 
 #### миша {#MouseSettings}
 
@@ -2841,7 +2908,7 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
 * інформація про шрифт
   * назва шрифту
   * розмір шрифту
-  * атрибути шрифту
+  * Font attributes [(Off, Speech, Braille, Speech and braille)](#DocumentFormattingFontAttributes)
   * надрядкові й підрядкові
   * акценти
   * підсвічений (маркований) текст
@@ -2879,6 +2946,17 @@ NVDA використовує алгоритм NFKC (Normalization Form Compatib
   * клікабельність
 
 Для перемикання цих параметрів з будь-якого місця у Windows, будь ласка, призначте на них свої жести за допомогою діалогу [Жести вводу](#InputGestures).
+
+##### Font attributes {#DocumentFormattingFontAttributes}
+
+This option allows you to select how certain font attributes, such as bold, italics, underline and strikethrough are reported.
+The font attributes combo box has four options:
+
+* Off: NVDA will not report these font attributes.
+* Speech: NVDA will announce when these font attributes change.
+* Braille: NVDA will display these attributes in braille.
+Exactly how they are displayed can be configured in [NVDA's braille settings](#BrailleFormattingDisplay).
+* Speech and braille: NVDA will report font attributes using both of the above methods.
 
 ##### Повідомляти зміни формату після переміщення курсора {#DocumentFormattingDetectFormatAfterCursor}
 
@@ -3708,7 +3786,7 @@ NVDA попросить вас підтвердити видалення.
 
 Існує також багато варіантів, які можуть змінити звук голосу.
 
-### Microsoft Speech API version 4 (SAPI 4) {#SAPI4}
+### Microsoft Speech API версія 4 (SAPI 4) {#SAPI4}
 
 SAPI 4 — це застарілий стандарт синтезаторів мовлення від Microsoft.
 NVDA як і раніше підтримує цей драйвер для користувачів, які досі користуються встановленими SAPI 4 синтезаторами.
@@ -3716,7 +3794,7 @@ NVDA як і раніше підтримує цей драйвер для кор
 
 При використанні цього синтезатора у NVDA, серед доступних голосів, які ви можете побачити у категорії [Мовлення](#SpeechSettings) діалогу [налаштувань NVDA](#NVDASettings) або в [кільці налаштувань синтезатора](#SynthSettingsRing), буде показано усі голоси з усіх SAPI 4 синтезаторів, які було виявлено на вашому комп’ютері.
 
-### Microsoft Speech API version 5 (SAPI 5) {#SAPI5}
+### Microsoft Speech API версія 5 (SAPI 5) {#SAPI5}
 
 SAPI 5 — це стандарт синтезаторів мовлення від Microsoft.
 Існує багато синтезаторів мовлення, які дотримуються вимог цього стандарту, їх можна придбати у різноманітних компаній або вільно завантажити зі сайтів виробників, втім, швидше за все, у вашій системі вже буде встановлено щонайменше один SAPI 5 синтезатор.
@@ -3729,7 +3807,7 @@ Microsoft Speech Platform (Мовленнєва платформа Microsoft) �
 
 Щоб використовувати ці голоси, вам потрібно встановити два компоненти:
 
-* [Microsoft Speech Platform - Runtime (Version 11), x86](https://www.microsoft.com/download/en/details.aspx?id=27225)
+* [Microsoft Speech Platform - Runtime (версія 11), x86](https://www.microsoft.com/download/en/details.aspx?id=27225)
 * [Microsoft Speech Platform - Runtime Languages (Version 11)](https://www.microsoft.com/download/en/details.aspx?id=27224)
   * Ця сторінка містить низку файлів як для  розпізнавання, так і для синтезу  мовлення.
  Оберіть файли, які містять потрібну вам мову і голос.
@@ -4300,6 +4378,8 @@ NVDA підтримує брайлівські дисплеї Braille Sense, Bra
 |в кінець |Пробіл+LJ down|
 |control+на початок |бекспейс+LJ up|
 |control+end |бекспейс+LJ down|
+
+<!-- KC:endInclude -->
 
 ### Papenmeier BRAILLEX Newer Models {#Papenmeier}
 
@@ -5106,5 +5186,5 @@ NVDA дозволяє встановлювати деякі параметри �
 ## Додаткова інформація {#FurtherInformation}
 
 Якщо ви потребуєте додаткової інформації або допомоги у зв’язку з NVDA, будь ласка, відвідайте [сайт NVDA](NVDA_URL).
-Тут ви зможете знайти додаткову документацію, технічну підтримку і посилання на ресурси спільнот. 
+Тут ви зможете знайти додаткову документацію, технічну підтримку і посилання на ресурси спільнот.
 Цей сайт також надає інформацію та ресурси щодо розробки NVDA.

@@ -39,18 +39,20 @@ Ses points forts sont :
 
 ### Configuration Système Requise {#SystemRequirements}
 
-#### Configuration système recommandée {#MinimumSystemRequirements}
-* Systèmes d'exploitation : éditions 64 bits de Windows 10, Windows 11 et Windows Server 2022
-  * Les variantes AMD64 et ARM64 de Windows sont prises en charge.
-* au moins 150 Mo d'espace de stockage.
-* au moins 4 Go de RAM.
-
 #### Configuration système minimale requise {#MinimumSystemRequirements}
+
 * Systèmes d'Exploitation : toutes les éditions 32-bit et 64-bit de Windows 8.1, Windows 10, Windows 11, et toutes les versions serveur à partir de Windows Server 2012 R2.
   * les variantes AMD64 et ARM64 de Windows sont prises en charge.
-  * Remarque : les systèmes d'exploitation 32 bits ne sont plus pris en charge activement.
+  * Note that 32-bit operating systems are no longer under active support.
   * Veuillez noter que les versions de Windows 8.1 et Windows Server antérieures à 2022 ne sont plus prises en charge activement.
-* au moins 150 Mo d'espace de stockage.
+* at least 500 MB of storage space.
+
+#### Recommended System Requirements {#RecommendedSystemRequirements}
+
+* Operating Systems: 64-bit editions of Windows 10, Windows 11, and Windows Server 2022.
+  * both AMD64 and ARM64 variants of Windows are supported.
+* at least 500 MB of storage space.
+* at least 4 GB of RAM.
 
 ### Internationalisation {#Internationalization}
 
@@ -1487,7 +1489,8 @@ La liste d'éléments peut lister les titres, les liens, annotations (incluant i
 #### Annonce des Commentaires {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-Pour annoncer tout commentaire à la position actuelle du curseur, pressez NVDA+alt+c.
+To report any comments at the current caret position, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 <!-- KC:endInclude -->
 Tous les commentaires pour le document ainsi que les autres demandes de modification peuvent aussi être listés dans la liste d'éléments de NVDA en choisissant le type Annotations.
 
@@ -1535,7 +1538,8 @@ La sélection d'un champ de formulaire et l'appui sur entrée ou le bouton Aller
 #### Annonce des Notes {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-Pour annoncer toute note pour la cellule actuellement en focus, pressez NVDA+alt+c.
+To report any notes for the currently focused cell, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 Sous Microsoft 2016, 365 et plus récents, les commentaires classiques sous Microsoft Excel ont été renommés en "notes".
 <!-- KC:endInclude -->
 Toutes les notes de la feuille de calcul peuvent aussi être listés dans la liste d'éléments de NVDAaprès appui sur NVDA+f7.
@@ -1606,7 +1610,7 @@ Note : Les raccourcis ci-dessus fonctionnent seulement avec le format de chaîn
 
 ### Poedit {#Poedit}
 
-NVDA offre un support amélioré pour Poedit 3.4 ou plus récent.
+NVDA offers enhanced support for Poedit 3.5 or newer.
 
 <!-- KC:beginInclude -->
 
@@ -2133,11 +2137,6 @@ Dans ce cas, le braille ne suivra pas le focus système et le curseur système.
 
 ##### Déplacer le curseur système lors du routage du curseur de revue {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|Options |Défaut (Jamais), Jamais, Seulement quand le braille suit automatiquement, Toujours|
-|Défaut |Jamais|
-
 Ce paramètre détermine si le curseur système doit également être déplacé lors d'un appui sur une touche de routage du curseur.
 Cette option est définie sur Jamais par défaut, ce qui signifie que le routage ne déplacera jamais le curseur système lors du routage du curseur de revue.
 
@@ -2153,6 +2152,11 @@ Cette option est uniquement active si "[Le braille suit](#BrailleTether)" est d�
 
 Pour parcourir les modes de déplacement du curseur système lors du routage du curseur de revue depuis n'importe où, veuillez attribuer un geste personnalisé à l'aide de la [boîte de dialogue Gestes de commandes](#InputGestures).
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Never), Never, Only when tethered automatically, Always|
+|Default |Never|
+
 ##### Lecture par paragraphe {#BrailleSettingsReadByParagraph}
 
 Si cette option est activée, le braille sera affiché par paragraphe au lieu d'être affiché par ligne.
@@ -2161,30 +2165,18 @@ Cela signifie que vous n'aurez pas besoin de faire défiler l'afficheur à la fi
 Cela permet une lecture plus fluide des textes volumineux.
 Par défaut, cette option est désactivée.
 
-##### Ne pas couper les mots quand c'est possible {#BrailleSettingsWordWrap}
+##### Paragraph start marker {#BrailleParagraphStartMarkers}
 
-Si cette option est activée, un mot trop long pour entrer à la fin de l'afficheur braille ne sera pas coupé.
-À la place, il y aura des espaces à la fin de l'affichage.
-En faisant défiler l'affichage, vous pourrez lire le mot entier.
-Ceci est parfois appelé retour automatique à la ligne.
-Notez que si le mot est trop long pour entrer sur l'afficheur, il devra quand-même être coupé.
+If "Read by paragraph" is checked, the selected start marker will be displayed to indicate the start of a paragraph.
+This can be especially helpful in applications used to read large pieces of text, like structured documents or books.
+In such documents, knowing where paragraphs start may be useful to understand the structure of the content, or to set bookmarks or annotations based on paragraph position.
 
-Si cette option est désactivée, le plus possible du mot sera affiché sur la ligne, mais le reste sera coupé.
-En faisant défiler l'affichage, vous pourrez lire le reste du mot.
+The options include using two spaces as a subtle paragraph break, and the paragraph symbol, pilcrow (¶), as a more obvious one.
 
-Activer cette option peut rendre la lecture plus fluide mais vous obligera à faire défiler plus souvent.
-
-##### Normalisation Unicode {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|Options |Défaut (Désactivé), Activé, Désactivé|
-|Défaut |Désactivé|
-
-Lorsque cette option est activée, la normalisation Unicode est appliqué au texte à afficher sur la plage braille.
-Ceci est utile lorsque vous rencontrez des caractères en braille qui sont inconnus dans une table braille particulière et qui ont une alternative compatible, comme les caractères gras et italiques couramment utilisés sur les réseaux sociaux.
-Les autres avantages de la normalisation Unicode sont expliqués plus en détail dans la [section relative au paramètre de parole équivalent](#SpeechUnicodeNormalization).
-
-Pour activer/désactiver la normalisation Unicode depuis n'importe où, veuillez assigner un geste personnalisé en utilisant le [dialogue des Gestes de Commandes](#InputGestures).
+|Options |No paragraph start marker, Double space (  ), Pilcrow (¶)|
+|Default |No paragraph start marker|
 
 ##### Afficher le contexte du focus {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ Cependant, si vous voulez lire le contexte (ex : que vous êtes dans une liste 
 
 Pour modifier l'option "Afficher le contexte du focus" depuis n'importe où, veuillez assigner un geste de commande personnalisé en utilisant [le dialogue Gestes de Commandes](#InputGestures).
 
-##### Interrompre la parole pendant le défilement {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Options |Défaut (Activé), Activé, Désactivé|
-|Défaut |Activé|
-
-Ce paramètre détermine si la parole doit être interrompue lorsque l'afficheur braille défile vers l'arrière/vers l'avant.
-Les commandes de ligne précédente/suivante interrompent toujours la parole.
-
-La parole en cours peut être une distraction lors de la lecture du braille.
-Pour cette raison, l'option est activée par défaut, interrompant la parole lors du défilement du braille.
-
-La désactivation de cette option permet d'entendre la parole tout en lisant simultanément le braille.
-
 ##### Afficher la sélection {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Options |Défaut (Activé), Activé, Désactivé|
-|Défaut |Activé|
 
 Ce réglage détermine si l'indicateur de sélection (points 7 et 8) s'affiche sur l'afficheur braille.
 L'option est activée par défaut, donc l'indicateur de sélection est affiché.
@@ -2241,6 +2213,91 @@ L'indicateur de sélection peut être une distraction lors de la lecture.
 La désactivation de cette option peut améliorer la lisibilité.
 
 Pour basculer l'affichage de la sélection depuis n'importe où, veuillez attribuer un geste personnalisé à l'aide de la [boîte de dialogue Gestes de commandes](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
+
+##### Formatting display {#BrailleFormattingDisplay}
+
+This setting determines how NVDA will display text formatting in braille.
+This option only has an effect if NVDA is set to [display font attributes in braille](#DocumentFormattingFontAttributes).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| Options | Default (Liblouis), Liblouis, Tags |
+| Default | Liblouis |
+
+| Option | Behaviour |
+|---|---|
+| Liblouis | Use native Braille formatting. Note that this option will only indicate bold, italic and underlined text, and only if the selected braille table supports indicating these attributes. |
+| [Tags](#BrailleFormattingDisplayTags) | Use tags that describe how and where text formatting changes. |
+
+###### Tags {#BrailleFormattingDisplayTags}
+
+When "Formatting display" is set to "Tags", a formatting tag is displayed in braille when a change in formatting is detected.
+These tags start with ⣋ and end with ⣙.
+A formatting tag will contain one or more symbols which describe the text formatting.
+The following symbols are defined:
+
+| Symbol | Meaning |
+|---|---|
+| ⠃ ("b") | Start bold |
+| ⡃ ("b" with dot 7) | End bold |
+| ⠊ ("i") | Start italic |
+| ⡊ ("i" with dot 7) | End italic |
+| ⠥ ("u") | Start underline |
+| ⡥ ("u" with dot 7) | End underline |
+| ⠎ ("s")| Start strikethrough |
+| ⡎ ("s" with dot 7) | End strikethrough |
+
+##### "Annoncer le caractère lors du routage du curseur dans le texte {#BrailleSpeakOnRouting}
+
+If this is enabled, NVDA will automatically speak the character at the cursor when routing to it with braille cursor routing keys.
+
+To toggle this option from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+##### Avoid splitting words when possible {#BrailleSettingsWordWrap}
+
+If this is enabled, a word which is too large to fit at the end of the braille display will not be split.
+Instead, there will be some blank space at the end of the display.
+When you scroll the display, you will be able to read the entire word.
+This is sometimes called "word wrap".
+Note that if the word is too large to fit on the display even by itself, the word must still be split.
+
+If this is disabled, as much of the word as possible will be displayed, but the rest will be cut off.
+When you scroll the display, you will then be able to read the rest of the word.
+
+Enabling this may allow for more fluent reading, but generally requires you to scroll the display more.
+
+##### Unicode normalization {#BrailleUnicodeNormalization}
+
+When this option is enabled, unicode normalization is performed on the text that is brailled on the braille display.
+This is beneficial when coming across characters in braille that are unknown in a particular braille table and which have a compatible alternative, like the bold and italic characters commonly used on social media.
+Other benefits of unicode normalization are explained in greater detail in the [section for the equivalent speech setting](#SpeechUnicodeNormalization).
+
+To toggle Unicode normalization from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Disabled), Enabled, Disabled|
+|Default |Disabled|
+
+##### Interrupt speech while scrolling {#BrailleSettingsInterruptSpeech}
+
+This setting determines if speech should be interrupted when the Braille display is scrolled backwards/forwards.
+Previous/next line commands always interrupt speech.
+
+On-going speech might be a distraction while reading Braille.
+For this reason the option is enabled by default, interrupting speech when scrolling braille.
+
+Disabling this option allows speech to be heard while simultaneously reading Braille.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
 
 #### Choisir l'afficheur braille {#SelectBrailleDisplay}
 
@@ -2513,6 +2570,16 @@ Cette option n'est disponible que si l'annonce des fautes d'orthographe est acti
 
 Cette option permet à l'utilisateur de choisir si les combinaisons de touches générées par des applications telles que les claviers à l'écran et les logiciels de reconnaissance vocale doivent être traitées par NVDA.
 Cette option est activée par défaut, mais certains utilisateurs souhaiteraient la désactiver, comme ceux tapant en vietnamien avec le logiciel de dactylographie UniKey, car cela causerait la saisie de caractères incorrects.
+
+##### Multiple key press timeout {#MultiPressTimeout}
+
+Some NVDA keyboard gestures perform different actions based upon how many times the same key is pressed in rapid succession.
+An example of this is the "Report current character of navigator object" command.
+This command reports the character if pressed once, a phonetic description of the character if pressed twice, and the numeric value of the character if pressed three times.
+This option configures the timeout after which an additional press of the same key will start a new gesture, rather than being taken as a subsequent press of the first one.
+For the example command, a too short timeout will cause two presses to report the current character twice, rather than the phonetic description.
+The default timeout is 500 ms, i.e. half a second.
+Increasing this timeout may be especially useful for people using sticky keys, or who have a physical disability.
 
 #### Souris {#MouseSettings}
 
@@ -2841,7 +2908,7 @@ On peut configurer les annonces suivantes :
 * Police,
   * Nom de la police
   * Taille de la police,
-  * Attributs de la police,
+  * Font attributes [(Off, Speech, Braille, Speech and braille)](#DocumentFormattingFontAttributes)
   * Exposants et indices
   * Emphase
   * Texte surligné (marqué)
@@ -2879,6 +2946,17 @@ On peut configurer les annonces suivantes :
   * Cliquable
 
 Pour modifier ces paramètres depuis n'importe où, veuillez assigner un geste personnalisé en utilisant le [dialogue Gestes de Commandes](#InputGestures).
+
+##### Font attributes {#DocumentFormattingFontAttributes}
+
+This option allows you to select how certain font attributes, such as bold, italics, underline and strikethrough are reported.
+The font attributes combo box has four options:
+
+* Off: NVDA will not report these font attributes.
+* Speech: NVDA will announce when these font attributes change.
+* Braille: NVDA will display these attributes in braille.
+Exactly how they are displayed can be configured in [NVDA's braille settings](#BrailleFormattingDisplay).
+* Speech and braille: NVDA will report font attributes using both of the above methods.
 
 ##### Annonce des changements de mise en forme après le curseur {#DocumentFormattingDetectFormatAfterCursor}
 
@@ -4300,6 +4378,8 @@ Veuillez consulter la documentation du terminal pour savoir où se situent ces t
 |touche fin |espace+LJ bas|
 |touche contrôle+début |retourArrière+LJ haut|
 |touche contrôle+fin |retourArrière+LJ bas|
+
+<!-- KC:endInclude -->
 
 ### Nouveaux Modèles de Papenmeier brailleX {#Papenmeier}
 

@@ -39,18 +39,20 @@ NVDA'nın kısaca tanıtıldığı şu [videoya (ingilizce)](https://www.youtube
 
 ### sistem gereksinimleri {#SystemRequirements}
 
-#### Önerilen Sistem Gereksinimleri {#MinimumSystemRequirements}
-* İşletim Sistemleri: Windows 10, Windows 11 ve Windows Server 2022'nin 64 bit sürümleri
-  * .Windows'un AMD64 ve ARM64 olmak üzere iki sürümü de desteklenir.
-* en az 150 MB depolama alanı.
-* En az 4 gb RAM.
-
 #### minimum sistem gereksinimleri {#MinimumSystemRequirements}
-* İşletim Sistemleri: Windows 8.1, Windows 10, Windows 11'in tüm 32 bit ve 64 bit sürümleri ve Windows Server 2012 R2'den başlayarak tüm server İşletim Sistemleri. 
+
+* İşletim Sistemleri: Windows 8.1, Windows 10, Windows 11'in tüm 32 bit ve 64 bit sürümleri ve Windows Server 2012 R2'den başlayarak tüm server İşletim Sistemleri.
   * .Windows'un AMD64 ve ARM64 olmak üzere iki sürümü de desteklenir.
-  *  32 bit işletim sistemleri aktif olarak desteklenmez.
+  * 32 bit işletim sistemlerinin artık aktif olarak desteklenmediğini unutmayın.
   * 2022'den eski Windows 8.1 ve Windows Server sürümleri aktif olarak desteklenmez.
-* en az 150 MB depolama alanı.
+* en az 500 MB depolama alanı.
+
+#### Önerilen Sistem Gereksinimleri {#RecommendedSystemRequirements}
+
+* İşletim Sistemleri: Windows 10, Windows 11 ve Windows Server 2022'nin 64 bit sürümleri.
+  * Windows'un AMD64 ve ARM64 sürümleri desteklenir.
+* en az 500 MB depolama alanı.
+* en az 4 GB RAM.
 
 ### Yerel Dil Desteği {#Internationalization}
 
@@ -83,7 +85,7 @@ NVDA GNU General Public License (Version 2) (Yeni Genel Kamu Lisansı Sürüm2) 
 İstisnalar, lisans belgesinde "Eklentiler ve Sürücülerdeki GPL Olmayan Bileşenler" ve "Microsoft Dağıtılabilir Kodu" bölümlerinde özetlenmiştir.
 NVDA ayrıca farklı ücretsiz ve açık kaynak lisansları altında kullanıma sunulan bileşenleri içerir ve kullanır.
 Programı, lisans şartlarına uyduğunuz ve kodlarını isteyen kişilerle de paylaştığınız müddetçe, kullanmakta, dağatmakta ve istediğiniz biçimde değiştirmekte özgürsünüz.
-Bu, Özgün ve değiştirilmiş yazılım kopyaları ile, bu kodları kullanan diğer yazılımlar için geçerlidir. 
+Bu, Özgün ve değiştirilmiş yazılım kopyaları ile, bu kodları kullanan diğer yazılımlar için geçerlidir.
 
 Daha fazla detay için [Tam lisansı açıp okuyabilirsiniz.](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 İstisnalarla ilgili ayrıntılar için "yardım" bölümünün altındaki NVDA menüsünden lisans belgesine erişin.
@@ -91,7 +93,7 @@ Daha fazla detay için [Tam lisansı açıp okuyabilirsiniz.](https://www.gnu.or
 ## NVDA Hızlı Başlangıç Rehberi {#NVDAQuickStartGuide}
 
 Bu rehber,  NVDA'yı indirme, kurma ve ilk çalıştırma olmak üzere üç ana bölümden oluşmaktadır.
-Ayrıca yukarıdaki belirtilen konulara ek olarak, NVDA'yı özelleştirme, eklentileri kullanma, NVDA topluluğuna katılma ve yardım alma hakkında da bilgiler içermektedir. 
+Ayrıca yukarıdaki belirtilen konulara ek olarak, NVDA'yı özelleştirme, eklentileri kullanma, NVDA topluluğuna katılma ve yardım alma hakkında da bilgiler içermektedir.
 Bu rehberdeki bilgiler, NVDA Kullanıcı Rehberinin diğer BÖLÜMLERİNİ ÖZETLER NİTELİKTEDİR.
 Bahsi geçen konular ve pek çok diğer fazlası hakkında daha ayrıntılı bilgi için lütfen Kullanıcı Rehberine bakın.
 
@@ -110,8 +112,8 @@ Sistem gereksinimleri hakkında daha fazla bilgi için[sistem gereksinimleri](#S
 Listelenen bu adımlar, web sayfalarında gezinme konusunda biraz bilgi sahibi olduğunuzu varsaymaktadır.
 
 * Web tarayıcınızı açın (`Windows` tuşuna basın, aşağıdaki adresi yazın ve `enter` tuşuna basın.)
-* NV Access indirme sayfasına gitmek için (`alt+d` tuşlarına basın, aşağıdaki adresi yazın veya kopyalayın ve `enter` tuşuna basın): 
-https://www.nvaccess.org/download 
+* NV Access indirme sayfasına gitmek için (`alt+d` tuşlarına basın, aşağıdaki adresi yazın veya kopyalayın ve `enter` tuşuna basın):
+https://www.nvaccess.org/download
 * "Download" düğmesine basın
 * Kullandığınız tarayıcıya ve ayarlarınıza göre dosyayı indirmek için ekstra bir işlem gerekebilir
 * Tarayıcıya bağlı olarak, dosya indirildikten sonra otomatik olarak çalıştırılabilir.
@@ -142,13 +144,13 @@ Seçenekler şunlardır:
 
 * "NVDA'yı bu bilgisayara kur": bu seçenek NVDA'yı bilgisayarlarına kurmak isteyen kullanıcılar içindir.
 * "Taşınabilir kopya oluştur": Bu seçenek, NVDA'nın kurulum yapmadan herhangi bir klasöre kurulmasını ve çalıştırılmasını sağlar.
-Taşınabilir kopya, yönetici hakları olmayan bilgisayarlarda veya bir USB bellekte NVDA'yı yanınızda taşımanıza yarar. 
+Taşınabilir kopya, yönetici hakları olmayan bilgisayarlarda veya bir USB bellekte NVDA'yı yanınızda taşımanıza yarar.
 Seçildiğinde, NVDA sizi taşınabilir kopya oluşturma sırasında gerekli adımlar ile yönlendirecektir.
-Taşınabilir kopya için bilinmesi gereken en önemli bilgi, taşınabilir kopyanın kurulacağı klasördür. 
+Taşınabilir kopya için bilinmesi gereken en önemli bilgi, taşınabilir kopyanın kurulacağı klasördür.
 * "Geçici kopyayla devam et": Bu, NVDA'nın geçici kopyasını çalışır durumda tutar.
-Geçici kopya yeni bir sürümdeki özellikleri NVDA'yı yüklemeden test etmeye yarar. 
+Geçici kopya yeni bir sürümdeki özellikleri NVDA'yı yüklemeden test etmeye yarar.
 Seçildiğinde, başlatıcı penceresi kapanır ve NVDA'nın geçici kopyası, çıkılana veya bilgisayar kapatılana kadar çalışmaya devam eder.
-Ayarlarda yapılan değişikliklerin kaydedilmediğini unutmayın. 
+Ayarlarda yapılan değişikliklerin kaydedilmediğini unutmayın.
 * "Çıkış": Bu, NVDA'yı herhangi bir işlem yapmadan kapatır.
 
 NVDA'yı her zaman bu bilgisayarda kullanmayı düşünüyorsanız, NVDA'yı kur seçeneğini seçmeniz önerilir.
@@ -176,7 +178,7 @@ Bu işlem sırasında NVDA giderek daha yüksek perdeli bir bip sesi çıkarır.
 Bu süreç genellikle hızlıca tamamlanır.
 1. NVDA kurulumunun başarılı olduğunu bildiren bir iletişim kutusu görüntülenir.
 Mesaj, "Kurulu kopyayı başlatmak için Tamam düğmesine basın" şeklinde olacaktır.
-Kurulmuş kopyayı başlatmak için `enter` tuşuna basın. 
+Kurulmuş kopyayı başlatmak için `enter` tuşuna basın.
 1. "NVDA'ya Hoş Geldiniz" iletişim kutusu açılır ve NVDA bir karşılama mesajı okur.
 Odak noktası "Klavye Düzeni" seçim kutusu üzerindedir.
 Varsayılan olarak "Masa üstü" klavye düzeni, bazı işlevler için numaratör tuş takımını kullanır.
@@ -197,19 +199,19 @@ Komutlar ayrıca "komutlar için çabuk rehber" bölümünde de bulunmaktadır.
 "NVDA için Temel Eğitim" modülü, her komutu derinlemesine anlatmaktadır.
 "NVDA Temel Eğitimi" (İngilizce), [NV Access Shop](http://www.nvaccess.org/shop) adresinden bulabilirsiniz.
 
-İşte sık kullanılan bazı temel komutlar: 
+İşte sık kullanılan bazı temel komutlar:
 Tüm komutlara farklı kısayol tuşları atanabilir. Bu listedeki kısayol tuşları varsayılan kısayollardır.
 
 #### NVDA Tuşu {#NVDAModifierKey}
 
-Varsayılan NVDA tuşu, `NumaratörSıfır` (`numLock tuşu` veya `delete`, `home` ve `end` tuşlarının yanındaki `insert` tuşudur. 
+Varsayılan NVDA tuşu, `NumaratörSıfır` (`numLock tuşu` veya `delete`, `home` ve `end` tuşlarının yanındaki `insert` tuşudur.
 NVDA tuşu ayrıca `capsLock` tuşuna da atanabilir.
 
 #### Girdi yardımı {#InputHelp}
 
 Tuşların yerini öğrenmek ve alıştırma yapmak için `NVDA+1` tuşlarına basarak girdi yardımı'nı kullanabilirsiniz.
 Girdi yardımı'ndayken, herhangi bir tuşa bastığınızda veya dokunma hareketi yaptığınızda, NVDA bastığınız tuşu bildirecek ve ne işe yaradığını (eğer varsa) açıklayacaktır.
-Girdi yardımı açıkken komutlar farklı uygulamalara gönderilmez. 
+Girdi yardımı açıkken komutlar farklı uygulamalara gönderilmez.
 
 #### NVDA'yı açıp kapama {#StartingAndStoppingNVDA}
 
@@ -366,7 +368,7 @@ Bu davranış hakkında daha fazla bilgi edinmek ve değiştirmek için ["günce
 
 ### Topluluk {#Community}
 
-NVDA'nın dinamik bir kullanıcı topluluğu bulunmaktadır. 
+NVDA'nın dinamik bir kullanıcı topluluğu bulunmaktadır.
 Örneğin, [İngilizce e-posta listesi](https://nvda.groups.io/g/nvda) veya yerel dil gruplarını bulabileceğiniz ve farklı NVDA topluluklarını listeleyen [https://github.com/nvaccess/nvda-community/wiki/Connect] gibi birçok topluluk bulunmaktadır.
 NVDA'nın üreticileri olan NV Access, [Twitter](https://twitter.com/nvaccess) ve [Facebook](https://www.facebook.com/NVAccess) sayfalarında aktif olarak yer almaktadır.
 NV Access'in ayrıca düzenli periyotlarla güncellenen bir [İnprocess blogu](https://www.nvaccess.org/category/in-process/) vardır.
@@ -377,7 +379,7 @@ Bu program, NVDA'daki becerilerinizi göstermek için tamamlayabileceğiniz çev
 
 ### Yardım Alma {#GettingHelp}
 
-NVDA ile ilgili yardım almak için `nvda+n` tuşlarına basın, ardından yardım altmenüsüne gitmek için `a` tuşuna basın. 
+NVDA ile ilgili yardım almak için `nvda+n` tuşlarına basın, ardından yardım altmenüsüne gitmek için `a` tuşuna basın.
 Bu alt menüden Kullanıcı Rehberine, Komutlar İçin Çabuk Rehbere, ne yeni dosyasına ve daha fazlasına ulaşılabilir.
 Bu ilk üç seçenek, varsayılan web tarayıcınızda açılacaktır.
 Ayrıca [NV Access Shop](https://www.nvaccess.org/shop) adresinde daha kapsamlı Eğitim Materyalleri bulunmaktadır.
@@ -428,12 +430,12 @@ Bu seçenek yeni kurulumlar için varsayılan olarak etkindir.
 
 #### Masaüstünde Kısayol Oluştur (kontrol+alt+n) {#CreateDesktopShortcut}
 
-Bu seçenek NVDA'nın başlatılması için bir masaüstü kısayolu oluşturmanızı sağlar. 
+Bu seçenek NVDA'nın başlatılması için bir masaüstü kısayolu oluşturmanızı sağlar.
 Kısayol oluşturulduğu taktirde, NVDA'nın başlatılması için bir kısayol tuşu da `kontrol+alt+n` atanır.
 
 #### Taşınabilir Konfigürasyonu Mevcut Kullanıcı Hesabına Kopyala {#CopyPortableConfigurationToCurrentUserAccount}
 
-Bu seçenek, çalışmakta olan NVDA için kullanılan konfigürasyonun, kurulacak NVDA için de geçerli olmasını belirlemenize olanak tanır. 
+Bu seçenek, çalışmakta olan NVDA için kullanılan konfigürasyonun, kurulacak NVDA için de geçerli olmasını belirlemenize olanak tanır.
 Bu, konfigürasyonu yalnızca mevcut kullanıcı için kopyalar, başka kullanıcıların ayarları ya da [güvenli ekranlarda](#SecureScreens) için kullanılan konfigürasyon değiştirilmez.
 Bu seçenek yalnızca kurulumu NVDA taşınabilir kopyası üzerinden yaparken sunulur, doğrudan ana kurulum paketini kullanarak yapacağınız kurulumlarda gösterilmez.
 
@@ -458,10 +460,10 @@ Bu iletişim kutusunu kapatmak için Tamam'a basabilirsiniz.
 
 ### Taşınabilir Kopya Kısıtlamaları {#PortableAndTemporaryCopyRestrictions}
 
-NVDA'yı bir USB sürücüde veya başka bir ortamda yanınızda taşımak istiyorsanız, taşınabilir bir kopya oluşturmanız önerilir. 
-Bir taşınabilir kopyayı istediğiniz zaman NVDA'yı kurmak için kullanabilirsiniz. 
-Bilgisayarınıza kurulu NVDA kopyası üzerinden de taşınabilir kopya oluşturabilirsiniz. 
-Ancak, NVDA'yı CD gibi salt okunur bir ortama kopyalamak isterseniz, sadece indirdiğiniz kurulum dosyasını kopyalamanız yeterlidir. 
+NVDA'yı bir USB sürücüde veya başka bir ortamda yanınızda taşımak istiyorsanız, taşınabilir bir kopya oluşturmanız önerilir.
+Bir taşınabilir kopyayı istediğiniz zaman NVDA'yı kurmak için kullanabilirsiniz.
+Bilgisayarınıza kurulu NVDA kopyası üzerinden de taşınabilir kopya oluşturabilirsiniz.
+Ancak, NVDA'yı CD gibi salt okunur bir ortama kopyalamak isterseniz, sadece indirdiğiniz kurulum dosyasını kopyalamanız yeterlidir.
 Taşınabilir Kopyanın doğrudan salt okunur ortamdan çalıştırılması şu anda desteklenmemektedir.
 
 [NVDA Kurulum dosyası](#StepsForRunningTheDownloadLauncher), NVDA'nın geçici bir kopyası olarak kullanılabilir.
@@ -471,11 +473,11 @@ Bu, [Eklenti Mağazası](#AddonsManager) kullanımının devre dışı bırakıl
 NVDA'nın taşınabilir ve geçici kopyaları aşağıdaki kısıtlamalara tabidir:
 
 * Oturum açma sırasında ve/veya sonrasında otomatik olarak başlayamaması.
-* Eğer taşınabilir kopya yönetici haklarıyla çalıştırılmadıysa (önerilmez<) Yönetici haklarıyla çalıştırılmış uygulamalarda taşınabilir kopyanın çalışmaması 
+* Eğer taşınabilir kopya yönetici haklarıyla çalıştırılmadıysa (önerilmez<) Yönetici haklarıyla çalıştırılmış uygulamalarda taşınabilir kopyanın çalışmaması
 * Yönetici izni isteyen bir uygulamayı başlatmaya çalışırken Kullanıcı Hesabı Denetimi (UAC) ekranlarını okuyamaması<
 * Dokunmatik ekran desteğinin olmaması
 * Windows Mağazası uygulamalarında tarama kipi ve yazılan karakterlerin söylenmesi gibi özelliklerin kullanılamaması
-* Ses zayıflamasının kullanılamaması gibi kısıtlamalar bulunmaktadır. 
+* Ses zayıflamasının kullanılamaması gibi kısıtlamalar bulunmaktadır.
 
 ## NVDA'ya Başlarken {#GettingStartedWithNVDA}
 ### NVDA'yı açma {#LaunchingNVDA}
@@ -757,7 +759,7 @@ Tablolarda aşağıdaki tuşlar da kullanılabilir:
 ### Nesne Dolaşımı {#ObjectNavigation}
 
 Çoğu zaman, [sistem odağını](#SystemFocus) ve [sistem düzenleme imlecini](#SystemCaret)hareket ettiren uygulamalarla çalışırsınız.
-Öte yandan, Bazen aktif uygulamayı veya işletim sistemini sistem odağını ya da düzenleme imlecinin konumunu değiştirmeden dolaşmak isteyebilirsiniz. 
+Öte yandan, Bazen aktif uygulamayı veya işletim sistemini sistem odağını ya da düzenleme imlecinin konumunu değiştirmeden dolaşmak isteyebilirsiniz.
 Aynı zamanda, normal şartlarda klavye ile ulaşamayacağınız [nesnelerle](#Objects) çalışmak isteyebilirsiniz.
 İşte bu tür durumlar için, NVDA'nın nesne dolaşım özelliğini kullanabilirsiniz.
 
@@ -779,7 +781,7 @@ Diğer bir seçenek olarak, mevcut nesne herhangi bir içerik içermiyorsa, NVDA
 Eğer içerik içeren bir sonraki nesne yoksa, hiyerarşideki bir sonraki nesneye geçer. Bu işlem, taşınabilecek nesne kalmayana kadar devam eder.
 Hiyerarşide geri gitmek için de aynı kurallar geçerlidir.
 
-İncelenmekte olan nesneye dolaşım nesnesi denir. 
+İncelenmekte olan nesneye dolaşım nesnesi denir.
 Nesne dolaşım komutlarıyla bir nesne üzerine geldikten sonra, nesneyi [metin inceleme komutlarını](#ReviewingText) kullanarak [Nesne inceleme kipinde](#ObjectReview) inceleyebilirsiniz.
 [görsel vurgu](#VisionFocusHighlight) etkinse, geçerli nesne sunucusunun konumu  görsel olarak da gösterilir.
 Varsayılan olarak, nesne sunucusu sistem odağıyla birlikte hareket eder; ancak bu özellik kapatılıp açılabilir.
@@ -991,7 +993,7 @@ Aşağıdaki tuşlara kendi başlarına basıldığında bir sonraki ögeye gidi
 * l: liste
 * i: liste ögesi
 * t: tablo
-* k: link
+* k: bağlantı
 * n: link dışı metin
 * f: form alanı
 * u: ziyaret edilmemiş link
@@ -1146,7 +1148,7 @@ Ancak zengin içerikli bir tablonun veya paragrafın tamamını kopyalamak isted
 
 NVDA desteklenen maatematiksel içerik üzerinde dolaşıp okumanızı sağlar.
 Ancak NVDA'nın matematiksel içeriği okuyabilmesi ve etkileşime girebilmesi için öncelikle NvDA'ya bir Matematik bileşeni yüklemeniz gerekir.
-NVDA Eklenti Mağazasında matematik desteği sağlayan [MathCAT NVDA eklentisi](https://nsoiffer.github.io/MathCAT/) ve [Access8Math](https://github.com/tsengwoody/Access8Math) gibi çeşitli NVDA eklentileri bulunmaktadır. . 
+NVDA Eklenti Mağazasında matematik desteği sağlayan [MathCAT NVDA eklentisi](https://nsoiffer.github.io/MathCAT/) ve [Access8Math](https://github.com/tsengwoody/Access8Math) gibi çeşitli NVDA eklentileri bulunmaktadır. .
 NVDA'da eklentilerin bulunmasını ve kurulmasını öğrenmek için lütfen [Eklenti Mağazası bölümü](#AddonsManager)'ne bakın.
 NVDA, sisteminizde bulunması halinde Wiris'in eski [MathPlayer](https://info.wiris.com/mathplayer-info) yazılımını da kullanabilir, ancak bu yazılım artık geliştirlmemektedir.
 
@@ -1160,7 +1162,7 @@ NVDA, Microsoft Word 365/2016 build 14326 ve üzeri sürümlerde matematik denkl
 Ancak, önceden oluşturulmuş MathType denklemlerinin önce Office Math'a dönüştürülmesi gerektiğini unutmayın.
 Denklemleri dönüştürmek için, her birini seçip "Denklem Seçenekleri"ni ve ardından bağlam menüsünde "Office Math'a Dönüştür"ü seçin.
 Bunu yapmadan önce MathType sürümünüzün en son sürüm olduğundan emin olun.
-Microsoft Word ayrıca denklemlerin kendisinde doğrusal sembol tabanlı gezinme sağlar ve LateX dahil olmak üzere çeşitli sözdizimlerini kullanarak matematik girişini destekler. 
+Microsoft Word ayrıca denklemlerin kendisinde doğrusal sembol tabanlı gezinme sağlar ve LateX dahil olmak üzere çeşitli sözdizimlerini kullanarak matematik girişini destekler.
 Daha fazla ayrıntı için lütfen [Word'de UnicodeMath ve LaTeX kullanan doğrusal biçimli denklemler](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8) makalesine bakın
 * Microsoft Powerpoint ve Microsoft Word'ün eski sürümleri:
 NVDA, MathType denklemlerini hem Microsoft Powerpoint hem de Microsoft word'de okuyabilir ve içlerinde dolaşılmasını sağlayabilir.
@@ -1259,10 +1261,10 @@ Braille ekranaa mümkün olduğunca fazla bilgi sığdırmak amacıyla, kontrol 
 |bN |başlık seviyesi n, Örneğin, b1, b2.|
 |yrd |yardım balonu|
 |snrimi |sınırimi|
-|lnk |link|
+|BLN |bağlantı|
 |zlnk |ziyaret edilmiş link|
 |lst |liste|
-|mnu |menu|
+|mnu |menü|
 |mçb |menü çubuğu|
 |mnüdğm |menü düğmesi|
 |mnüöğe |menü öğesi|
@@ -1322,7 +1324,7 @@ Son olarak, sınırimleri için aşağıdaki kısaltmalar tanımlanmıştır:
 |bnnr |benır|
 |içrkblg |içerik bilgisi|
 |tmmlyc |tamamlayıcı|
-|form |form|
+|<target/>|
 |ana |ana|
 |navi |navigasyon|
 |ara |arama|
@@ -1355,7 +1357,7 @@ Her bir Braille ekranının sürücüsü, bu görevlerden bazılarıyla önceden
 
 Bu yaklaşım, yaygın olarak basılan veya biricik tuşlar (Tab gibi) için kullanışlı olsa da, her klavye kısayoluna biricik bir tuş takımı atamak istemeyebilirsiniz.
 NVDA, değiştirici tuşların basılı tutulduğu durumlarda tuş basmalarının taklit edilmesini sağlamak için kontrol, alt, şift, windows ve NVDA tuşlarının  ayrı ayrı , bu tuşların bazı kombinasyonlarının birlikte kullanılması için çeşitli komutlar sunar.
-Bu geçişleri kullanmak için önce basılmasını istediğiniz değiştirici tuşlar için komuta (veya komut dizisine) basın. 
+Bu geçişleri kullanmak için önce basılmasını istediğiniz değiştirici tuşlar için komuta (veya komut dizisine) basın.
 Ardından girmek istediğiniz klavye kısayolunun parçası olan karakteri girin.
 Örneğin, kontrol+f kısayol tuşunu kullanmak için "Kontrol tuşunu aç" komutunu kullanın ve ardından f yazın,
 ve kontrol+alt+t'yi girmek için, sırası fark etmez, "Kontrol tuşunu aç" ve "Alt tuşunu aç" komutlarını veya "Kontrol+alt tuşlarını aç" komutunu kullanın ve ardından t yazın.
@@ -1467,7 +1469,7 @@ Tabloda satır ya da sütun başlık bilgisini içeren hücreye geldikten sonra,
 
 <!-- KC:endInclude -->
 Bu ayarlar, belge içinde yer imi olarak kaydedilir ve JAWS gibi başka ekran okuyucu yazılımlarla uyumludur.
-Dolayısıyla, belge daha sonra başka ekran okuyucular aktifken açıldığında da başlık bilgilerine ulaşılabilir. 
+Dolayısıyla, belge daha sonra başka ekran okuyucular aktifken açıldığında da başlık bilgilerine ulaşılabilir.
 
 #### Microsoft Word'de Tarama Kipi {#BrowseModeInMicrosoftWord}
 
@@ -1487,7 +1489,8 @@ Microsoft Word'de tarama kipi etkinken, öğe listesine NVDA+F7 tuşlarına basa
 #### Açıklamaların Bildirimi {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-İmleç konumundaki açıklamayı okumak için, NVDA+alt+c tuşlarına basın.
+İmleç konumundaki yorumu görmek  için `NVDA+alt+c` tuşlarına basın.
+İki kez basıldığında bilgiler tarama kipinde gösterilir.
 <!-- KC:endInclude -->
 Belgedeki tüm değişiklik ve açıklamalar, tür bölümünden "Açıklama" seçeneği tercih edilerek NVDA+F7 ile açılan Öğe Listesi iletişim kutusunda da listelenebilir.
 
@@ -1507,7 +1510,7 @@ Satır ya da sütun başlık bilgisini içeren hücreye geldikten sonra, aşağ�
 
 <!-- KC:endInclude -->
 Bu ayarlar, çalışma kitabında tanımlı ad aralıkları olarak saklanacaktır ve Jaws gibi diğer Ekran Okuyucular ile uyumludur.
-Dolayısıyla, daha sonraki bir tarihte bu çalışma kitabını açın diğer ekran okuyucu kullanıcıları için otomatik olarak satır ve sütun başlıkları önceden ayarlanmış olacaktır. 
+Dolayısıyla, daha sonraki bir tarihte bu çalışma kitabını açın diğer ekran okuyucu kullanıcıları için otomatik olarak satır ve sütun başlıkları önceden ayarlanmış olacaktır.
 
 #### Öğe Listesi {#ExcelElementsList}
 
@@ -1517,16 +1520,16 @@ Excel'de öğe listesine ulaşmak için, NVDA+f7 tuşlarını kullanın.
 <!-- KC:endInclude -->
 Öğe listesinde ulaşılabilecek farklı türdeki bilgiler şunlardır:
 
-* Grafikler: Bu çalışma sayfasındaki tüm grafikleri listeler. 
+* Grafikler: Bu çalışma sayfasındaki tüm grafikleri listeler.
 Grafiği seçip üzerinde enter tuşuna ya da Git düğmesine basarsanız yön tuşlarıyla dolaşmanız ve okumanız için grafik üzerine odaklanmış olursunuz.
-* Açıklamalar: Bu çalışma sayfasındaki açıklama içeren tüm hücreleri listeler. 
-Her hücre için adres bilgisiyle birlikte açıklama metni gösterilir. 
+* Açıklamalar: Bu çalışma sayfasındaki açıklama içeren tüm hücreleri listeler.
+Her hücre için adres bilgisiyle birlikte açıklama metni gösterilir.
 Listedeki açıklama üzerinde enter tuşuna ya da Git düğmesine basarsanız ilgili hücreye gidebilirsiniz.
-* Formüller: Bu çalışma sayfasındaki formül içeren tüm hücreleri listeler. 
+* Formüller: Bu çalışma sayfasındaki formül içeren tüm hücreleri listeler.
 Her hücre için adres bilgisiyle birlikte formül gösterilir.
-Listelenmiş formüllerden birinin üzerinde enter tuşuna ya da Git düğmesine basarsanız ilgili hücreye gidebilirsiniz. 
-* Çalışma sayfaları: Bu çalışma kitabındaki tüm sayfaları listeler. 
-Listeden seçtiğiniz bir sayfa üzerinde f2 tuşuna basarak sayfanın adını değiştirebilirsiniz. 
+Listelenmiş formüllerden birinin üzerinde enter tuşuna ya da Git düğmesine basarsanız ilgili hücreye gidebilirsiniz.
+* Çalışma sayfaları: Bu çalışma kitabındaki tüm sayfaları listeler.
+Listeden seçtiğiniz bir sayfa üzerinde f2 tuşuna basarak sayfanın adını değiştirebilirsiniz.
 Seçili sayfa üzerinde enter tuşuna ya da Git düğmesine basarak ilgili çalışma sayfasına ulaşabilirsiniz.
 * Form alanları: Etkin çalışma sayfasındaki tüm form alanlarını listeler.
 Her form alanı için, Öğe listesi kapsanan hücre adresleri ile birlikte alanın alternatif metinlerini gösterir.
@@ -1535,7 +1538,8 @@ Bir form alanını seçip entır tuşuna ya da git düğmesine basarak tarama ki
 #### Notların Bİldirimi {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-Üzerinde bulunduğunuz hücreyle ilgili notu okumak için NVDA+alt+c tuşlarını kullanın.
+O anda odaklanılan hücreye ilişkin notların bildirimi  için `NVDA+alt+c` tuşlarına basın.
+İki kez basıldığında bilgiler tarama kipinde gösterilir.
 Microsoft 2016, 365 ve daha yeni sürümlerde, Microsoft Excel'deki klasik açıklamalar "notlar" olarak yeniden adlandırılmıştır.
 <!-- KC:endInclude -->
 Çalışma sayfasındaki tüm notlar NVDA+F7 ile açılan öğe listesinde de gösterilebilir.
@@ -1570,7 +1574,7 @@ Bunlara öğe listesini kullanarak ya da f ve şift+f form alanı tek tuş dola�
 Bir form alanına tarama kipinde ulaştıktan sonra, kontrole bağlı olarak, enter ya da aralık tuşuna basarak etkinleştirebilir veya etkileşimde bulunabilmek için odak kipine geçebilirsiniz.
 Tarama kipi ve tek tuş dolaşımı  hakkında daha fazla bilgi için, [tarama kipi bölümüne](#BrowseMode) bakın.
 
-### Microsoft PowerPoint {#MicrosoftPowerPoint}
+### <target/> {#MicrosoftPowerPoint}
 
 <!-- KC:beginInclude -->
 
@@ -1580,7 +1584,7 @@ Tarama kipi ve tek tuş dolaşımı  hakkında daha fazla bilgi için, [tarama k
 
 <!-- KC:endInclude -->
 
-### foobar2000 {#Foobar2000}
+### <target/> {#Foobar2000}
 
 <!-- KC:beginInclude -->
 
@@ -1594,7 +1598,7 @@ Tarama kipi ve tek tuş dolaşımı  hakkında daha fazla bilgi için, [tarama k
 
 Not: yukarıdaki kısayol tuşları, yalnızca Foobar2000 durum çubuğu varsayılan görünümünde geçerlidir.
 
-### Miranda IM {#MirandaIM}
+### <target/> {#MirandaIM}
 
 <!-- KC:beginInclude -->
 
@@ -1604,9 +1608,9 @@ Not: yukarıdaki kısayol tuşları, yalnızca Foobar2000 durum çubuğu varsay�
 
 <!-- KC:endInclude -->
 
-### Poedit {#Poedit}
+### <target/> {#Poedit}
 
-NVDA, Poedit 3.4 veya daha yeni sürümler için gelişmiş destek sunar.
+NVDA, Poedit 3.5 veya daha yeni sürümler için gelişmiş destek sunar.
 
 <!-- KC:beginInclude -->
 
@@ -1619,56 +1623,56 @@ NVDA, Poedit 3.4 veya daha yeni sürümler için gelişmiş destek sunar.
 
 <!-- KC:endInclude -->
 
-### Kindle for PC {#Kindle}
+### <target/> {#Kindle}
 
-NVDA supports reading and navigating books in Amazon Kindle for PC.
-This functionality is only available in Kindle books designated with "Screen Reader: Supported" which you can check on the details page for the book.
+NVDA, PC için Amazon Kindle'da kitap okumayı ve kitap içinde gezinmeyi destekler.
+Bu işlevsellik yalnızca "Ekran Okuyucu: Desteklenir" olarak belirtilen Kindle kitaplarında mevcuttur ve bunu kitabın ayrıntılar sayfasından kontrol edebilirsiniz.
 
-Browse mode is used to read books.
-It is enabled automatically when you open a book or focus the book area.
-The page will be turned automatically as appropriate when you move the cursor or use the say all command.
+Tarama kipi kitap okumak için kullanılır.
+Bir kitabı açtığınızda veya kitaba odaklandığınızda otomatik olarak etkinleştirilir.
+İmleci hareket ettirdiğinizde veya tümünü söyle komutunu kullandığınızda sayfa uygun şekilde otomatik olarak çevrilecektir.
 <!-- KC:beginInclude -->
-You can manually turn to the next page with the pageDown key and turn to the previous page with the pageUp key.
+Manuel olarak sayfaAşağı tuşu ile bir sonraki sayfaya geçebilir, sayfaYukarı tuşu ile bir önceki sayfaya dönebilirsiniz.
 <!-- KC:endInclude -->
 
-Single letter navigation is supported for links and graphics, but only within the current page.
-Navigating by link also includes footnotes.
+<target/>
+<target/>
 
-NVDA provides early support for reading and interactive navigation of mathematical content for books with accessible math.
-Please see the [Reading Mathematical Content](#ReadingMath) section for further information.
+<target/>
+<target/>
 
-#### Text Selection {#KindleTextSelection}
+#### <target/> {#KindleTextSelection}
 
-Kindle allows you to perform various functions on selected text, including obtaining a dictionary definition, adding notes and highlights, copying the text to the clipboard and searching the web.
+<target/>
 To do this, first select text as you normally would in browse mode; e.g. by using şift and the cursor keys.
 <!-- KC:beginInclude -->
 Once you have selected text, press the applications key or şift+f10 to show the available options for working with the selection.
 <!-- KC:endInclude -->
-If you do this with no text selected, options will be shown for the word at the cursor.
+<target/>
 
-#### User Notes {#KindleUserNotes}
+#### <target/> {#KindleUserNotes}
 
-You can add a note regarding a word or passage of text.
-To do this, first select the relevant text and access the selection options as described above.
-Then, choose Add Note.
+<target/>
+<target/>
+<target/>
 
-When reading in browse mode, NVDA refers to these notes as comments.
+<target/>
 
-To view, edit or delete a note:
+<target/>
 
-1. Move the cursor to the text containing the note.
-1. Access the options for the selection as described above.
-1. Choose Edit Note.
+1. <target/>
+1. <target/>
+1. <target/>
 
-### Azardi {#Azardi}
+### <target/> {#Azardi}
 
 <!-- KC:beginInclude -->
-When in the table view of added books:
+<target/>
 
-| Name |Key |Description|
+| <target/>|
 |---|---|---|
-|Enter |enter |Opens the selected book.|
-|Context menu |applications |Opens the context menu for the selected book.|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
@@ -1676,7 +1680,7 @@ When in the table view of added books:
 
 NVDA, Komut İstemi, PowerShell ve Linux için Windows Subsystem tarafından kullanılan Windows komut konsolu için destek sağlar.
 Konsol penceresi sabit bir boyuta sahiptir, genellikle çıktıyı tutan arabellekten çok daha küçüktür.
-Yeni metin yazılırken, içerik yukarı kaydırılır ve önceki metin artık görünmez. 
+Yeni metin yazılırken, içerik yukarı kaydırılır ve önceki metin artık görünmez.
 Windows 11 22H2'den önceki Windows sürümlerinde, pencerede görünmeyen bir metne NVDA'nın metin inceleme komutlarıyla erişilemez.
 Bu nedenle, önceki metni okumak için konsol penceresini kaydırmanız gerekir.
 Yeni konsol sürümlerinde, pencereyi kaydırmaya gerek kalmadan tüm metin arabelleğinnde serbestçe gezinebilirsiniz.
@@ -1795,7 +1799,7 @@ Bu seçenek, yalnızca bilgisayara kurulu  NVDA kopyalarında mevcuttur.
 Bu etkinleştirildiyse, NVDA güncel sürüm olup olmadığını otomatik olarak kontrol edecek ve güncelleme bulunduğunda sizi bilgilendirecektir.
 Ek olarak, NVDA Yardım menüsü altında bulunan, güncelleme olup olmadığına bak seçeneğini kullanarak istediğiniz zaman güncelleme kontrolü yapabilirsiniz.
 Manuel veya otomatik olarak güncellemeleri kontrol ederken, sisteminiz için doğru güncellemeyi indirmeniz için NVDA'nın güncelleme sunucusuna bazı bilgileri göndermesi gerekir.
-Aşağıdaki bilgiler, her zaman gönderilir: 
+Aşağıdaki bilgiler, her zaman gönderilir:
 
 * Mevcut NVDA sürümü
 * İşletim Sistemi sürümü
@@ -1929,7 +1933,7 @@ Unicode normalleştirmeyi istediğiniz yerden değiştirmek için lütfen [Girdi
 
 ##### Karaktere karakter gezinirken unicode normalleştirme durumunu bildir {#SpeechReportNormalizedForCharacterNavigation}
 
-Bu seçenek etkinleştirildiğinde, NVDA karakter karakter gezinirken karakterin normalleştirilmiş olup olmadığını bildirir. 
+Bu seçenek etkinleştirildiğinde, NVDA karakter karakter gezinirken karakterin normalleştirilmiş olup olmadığını bildirir.
 Örneğin, "ĳ" karakterinin üzerine geldiğinizde "i j normalleştirilmiş" o seslendirilir.
 
 Bu ayar sadece "[Unicode normalleştirme](#SpeechUnicodeNormalization)" etkinse görüntülenir.
@@ -1950,7 +1954,7 @@ Unicode Konsorsiyum verisinin dahil edilmesini her yerden değiştirmek için, l
 ##### Büyük Harflerde Ses Perdesi Değişim Yüzdesi {#SpeechSettingsCapPitchChange}
 
 Bu yazı alanı , büyük harfler seslendirilirken ses perdesinin hangi oranda değiştirileceğini belirlemenizi sağlar.
-Bu değer yüzde belirtir ve negatif değer sesi kalınlaştırırken pozitif değer sesi inceltecektir. 
+Bu değer yüzde belirtir ve negatif değer sesi kalınlaştırırken pozitif değer sesi inceltecektir.
 Ses perdesinde değişiklik olmasını istemezseniz buraya 0 yazabilirsiniz.
 Genellikle, NVDA herhangi bir büyük harf için ses perdesini hafifçe yükseltir, ancak bazı sentezleyiciler bunu desteklemeyebilir.
 Büyük harfler için perde değişiminin desteklenmediği durumlarda, [Büyük harflerden önce "büyük" de](#SpeechSettingsSayCapBefore) ve / veya [Büyük harflerde bip sesi çıkar](#SpeechSettingsBeepForCaps) seçeneklerini kullanabilirsiniz.
@@ -2035,7 +2039,7 @@ Eğer NVDA ile çalışırken ses ayarları iletişim kutusuna gitmeden herhangi
 
 <!-- KC:endInclude -->
 
-#### Braille {#BrailleSettings}
+#### <target/> {#BrailleSettings}
 
 NVDA Ayarları iletişim kutusundaki Braille kategorisi braille girişi ve çıktısıyla ilgili çeşitli parametrelerin ayarlanabileceği seçenekleri içerir.
 Bu kategori aşağıdaki seçenekleri içerir:
@@ -2133,11 +2137,6 @@ Bu durumda braille sistem odağını ve düzenleme imlecini takip etmez.
 
 ##### Braille inceleme imlecini taşırken sistem düzenleme imlecini hareket ettir {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|seçenekler |varsayılan (hiçbir zaman), hiçbir zaman, Yalnızca otomatik olarak bağlandığında, herzaman|
-|Varsayılan |hiçbir zaman|
-
 Bu seçenek, sistem imlecinin hareket ettirme düğmesine basarak da hareket ettirilip ettirilmeyeceğini belirler.
 Bu seçenek, varsayılan olarak Hiçbir zaman olarak seçilidir. Yani inceleme imleci taşındığında imleç hareket etmez.
 
@@ -2153,6 +2152,11 @@ Bu seçenek yalnızca "[Braille taşınsın](#BrailleTether)", "Otomatik" veya "
 
 Braille inceleme imlecini taşırken sistem düzenleme imlecini hareket ettir'i değiştirmek için lütfen [Girdi Hareketleri iletişim kutusu](#InputGestures) üzerinden özel bir girdi atayın.
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|<target/>|
+|<target/>|
+
 ##### Paragraf Paragraf Oku {#BrailleSettingsReadByParagraph}
 
 Etkinleştirilirse, braille yazı satır yerine paragraf bazında gösterilir.
@@ -2161,30 +2165,18 @@ Bu, braille ekranı, daha fazla metin sığması için sürekli kaydırmak zorun
 Sayesinde, uzun metinleri daha akıcı olarak okuyabilirsiniz.
 Varsayılan olarak, bu ayar etkinleştirilmemiştir.
 
-##### Mümkün olduğunda sözcükleri bölmemeye çalış {#BrailleSettingsWordWrap}
+##### <target/> {#BrailleParagraphStartMarkers}
 
-Bu etkinleştirilirse, braille satıra sığmayan son sözcük bölünmez.
-Bunun yerine, satır sonunda boş hücreler gösterilir.
-Ekranı kaydırdığınızda sözcüğü okuyabilirsiniz.
-Bu bazen "sözcük kaydırma" olarak çağrılır.
-Sözcüğün tek başına satıra sığmaması halinde bu kez bölüneceğini not edin.
+<target/>
+<target/>
+<target/>
 
-Bu etkinleştirilmemişse, satıra mümkün olduğunca fazla karakter sığdırılır.
-Ekranı kaydırdığınızda bölünmüş sözcüğün kalanını okuyabilirsiniz.
+<target/>
 
-Bunu etkinleştirmek daha akıcı bir okuma olanağı sunmakla birlikte, ekranı kaydırmak için ilgili tuşlara daha fazla basmanızı gerektirecektir.
-
-##### Unicode normalleştirme {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|Seçenekler |Varsayılan (Devre Dışı), Etkin, Devre Dışı|
-|Varsayılan |Devre Dışı|
-
-Bu seçenek etkinleştirildiğinde, braille ekranında braille ile yazılan metin üzerinde unicode normalleştirme yapılır.
-Bu seçenek, belirli bir braille tablosunda bilinmeyen ve sosyal medyada yaygın olarak kullanılan kalın ve italik karakterler gibi uyumlu bir alternatifi olan braille karakterleriyle karşılaştığınızda işe yarar.
-Unicode normalleştirmeyle ilgili daha fazla bilgi için, rehberin konuşma bölümünde olan [unicode normalleştirme](#SpeechUnicodeNormalization) kısmına bakabilirsiniz.
-
-Unicode normalleştirmeyi istediğiniz yerden değiştirmek için lütfen [Girdi Hareketleri iletişim kutusunu](#InputGestures) kullanarak bir hareket atayın.
+|<target/>|
+|<target/>|
 
 ##### Odak bağlam sunumu {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ Ancak bağlamı tekrar okumak için (yani bir listede olduğunuzu ve bu listenin
 
 Herhangi bir yerdeyken odak bağlam sunumunu değiştirmek için, [Girdi Hareketleri iletişim kutusu](#InputGestures) kullanarak özel bir girdi hareketi oluşturun.
 
-##### Kaydırma sırasında konuşmayı durdur {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Seçenekler |Varsayılan (Etkin), Etkin, Devre Dışı|
-|Varsayılan |Etkin|
-
-Bu ayar, Braille ekranı geri/ileri kaydırıldığında konuşmanın durdurulup durdurulmayacağını ayarlamanızı sağlar.
-Önceki/sonraki satır komutları her zaman konuşmayı durdurur.
-
-Braille okurken ekran okuyucunun konuşması dikkati dağıtabilir.
-Bu nedenle seçenek varsayılan olarak etkindir ve braille kaydırılırken konuşma durdurulur.
-
-Bu seçeneğin devre dışı bırakılması, aynı anda Braille okunurken konuşmanın duyulmasını sağlar.
-
 ##### Seçimi göster {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Seçenekler |Varsayılan (Etkin), Etkin, Devre Dışı|
-|Varsayılan |Etkin|
 
 Bu seçenek, braille ekranda seçim göstergesinin (nokta 7 ve 8) gösterilip gösterilmeyeceğini belirler.
 Bu seçenek varsayılan olarak etkindir ve seçim göstergesi gösterilir.
@@ -2241,6 +2213,91 @@ Okuma sırasında seçim göstergesi dikkat dağıtıcı olabilir.
 Bu seçeneğin devre dışı bırakılması okunabilirliği artırabilir.
 
 Seçimi göster seçeneğini herhangi bir yerden değiştirebilmek için [Girdi hareketleri iletişim kutusu](#InputGestures) üzerinden bir girdi atayabilirsiniz.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|<target/>|
+|<target/>|
+
+##### <target/> {#BrailleFormattingDisplay}
+
+<target/>
+<target/>
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| <target/> |
+| <target/> |
+
+| <target/> |
+|---|---|
+| <target/> |
+| <target/> |
+
+###### <target/> {#BrailleFormattingDisplayTags}
+
+<target/>
+<target/>
+<target/>
+<target/>
+
+| <target/> |
+|---|---|
+| <target/> |
+| <target/> |
+| <target/> |
+| <target/> |
+| <target/> |
+| <target/> |
+| <target/> |
+| <target/> |
+
+##### <target/> {#BrailleSpeakOnRouting}
+
+<target/>
+
+<target/>
+
+##### <target/> {#BrailleSettingsWordWrap}
+
+<target/>
+<target/>
+<target/>
+<target/>
+<target/>
+
+<target/>
+<target/>
+
+<target/>
+
+##### <target/> {#BrailleUnicodeNormalization}
+
+<target/>
+<target/>
+<target/>
+
+<target/>
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|<target/>|
+|<target/>|
+
+##### <target/> {#BrailleSettingsInterruptSpeech}
+
+<target/>
+<target/>
+
+<target/>
+<target/>
+
+<target/>
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|<target/>|
+|<target/>|
 
 #### Braille ekran seçimi {#SelectBrailleDisplay}
 
@@ -2277,7 +2334,7 @@ NVDA'nın gelecekteki bir sürümüne veya bir eklentiyle yüklenen başka sür�
 
 Listedeki bir sürücünün ekranların otomatik algılanmasını destekleyip desteklemediğini kontrol etmek için [desteklenen braille ekranlar](#SupportedBrailleDisplays) bölümünde Braille ekranınızın dokümantasyonuna başvurabilirsiniz.
 
-##### Port {#SelectBrailleDisplayPort}
+##### <target/> {#SelectBrailleDisplayPort}
 
 Bu seçenek, eğer mevcutsa, seçtiğiniz kabartma ekranla hangi port ya da bağlantı tipini kullanarak bağlantı kuracağınızı belirlemenizi sağlar.
 Bu, kabartma ekranınız için mevcut seçeneklerin sunulduğu bir seçim kutusudur.
@@ -2316,8 +2373,8 @@ Kısayol tuşu: `NVDA+şift+d`
 
 Bu seçenek NVDA'nın diğer seslerin seviyesini düşürüp düşürmeyeceğini belirlemenizi sağlar.
 
-* Ses zayıflaması, kapalı: NVDA, hiçbir zaman diğer seslerin seviyesini düşürmez. 
-* Ses zayıflaması açık, konuşurken ya da ses çalarken: NVDA, diğer seslerin seviyesini yalnızca NVDA konuşurken ya da ses çalarken düşürür. Tüm sentezleyiciler desteklemeyebilir. 
+* Ses zayıflaması, kapalı: NVDA, hiçbir zaman diğer seslerin seviyesini düşürmez.
+* Ses zayıflaması açık, konuşurken ya da ses çalarken: NVDA, diğer seslerin seviyesini yalnızca NVDA konuşurken ya da ses çalarken düşürür. Tüm sentezleyiciler desteklemeyebilir.
 * Ses zayıflaması açık, her zaman : NVDA, NVDA açıkken diğer seslerin seviyesini her zaman düşük tutar.
 
 Bu seçenek yalnızca kurulu NVDA için geçerlidir.
@@ -2328,7 +2385,7 @@ NVDA taşınabilir ve geçici kopyaları için ses zayıflamasının desteği m�
 | . {.hideHeaderRow} |.|
 |---|---|
 |Seçenekler |devre dışı, etkin|
-| Varsayılan |Etkin|
+|Varsayılan |Etkin|
 
 Bu seçenek etkinleştirildiğinde, NVDA seslerinin ve bip seslerinin düzeyi, kullandığınız sesin ses seviyesine göre belirlenir.
 Eğer konuşma ses seviyesini azaltırsanız, NVDA seslerinin seviyesi de azalır.
@@ -2362,7 +2419,7 @@ Varsayılan olarak bu komut aşağıdaki modlar arasında geçiş yapacaktır:
 * Sağda NVDA ve solda uygulamalar: NVDA sağ kanalda konuşacak, diğer uygulamalar ise sesleri sol kanalda çalacaktır.
 
 NVDA ayarlarında daha gelişmiş ses ayırma modları mevcuttur.
-Bu modlar arasında, "Her iki kanalda NVDA ve her iki kanalda uygulamalar" seçeneği tüm seslerin her iki kanala yönlendirilmesini sağlar. 
+Bu modlar arasında, "Her iki kanalda NVDA ve her iki kanalda uygulamalar" seçeneği tüm seslerin her iki kanala yönlendirilmesini sağlar.
 Ses ayırma devre dışı" modunda diğer ses işlemeleri ses seviyeleriyle  çakışabilir ancakk bu modda böyle bir sorun yaşanmaz.
 
 Lütfen ses ayırmanın mikser olarak çalışmadığını unutmayın.
@@ -2511,8 +2568,18 @@ Bu seçenek, yalnızca NVDA'nın [Belge format ayarları](#DocumentFormattingSet
 
 ##### Diğer uygulamaların kullandığı tuşları işle {#KeyboardSettingsHandleKeys}
 
-Bu seçenek kullanıcının ekran klavyeleri ve konuşma tanıma uygulamaları gibi yazılımların tuşlarının NVDA tarafından işlenip işlenmeyeceğini kontrol etmesini sağlar. 
+Bu seçenek kullanıcının ekran klavyeleri ve konuşma tanıma uygulamaları gibi yazılımların tuşlarının NVDA tarafından işlenip işlenmeyeceğini kontrol etmesini sağlar.
 Seçenek varsayılan olarak etkindir, bazı kullanıcılar bunu kapatmak isteyebilir, örneğin Vietnamca yazmak için Unikey yazma programı kullananlar.
+
+##### <target/> {#MultiPressTimeout}
+
+<target/>
+<target/>
+<target/>
+<target/>
+<target/>
+<target/>
+<target/>
 
 #### Fare {#MouseSettings}
 
@@ -2578,7 +2645,7 @@ Bu kategori aşağıdaki seçenekleri içerir:
 Bu onay kutusu, NVDA'nın dokunmatik etkileşim desteğini etkinleştirir.
 Etkinleştirilirse, dokunmatik ekranlı bir cihaz kullanarak ekrandaki öğelerde gezinmek ve etkileşimde bulunmak için parmaklarınızı kullanabilirsiniz.
 Devre dışı bırakılırsa, NVDA çalışmıyormuş gibi dokunmatik ekran desteği devre dışı bırakılır.
-Bu ayar, NVDA+kontrol+alt+t kullanılarak da değiştirilebilir. 
+Bu ayar, NVDA+kontrol+alt+t kullanılarak da değiştirilebilir.
 
 ##### Dokunarak yazma kipi {#TouchTypingMode}
 
@@ -2716,7 +2783,7 @@ Bu seçenek kapalı olsa dahi, nesne dolaşımı yoluyla önerileri manuel olara
 ##### Öneriler için daima kısa karakter tanımlarını da kullan {#InputCompositionCandidateIncludesShortCharacterDescription}
 
 This option, which is on by default, allows you to choose whether or not NVDA should provide a short description for each character in a candidate, either when its selected or when its automatically read when the candidate list appears.
-Note that for locales such as Chinese, the announcement of extra character descriptions for the selected candidate is not affected by this option.
+<target/>
 Bu seçenek Korece ve Japonca girdi metodları için faydalı olabilir.
 
 ##### İfade okunuşlarındaki değişiklikleri bildir {#InputCompositionReadingStringChanges}
@@ -2728,7 +2795,7 @@ Chinese ChangJie gibi bazı eski girdi metodlarının ön kompozisyon ifade okum
 
 ##### İfade Kompozisyonundaki Değişiklikleri Bildir {#InputCompositionCompositionStringChanges}
 
-After reading or precomposition data has been combined into a valid pictographic symbol, most input methods place this symbol into a composition string for temporary storage along with other combined symbols before they are finally inserted into the document.
+<target/>
 This option allows you to choose whether or not NVDA should report new symbols as they appear in the composition string.
 Bu seçenek varsayılan olarak açıktır.
 
@@ -2757,7 +2824,7 @@ Bu değer, önceki sayfa ve sonraki sayfa tuşlarıyla tarama kipinde gösterile
 
 Tuş: NVDA+v
 
-Bu seçenek, tarama kipinin tıklanabilir içeriği (linkler, düğmeler ve alanlar) ayrı satırlara  mı yerleştirmesi yoksa görsel olarak ekranda görüldüğü gibi metin akışında mı tutması gerektiğini belirlemenizi sağlar. 
+Bu seçenek, tarama kipinin tıklanabilir içeriği (linkler, düğmeler ve alanlar) ayrı satırlara  mı yerleştirmesi yoksa görsel olarak ekranda görüldüğü gibi metin akışında mı tutması gerektiğini belirlemenizi sağlar.
 Bu seçeneğin, her zaman ekran düzenini kullanan Outlook ve Word gibi Microsoft Office uygulamaları için geçerli olmadığını unutmayın.
 Örneğin, birden çok linkten oluşan bir satırda linkler aynı satırda farklı farklı linkler olarak gösterilecektir.
 Eğer bu seçenek aktif değilse, bğlantılar orijinal halleriyle görüntülenecektir.
@@ -2808,7 +2875,7 @@ Bu seçenek etkinse, odak kipi ve tarama kipi arasında geçiş yaparken NVDA bu
 
 ##### Komut tuşu olmayan tuşların belgeye gönderilmesini engelle {#BrowseModeSettingsTrapNonCommandGestures}
 
-Bu seçenek varsayılan olarak etkindir ve NVDA komutu olarak kullanılmayan tuşların ve hareketlerin belgeye gönderilip gönderilmeyeceğini belirlemenizi sağlar. 
+Bu seçenek varsayılan olarak etkindir ve NVDA komutu olarak kullanılmayan tuşların ve hareketlerin belgeye gönderilip gönderilmeyeceğini belirlemenizi sağlar.
 Etkinleştirildiğinde, örneğin ş harfine basılırsa, bu tuş ne NVDA komutu ne de aktif uygulama komutu olarak kullanıldığı için , tuşun belgeye ulaşması engellenecektir.
 Bu durumda NVDA, Windows’a bu türden  bir tuşa basıldığında varsayılan bir ses çalmasını söyler.
 
@@ -2841,7 +2908,7 @@ Belge biçimlendirme seçenekleri gruplar halinde düzenlenmiştir.
 * Yazı tipi
   * Yazı tipi adı
   * Yazı tipi boyutu
-  * Yazı tipi özellikleri
+  * <target/>
   * Üst ve alt simgeler
   * Vurgu
   * Öne çıkarılmış (işaretli) metin
@@ -2862,7 +2929,7 @@ Belge biçimlendirme seçenekleri gruplar halinde düzenlenmiştir.
   * Hizzalama
 * Tablo bilgileri
   * Tablolar
-  *  Satır/sütun başlıkları (Kapalı, Satırlar, Sütunlar, Satırlar ve sütunlar)
+  * Satır/sütun başlıkları (Kapalı, Satırlar, Sütunlar, Satırlar ve sütunlar)
   * Hücre koordinatları
   * Hücre kenarlıkları [(Kapalı, stiller, renk ve stiller)
 * Öğeler
@@ -2879,6 +2946,17 @@ Belge biçimlendirme seçenekleri gruplar halinde düzenlenmiştir.
   * Bir ögenin tıklanabilir olup olmadığı
 
 Bu ayarları herhangi bir yerdeyken değiştirebilmek için, lütfen [girdi hareketleri iletişim kutusunu](#InputGestures) kullanarak kısayol tuşu belirleyin.
+
+##### <target/> {#DocumentFormattingFontAttributes}
+
+<target/>
+<target/>
+
+* <target/>
+* <target/>
+* <target/>
+<target/>
+* <target/>
 
 ##### imleçten sonraki biçim değişikliklerini bildir {#DocumentFormattingDetectFormatAfterCursor}
 
@@ -2916,7 +2994,7 @@ Bu kategori belge dolaşımı ile ilgili çeşitli ayarlamaları yapmanıza yara
 Bu seçim kutusu, `kontrol+yukarı ok` ve `kontrol+aşağı ok` tuşları ile paragraflarda gezinirken kullanılacak paragraf kipini seçmenize olanak tanır.
 Kullanılabilir paragraf kipleri şunlardır:
 
-* Uygulama tarafından kontrol edilir: NVDA mevcut uygulamanın bir önceki veya sonraki paragrafı belirlemesine izin verir ve gezinirken paragrafı okur. 
+* Uygulama tarafından kontrol edilir: NVDA mevcut uygulamanın bir önceki veya sonraki paragrafı belirlemesine izin verir ve gezinirken paragrafı okur.
 Bu seçenek varsayılan olarak seçilidir ve uygulamaların varsayılan olarak paragraf dolaşımını desteklediği durumlarda en iyi biçimde çalışır.
 * Tek satır sonu: NVDA, paragraf göstergesi olarak tek bir satır sonu kullanarak önceki veya sonraki paragrafı belirlemeye çalışır.
 Bu, Varsayılan olarak paragraf gezinmeyi desteklemeyen bir uygulamada belgeleri okurken en iyi biçimde çalışır ve belgedeki paragraflar `enter` tuşuna bir kez basılarak işaretlenir.
@@ -2924,7 +3002,7 @@ Bu, Varsayılan olarak paragraf gezinmeyi desteklemeyen bir uygulamada belgeleri
 Bu seçenek, blok paragraflar kullanan belgelerle çalışırken en iyi biçimde çalışır.
 Microsoft Word denetimlerine erişmek için UIA kullanmıyorsanız, bu paragraf stilinin Microsoft Word veya Microsoft Outlook'ta kullanılamayacağını unutmayın.
 
-Mevcut paragraf kipleri arasında hızlıca geçiş yapmak için [Girdi hareketleri iletişim kutusu](#InputGestures) üzerinden bir kısayol atayabilirsiniz. 
+Mevcut paragraf kipleri arasında hızlıca geçiş yapmak için [Girdi hareketleri iletişim kutusu](#InputGestures) üzerinden bir kısayol atayabilirsiniz.
 
 #### Eklenti Mağazası Ayarları {#AddonStoreSettings}
 
@@ -3080,7 +3158,7 @@ Bu özelliklerden bazıları eksik sunuluyor olabilir.
 "sistem imleci konumundaki Tüm ek açıklama ayrıntılarının özetinin bildirimi" için, NVDA+d'ye basın.
 <!-- KC:endInclude -->
 
-Aşağıdaki seçenekler mevcuttur: 
+Aşağıdaki seçenekler mevcuttur:
 
 * "Rapor, yapılandırılmış ek açıklamalar için 'ayrıntılara sahiptir'": metin veya kontrolde daha fazla ayrıntı varsa, raporlamayı etkinleştirir.
 * "Aria açıklamasını her zaman bildir":
@@ -3097,7 +3175,7 @@ Aşağıdaki seçenekler mevcuttur:
 | . {.hideHeaderRow} |.|
 |---|---|
 |Seçenekler |Varsayılan (Etkin), Devre Dışı, Etkin|
-| Varsayılan |Etkin|
+|Varsayılan |Etkin|
 
 Bu seçenek, NVDA'nın bazı dinamik web içeriklerindeki değişiklikleri Braille ile bildirip bildirmeyeceğini belirler.
 Bu seçeneği devre dışı bırakmak, NVDA'nın yalnızca konuşmadaki bu içerik değişikliklerini bildiren 2023.1 ve önceki sürümlerdeki çalışma biçimiyle aynı işlevi görür.
@@ -3236,7 +3314,7 @@ Son olarak, bir dizi seçim düğmesi, NVDA'ya girdiğiniz ifadenin her yerde mi
 Örneğin, girilen sözcüğün önünde ya da sonunda herhangi bir harf ya da sayı ya da alt çizgi  yoksa ifadenin yerine olarak değiştir alanına girilen ifade konur.
 Öyleyse, yukarıdaki "kuş" ifadesini "kurbağa" ile değiştirme örneğini kullanırsak, ifadenin tamamı seçeneği tercih edildiyse, "kuşlar" ifadesi "kurbağalar" olarak seslendirilmez.
 
-Bir kurallı ifade, içinde bir seferde birden fazla karakterle eşleştirme yapmanızı sağlayan özel karakterler barındıran bir öbektir. Bu eşleşme yalnızca rakamlar veya yalnızca harfler de olabilir. 
+Bir kurallı ifade, içinde bir seferde birden fazla karakterle eşleştirme yapmanızı sağlayan özel karakterler barındıran bir öbektir. Bu eşleşme yalnızca rakamlar veya yalnızca harfler de olabilir.
 Kurallı ifadeler konusu bu kullanıcı rehberinde kapsanmamıştır.
 Genel bilgi ve tanıtım için lütfen [Python'un Normal İfade Kılavuzuna](https://docs.python.org/3.11/howto/regex.html)  bakın.
 
@@ -3365,7 +3443,7 @@ Yeni Profil iletişim kutusunda, profil için bir ad girebilirsiniz.
 Ayrıca Bu profilin nasıl kullanılması gerektiğini seçebilirsiniz.
 Bu profili yalnızca elle seçerek kullanmak istiyorsanız, varsayılan olan Manuel etkinleştirme seçeneğini tercih edin.
 Aksi halde, bu profili otomatik olarak etkinleştirecek bir tetikleyici belirleyin.
-Kolaylık sağlamak amacıyla, profil için isim girmediyseniz, tetikleyici seçtiğinizde isim alanı seçiminize uygun olarak doldurulacaktır. 
+Kolaylık sağlamak amacıyla, profil için isim girmediyseniz, tetikleyici seçtiğinizde isim alanı seçiminize uygun olarak doldurulacaktır.
 Tetikleyiciler hakkında daha fazla bilgi için [aşağıya](#ConfigProfileTriggers) bakın.
 
 Tamam tuşuna basarak profili oluşturup yeni profili düzenlemek üzere konfigürasyon profilleri iletişim kutusunu kapatabilirsiniz.
@@ -3697,7 +3775,7 @@ Aşağıdaki NVDA kısayolları da faydalı olabilir:
 Bu bölümde NVDA tarafından desteklenen sentezleyici bilgileri yer almaktadır.
 NVDA ile kullanılabilecek ticari ve ücretsiz konuşma sentezleyicileri satın alabilmeniz ya da indirebilmeniz için çok daha geniş bir listeyi, bu sayfada bulabilirsiniz [https://www.nvda-project.org/wiki/ExtraVoices](https://github.com/nvaccess/nvda/wiki/ExtraVoices).
 
-### eSpeak NG {#eSpeakNG}
+### <target/> {#eSpeakNG}
 
 [eSpeak NG](https://github.com/espeak-ng/espeak-ng) sentezleyicisi Doğrudan NVDA içinde gömülüdür ve başka bir sürücü ya da bileşenin yüklenmesini gerektirmez.
 Varsayılan olarak NVDA Windows 8.1'de eSpeak NG'yi kullanırken, windows 10'da [Windows OneCore](#OneCore) seslerini kullanır.
@@ -3729,8 +3807,8 @@ Bu sesler NVDA tarafından da kullanılabilmektedir.
 
 Bu sesleri kullanabilmek için iki bileşeni indirip kurmanız gerekmektedir:
 
-* [Microsoft Speech Platform - Runtime (Version 11), x86](https://www.microsoft.com/download/en/details.aspx?id=27225)
-* [Microsoft Speech Platform - Runtime Languages (Version 11)](https://www.microsoft.com/download/en/details.aspx?id=27224)
+* <target/>
+* <target/>
   * Bu sayfa, konuşma tanıma ve konuşma sentezlemeyle ilgili birçok dosyayı içermektedir.
  İstediğiniz dil ve seslerle ilgili konuşma sentezleme (TTS) verilerini içeren dosyaları seçin.
  Örneğin, MSSpeech_TTS_en-US_ZiraPro.msi adlı dosya, ABD İngilizcesi konuşan bir sestir.
@@ -3764,16 +3842,16 @@ Bu seçenek varsayılan olarak seçilidir.
 
 Aşağıdaki ekranlar otomatik algılama işlevini destekler.
 
-* Handy Tech displays
-* Baum/Humanware/APH/Orbit braille displays
-* HumanWare Brailliant BI/B series
-* HumanWare BrailleNote
-* SuperBraille
-* Optelec ALVA 6 series
-* HIMS Braille Sense/Braille EDGE/Smart Beetle/Sync Braille Series
-* Eurobraille Esys/Esytime/Iris displays
-* Nattiq nBraille displays
-* Seika Notetaker: MiniSeika (16, 24 cells), V6, and V6Pro (40 cells)
+* <target/>
+* <target/>
+* <target/>
+* <target/>
+* <target/>
+* <target/>
+* <target/>
+* <target/>
+* <target/>
+* <target/>
 * Tivomatic Caiku Albatross 46/80 ekranlar
 * Standart HID Braille protokolünü destekleyen herhangi bir Ekran
 
@@ -3795,11 +3873,11 @@ Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgel
 
 | Ad |Kısayol tuşu|
 |---|---|
-|Scroll braille display back |topRouting1 (first cell on display)|
-|Scroll braille display forward |topRouting20/40/80 (last cell on display)|
-|Scroll braille display back |leftAdvanceBar|
-|Scroll braille display forward |rightAdvanceBar|
-|Toggle braille tethered to |leftGDFButton+rightGDFButton|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |sol tekerlek hareketini açıp kapama |Sol tekerleğe basma|
 |Sol tekerlek hareketini kullanarak geri gitme |Sol tekerlek yukarı|
 |Sol tekerlek hareketini kullanarak ileri gitme |Sol tekerlek aşağı|
@@ -3808,52 +3886,52 @@ Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgel
 |Sağ tekerlek hareketini kullanarak ileri gitme |Sağ tekerlek aşağı|
 |imleci parmağın üzerinde bulunduğu Braille hücresine taşıma |hücre üzerindeki braille iğnesi|
 |şift+tab key |brailleSpaceBar+dot1+dot2|
-|tab key |brailleSpaceBar+dot4+dot5|
-|upArrow key |brailleSpaceBar+dot1|
-|downArrow key |brailleSpaceBar+dot4|
+|<target/>|
+|<target/>|
+|<target/>|
 |Control+leftArrow key |brailleSpaceBar+dot2|
-|control+rightArrow key |brailleSpaceBar+dot5|
-|leftArrow |brailleSpaceBar+dot3|
-|rightArrow key |brailleSpaceBar+dot6|
-|home key |brailleSpaceBar+dot1+dot3|
-|end key |brailleSpaceBar+dot4+dot6|
-|control+home key |brailleSpaceBar+dot1+dot2+dot3|
-|control+end key |brailleSpaceBar+dot4+dot5+dot6|
-|alt key |brailleSpaceBar+dot1+dot3+dot4|
-|alt+tab key |brailleSpaceBar+dot2+dot3+dot4+dot5|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |alt+şift+tab key |brailleSpaceBar+dot1+dot2+dot5+dot6|
-|windows+tab key |brailleSpaceBar+dot2+dot3+dot4|
-|escape key |brailleSpaceBar+dot1+dot5|
-|windows key |brailleSpaceBar+dot2+dot4+dot5+dot6|
-|space key |brailleSpaceBar|
-|Toggle control key |brailleSpaceBar+dot3+dot8|
-|Toggle alt key |brailleSpaceBar+dot6+dot8|
-|Toggle windows key |brailleSpaceBar+dot4+dot8|
-|Toggle NVDA key |brailleSpaceBar+dot5+dot8|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |Toggle şift key |brailleSpaceBar+dot7+dot8|
 |Toggle control and şift keys |brailleSpaceBar+dot3+dot7+dot8|
 |Toggle alt and şift keys |brailleSpaceBar+dot6+dot7+dot8|
 |Toggle windows and şift keys |brailleSpaceBar+dot4+dot7+dot8|
 |Toggle NVDA and şift keys |brailleSpaceBar+dot5+dot7+dot8|
-|Toggle control and alt keys |brailleSpaceBar+dot3+dot6+dot8|
+|<target/>|
 |Toggle control, alt, and şift keys |brailleSpaceBar+dot3+dot6+dot7+dot8|
-|windows+d key (minimize all applications) |brailleSpaceBar+dot1+dot2+dot3+dot4+dot5+dot6|
-|Report Current Line |brailleSpaceBar+dot1+dot4|
-|NVDA menu |brailleSpaceBar+dot1+dot3+dot4+dot5|
+|<target/>|
+|<target/>|
+|<target/>|
 
-For newer Focus models that contain rocker bar keys (focus 40, focus 80 and focus blue):
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Move braille display to previous line |leftRockerBarUp, rightRockerBarUp|
-|Move braille display to next line |leftRockerBarDown, rightRockerBarDown|
+|<target/>|
+|<target/>|
 
-For Focus 80 only:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |leftBumperBarUp, rightBumperBarUp|
-|Scroll braille display forward |leftBumperBarDown, rightBumperBarDown|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
@@ -3877,19 +3955,19 @@ Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgel
 
 | Ad |Kısayol Tuşu|
 |---|---|
-|Scroll braille display back |t1, etouch1|
+|<target/>|
 |Braille ekran önceki satır |t2|
-|Move to current focus |t3|
+|<target/>|
 |Braille ekran sonraki satır |t4|
-|Scroll braille display forward |t5, etouch3|
+|<target/>|
 |Odağı braille konumuna taşı |routing|
 |braille hücre altındaki metin biçimlendirmesini bildir |secondary routing|
 |HID klavye simülasyonunu açıp kapama |t1+spEnter|
-|Move to top line in review |t1+t2|
-|Move to bottom line in review |t4+t5|
-|Toggle braille tethered to |t1+t3|
-|Report title |etouch2|
-|Report status bar |etouch4|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+tab tuşu |sp1|
 |alt tuşu |sp2, alt|
 |esc tuşu |sp3|
@@ -3902,27 +3980,27 @@ Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgel
 |Saat/tarih bilgisi |sp2+sp3|
 |NVDA Menüsü |sp1+sp3|
 |windows+d tuşu (Tüm uygulamaları küçült) |sp1+sp4|
-|windows+b key (focus system tray) |sp3+sp4|
+|<target/>|
 |windows tuşu |sp1+sp2, windows|
 |alt+tab tuşu |sp2+sp4|
-|control+home key |t3+spUp|
-|control+end key |t3+spDown|
-|home key |t3+spLeft|
-|end key |t3+spRight|
-|control key |control|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Handy Tech Displays {#HandyTech}
+### <target/> {#HandyTech}
 
 NVDA USB veya bluetooth ile bağlandıklarında [Handy Tech](https://www.handytech.de/) tarafından üretilen çoğu braille ekranı destekler.
 Bazı daha eski USB ekranlar için Handy Tech sürücülerini sisteminize yüklemeniz gerekecektir.
 
 Aşağıdaki ekranlar için anında destek sunulmaz, ancak [Handy Tech evrensel sürücüsü](https://handytech.de/en/service/downloads-and-manuals/handy-tech-software/braille-display-drivers) ve NVDA add-on aracılığıyla kullanılabilir:
 
-* Braillino
-* Bookworm
-* Modular displays with firmware version 1.13 or lower. Please note that the firmware of this displays can be updated.
+* <target/>
+* <target/>
+* <target/>
 
 Aşağıda Handy Tech ekranlarla kullanılabilecek tuş kombinasyonları yer almaktadır.
 Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgelerine bakın.
@@ -3945,14 +4023,14 @@ Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgel
 |SolOk tuşu |joystickLeft|
 |SağOk tuşu |joystickRight|
 |NVDA Menüsü |b2+b4+b5+b6|
-|Toggle braille tethered to |b2|
-|Toggle the braille cursor |b1|
-|Toggle focus context presentation |b7|
-|Toggle braille input |space+b1+b3+b4 (space+capital B)|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### MDV Lilli {#MDVLilli}
+### <target/> {#MDVLilli}
 
 [MDV](https://www.mdvbologna.it/) tarafından üretilen Lilli braille ekranı desteklenmektedir.
 Bu ekranı kullanmak için belirli bir sürücüye gereksiniminiz bulunmamaktadır.
@@ -3983,22 +4061,22 @@ Lütfen bu tuşların nerede bulunacağıyla ilgili Braille ekran yardım belgel
 Birçok [Baum](https://www.baum.de/cms/en/), [HumanWare](https://www.humanware.com/), [APH](https://www.aph.org/) ve [Orbit](https://www.orbitresearch.com/) ekran USB veya Bluetooth ile bağlandıklarında desteklenmektedir.
 Bunlardan bazıları şunlardır:
 
-* Baum: SuperVario, PocketVario, VarioUltra, Pronto!, SuperVario2, Vario 340
-* HumanWare: Brailliant, BrailleConnect, Brailliant2
-* APH: Refreshabraille
-* Orbit: Orbit Reader 20
+* <target/>
+* <target/>
+* <target/>
+* <target/>
 
 henüz test edilmemelerine karşın, Baum tarafından desteklenen başka ekranlar da NVDA ile çalışabilir.
 
-If connecting via USB to displays which do not use HID, you must first install the USB drivers provided by the manufacturer.
-The VarioUltra and Pronto! use HID.
-The Refreshabraille and Orbit Reader 20 can use HID if configured appropriately.
+<target/>
+<target/>
+<target/>
 
-The USB serial mode of the Orbit Reader 20 is currently only supported in Windows 10 and later.
-USB HID should generally be used instead.
+<target/>
+<target/>
 
-Following are the key assignments for these displays with NVDA.
-Please see your display's documentation for descriptions of where these keys can be found.
+<target/>
+<target/>
 <!-- KC:beginInclude -->
 
 | Ad |Kısayol tuşu|
@@ -4030,7 +4108,7 @@ Kumanda kolu olan ekranlar için:
 
 <!-- KC:endInclude -->
 
-### hedo ProfiLine USB {#HedoProfiLine}
+### <target/> {#HedoProfiLine}
 
 Hedo ProfiLine USB, [hedo Reha-Technik](https://www.hedo.de/) desteklenmektedir.
 Öncelikle üretici tarafından sağlanan USB sürücülerini kurmalısınız.
@@ -4053,7 +4131,7 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 
 <!-- KC:endInclude -->
 
-### hedo MobilLine USB {#HedoMobilLine}
+### <target/> {#HedoMobilLine}
 
 hedo MobilLine USB, [hedo Reha-Technik](https://www.hedo.de/) desteklenmektedir.
 Öncelikle üretici tarafından sağlanan USB sürücülerini kurmalısınız.
@@ -4084,10 +4162,10 @@ OpenBraille protokolü için USB sürücüleri gerekmez.
 
 Ek olarak aşağıdaki aygıtlar da desteklenir (ve herhangi bir özel sürücünün yüklenmesini gerektirmez):
 
-* APH Mantis Q40
-* APH Chameleon 20
-* Humanware BrailleOne
-* NLS eReader
+* <target/>
+* <target/>
+* <target/>
+* <target/>
   * Zoomax'ın şu anda harici sürücüler olmadan desteklenmediğini unutmayın
 
 Aşağıda Brailliant BI/B ve BrailleNote touch braille ekranları NVDA ile hangi tuşlarla kullanabileceğinizi bulabilirsiniz.
@@ -4116,9 +4194,9 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 |enter tuşu |dot8|
 |windows tuşu |space+dot3+dot4|
 |alt+tab tuşu |space+dot2+dot3+dot4+dot5 (space+t)|
-|NVDA Menu |space+dot1+dot3+dot4+dot5 (space+n)|
-|windows+d key (minimize all applications) |space+dot1+dot4+dot5 (space+d)|
-|Say all |space+dot1+dot2+dot3+dot4+dot5+dot6|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
@@ -4126,10 +4204,10 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|NVDA Menu |c1+c3+c4+c5 (command n)|
-|windows+d key (minimize all applications) |c1+c4+c5 (command d)|
+|<target/>|
+|<target/>|
 |Hepsini oku |c1+c2+c3+c4+c5+c6|
 
 <!-- KC:endInclude -->
@@ -4140,17 +4218,17 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 
 | Ad |Tuş|
 |---|---|
-|up arrow key |joystick up|
-|down arrow key |joystick down|
-|left arrow key |joystick left|
-|right arrow key |joystick right|
-|enter key |joystick action|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
 ### HIMS Braille Sense/Braille EDGE/Smart Beetle/Sync Braille Serileri {#Hims}
 
-USB ya da bluetooth üzerinden bağlandıklarında, NVDA [Hims](https://www.hims-inc.com/) tarafından üretilen Braille Sense, Braille EDGE, Smart Beetle ve Sync Braille kabartma ekranları destekler. 
+USB ya da bluetooth üzerinden bağlandıklarında, NVDA [Hims](https://www.hims-inc.com/) tarafından üretilen Braille Sense, Braille EDGE, Smart Beetle ve Sync Braille kabartma ekranları destekler.
 USB üzerinden bağlıyorsanız, sisteminize [HIMS tarafından dağıtılan USB sürücülerini](http://www.himsintl.com/upload/HIMS_USB_Driver_v25.zip) sayfasından indirip kurmanız gerekir.
 
 Aşağıda braille ekranı NVDA ile hangi tuşlarla kullanabileceğinizi bulabilirsiniz.
@@ -4159,76 +4237,76 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 
 | Ad |Kısayol tuşu|
 |---|---|
-|Route to braille cell |routing|
-|Scroll braille display back |leftSideScrollUp, rightSideScrollUp, leftSideScroll|
-|Scroll braille display forward |leftSideScrollDown, rightSideScrollDown, rightSideScroll|
-|Move braille display to previous line |leftSideScrollUp+rightSideScrollUp|
-|Move braille display to next line |leftSideScrollDown+rightSideScrollDown|
-|Move to previous line in review |rightSideUpArrow|
-|Move to next line in review |rightSideDownArrow|
-|Move to previous character in review |rightSideLeftArrow|
-|Move to next character in review |rightSideRightArrow|
-|Move to current focus |leftSideScrollUp+leftSideScrollDown, rightSideScrollUp+rightSideScrollDown, leftSideScroll+rightSideScroll|
-|control key |smartbeetle:f1, brailleedge:f3|
-|windows key |f7, smartbeetle:f2|
-|alt key |dot1+dot3+dot4+space, f2, smartbeetle:f3, brailleedge:f4|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift key |f5|
-|insert key |dot2+dot4+space, f6|
-|applications key |dot1+dot2+dot3+dot4+space, f8|
+|<target/>|
+|<target/>|
 |capsLock key |dot1+dot3+dot6+space|
-|tab key |dot4+dot5+space, f3, brailleedge:f2|
+|<target/>|
 |şift+alt+tab key |f2+f3+f1|
-|alt+tab key |f2+f3|
+|<target/>|
 |şift+tab key |dot1+dot2+space|
-|end key |dot4+dot6+space|
-|control+end key |dot4+dot5+dot6+space|
-|home key |dot1+dot3+space, smartbeetle:f4|
-|control+home key |dot1+dot2+dot3+space|
-|alt+f4 key |dot1+dot3+dot5+dot6+space|
-|leftArrow key |dot3+space, leftSideLeftArrow|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |control+şift+leftArrow key |dot2+dot8+space+f1|
-|control+leftArrow key |dot2+space|
+|<target/>|
 |şift+alt+leftArrow key |dot2+dot7+f1|
 |`alt+leftArrow` key |`dot2+dot7`|
-|rightArrow key |dot6+space, leftSideRightArrow|
+|<target/>|
 |control+şift+rightArrow key |dot5+dot8+space+f1|
-|control+rightArrow key |dot5+space|
+|<target/>|
 |şift+alt+rightArrow key |dot5+dot7+f1|
 |`alt+rightArrow` key |`dot5+dot7`|
-|pageUp key |dot1+dot2+dot6+space|
-|control+pageUp key |dot1+dot2+dot6+dot8+space|
-|upArrow key |dot1+space, leftSideUpArrow|
+|<target/>|
+|<target/>|
+|<target/>|
 |control+şift+upArrow key |dot2+dot3+dot8+space+f1|
-|control+upArrow key |dot2+dot3+space|
+|<target/>|
 |şift+alt+upArrow key |dot2+dot3+dot7+f1|
 |`alt+upArrow key` |`dot2+dot3+dot7`|
 |şift+upArrow key |leftSideScrollDown+space|
-|pageDown key |dot3+dot4+dot5+space|
-|control+pageDown key |dot3+dot4+dot5+dot8+space|
-|downArrow key |dot4+space, leftSideDownArrow|
+|<target/>|
+|<target/>|
+|<target/>|
 |control+şift+downArrow key |dot5+dot6+dot8+space+f1|
-|control+downArrow key |dot5+dot6+space|
+|<target/>|
 |şift+alt+downArrow key |dot5+dot6+dot7+f1|
 |`alt+downArrow key` |`dot5+dot6+dot7`|
 |şift+downArrow key |space+rightSideScrollDown|
-|escape key |dot1+dot5+space, f4, brailleedge:f1|
-|delete key |dot1+dot3+dot5+space, dot1+dot4+dot5+space|
-|f1 key |dot1+dot2+dot5+space|
-|f3 key |dot1+dot4+dot8+space|
-|f4 key |dot7+f3|
-|windows+b key |dot1+dot2+f1|
-|windows+d key |dot1+dot4+dot5+f1|
-|control+insert key |smartbeetle:f1+rightSideScroll|
-|alt+insert key |smartbeetle:f3+rightSideScroll|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Seika Braille Displays {#Seika}
+### <target/> {#Seika}
 
 Nippon Telesoft'un aşağıdaki Seika Braille ekranları, farklı işlevlere sahip iki grupta desteklenir:
 
-* [Seika Version 3, 4, and 5 (40 cells), Seika80 (80 cells)](#SeikaBrailleDisplays)
-* [MiniSeika (16, 24 cells), V6, and V6Pro (40 cells)](#SeikaNotetaker)
+* <target/>
+* <target/>
 
 Ekranlar hakkında daha fazla bilgiyi [Demo ve Sürücü İndirme sayfası](https://en.seika-braille.com/down/index.html) üzerinden edinebilirsiniz.
 
@@ -4245,17 +4323,17 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 
 | Ad |Kısayol tuşu|
 |---|---|
-|Scroll braille display back |left|
-|Scroll braille display forward |right|
-|Move braille display to previous line |b3|
-|Move braille display to next line |b4|
-|Toggle braille tethered to |b5|
-|Say all |b6|
-|tab |b1|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+tab |b2|
-|alt+tab |b1+b2|
-|NVDA Menu |left+right|
-|Route to braille cell |routing|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
@@ -4269,566 +4347,568 @@ Seika Notetaker tuş atamaları aşağıdaki gibidir.
 Bu tuşların nerede bulunabileceğinin açıklamaları için lütfen ekranın belgelerine bakın.
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |left|
-|Scroll braille display forward |right|
-|Say all |space+Backspace|
-|NVDA Menu |Left+Right|
-|Move braille display to previous line |LJ up|
-|Move braille display to next line |LJ down|
-|Toggle braille tethered to |LJ center|
-|tab |LJ right|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+tab |LJ left|
-|upArrow key |RJ up|
-|downArrow key |RJ down|
-|leftArrow key |RJ left|
-|rightArrow key |RJ right|
-|Route to braille cell |routing|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+upArrow key |Space+RJ up, Backspace+RJ up|
 |şift+downArrow key |Space+RJ down, Backspace+RJ down|
 |şift+leftArrow key |Space+RJ left, Backspace+RJ left|
 |şift+rightArrow key |Space+RJ right, Backspace+RJ right|
-|enter key |RJ center, dot8|
-|escape key |Space+RJ center|
-|windows key |Backspace+RJ center|
-|space key |Space, Backspace|
-|backspace key |dot7|
-|pageup key |space+LJ right|
-|pagedown key |space+LJ left|
-|home key |space+LJ up|
-|end key |space+LJ down|
-|control+home key |backspace+LJ up|
-|control+end key |backspace+LJ down|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+
+<!-- KC:endInclude -->
 
 ### Papenmeier BRAILLEX Yeni Modelleri {#Papenmeier}
 
-Aşağıdaki Braille ekranlar desteklenmektedir: 
+Aşağıdaki Braille ekranlar desteklenmektedir:
 
-* BRAILLEX EL 40c, EL 80c, EL 20c, EL 60c (USB)
-* BRAILLEX EL 40s, EL 80s, EL 2d80s, EL 70s, EL 66s (USB)
-* BRAILLEX Trio (USB and bluetooth)
-* BRAILLEX Live 20, BRAILLEX Live and BRAILLEX Live Plus (USB and bluetooth)
+* <target/>
+* <target/>
+* <target/>
+* <target/>
 
 Bu ekranlar henüz NVDA'nın otomatik arka plan braille görüntü algılama işlevini desteklememektedir.
-There is an option in the display's USB driver which can cause an issue with loading the display.
-Please try the following:
+<target/>
+<target/>
 
-1. Please make sure that you have installed the [latest driver](https://www.papenmeier-rehatechnik.de/en/service/downloadcenter/software/articles/software-braille-devices.html).
-1. Open the Windows Device Manager.
-1. Scroll down the list to "USB Controllers" or "USB Devices".
-1. Select "Papenmeier Braillex USB Device".
-1. Open the properties and switch to the "Advanced" tab.
-Sometimes the "Advanced" tab doesn't appear.
-If this is the case, disconnect the braille display from the computer, exit NVDA, wait a moment and reconnect the braille display.
-Repeat this 4 to 5 times if necessary.
-If the "Advanced" tab is still not displayed, please restart the computer.
-1. Disable the "Load VCP" option.
+1. <target/>
+1. <target/>
+1. <target/>
+1. <target/>
+1. <target/>
+<target/>
+<target/>
+<target/>
+<target/>
+1. <target/>
 
-Most devices have an Easy Access Bar (EAB) that allows intuitive and fast operation.
-The EAB can be moved in four directions where generally each direction has two switches.
-The C and Live series are the only exceptions to this rule.
+<target/>
+<target/>
+<target/>
 
-The c-series and some other displays have two routing rows whereby the upper row is used to report formatting information.
-Holding one of the upper routing keys and pressing the EAB on c-series devices emulates the second switch state.
-The live series displays have one routing row only and the EAB has one step per direction.
-The second step may be emulated by pressing one of the routing keys and pressing the EAB in the corresponding direction.
-Pressing and holding the up, down, right and left keys (or EAB) causes the corresponding action to be repeated.
+<target/>
+<target/>
+<target/>
+<target/>
+<target/>
 
-Generally, the following keys are available on these braille displays:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|l1 |Left front key|
-|l2 |Left rear key|
-|r1 |Right front key|
-|r2 |Right rear key|
-|up |1 Step up|
-|up2 |2 Steps up|
-|left |1 Step left|
-|left2 |2 Steps left|
-|right |1 Step right|
-|right2 |2 Steps right|
-|dn |1 Step down|
-|dn2 |2 Steps down|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
-Following are the Papenmeier command assignments for NVDA:
+<target/>
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |left|
-|Scroll braille display forward |right|
-|Move braille display to previous line |up|
-|Move braille display to next line |dn|
-|Route to braille cell |routing|
-|Report current character in review |l1|
-|Activate current navigator object |l2|
-|Toggle braille tethered to |r2|
-|Report title |l1+up|
-|Report Status Bar |l2+down|
-|Move to containing object |up2|
-|Move to first contained object |dn2|
-|Move to previous object |left2|
-|Move to next object |right2|
-|Report text formatting under braille cell |upper routing row|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-The Trio model has four additional keys which are in front of the braille keyboard.
-These are (ordered from left to right):
+<target/>
+<target/>
 
-* left thumb key (lt)
-* space
-* space
-* right thumb key (rt)
+* <target/>
+* <target/>
+* <target/>
+* <target/>
 
-Currently, the right thumb key is not in use.
-The inner keys are both mapped to space.
+<target/>
+<target/>
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|escape key |space with dot 7|
-|upArrow key |space with dot 2|
-|leftArrow key |space with dot 1|
-|rightArrow key |space with dot 4|
-|downArrow |space with dot 5|
-|control key |lt+dot2|
-|alt key |lt+dot3|
-|control+escape key |space with dot 1 2 3 4 5 6|
-|tab key |space with dot 3 7|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Papenmeier Braille BRAILLEX Older Models {#PapenmeierOld}
+### <target/> {#PapenmeierOld}
 
-The following Braille displays are supported: 
+<target/>
 
-* BRAILLEX EL 80, EL 2D-80, EL 40 P
-* BRAILLEX Tiny, 2D Screen
+* <target/>
+* <target/>
 
-Note that these displays can only be connected via a serial port.
-Due to this, these displays do not support NVDA's automatic background braille display detection functionality.
-You should select the port to which the display is connected after you have chosen this driver in the [Select Braille Display](#SelectBrailleDisplay) dialog.
+<target/>
+<target/>
+<target/>
 
-Some of these devices have an Easy Access Bar (EAB) that allows intuitive and fast operation.
-The EAB can be moved in four directions where generally each direction has two switches.
-Pressing and holding the up, down, right and left keys (or EAB) causes the corresponding action to be repeated.
-Older devices do not have an EAB; front keys are used instead.
+<target/>
+<target/>
+<target/>
+<target/>
 
-Generally, the following keys are available on braille displays:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|l1 |Left front key|
-|l2 |Left rear key|
-|r1 |Right front key|
-|r2 |Right rear key|
-|up |1 Step up|
-|up2 |2 Steps up|
-|left |1 Step left|
-|left2 |2 Steps left|
-|right |1 Step right|
-|right2 |2 Steps right|
-|dn |1 Step down|
-|dn2 |2 Steps down|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
-Following are the Papenmeier command assignments for NVDA:
+<target/>
 
 <!-- KC:beginInclude -->
-Devices with EAB:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |left|
-|Scroll braille display forward |right|
-|Move braille display to previous line |up|
-|Move braille display to next line |dn|
-|Route to braille cell |routing|
-|Report current character in review |l1|
-|Activate current navigator object |l2|
-|Report title |l1up|
-|Report Status Bar |l2down|
-|Move to containing object |up2|
-|Move to first contained object |dn2|
-|Move to next object |right2|
-|Move to previous object |left2|
-|Report text formatting under braille cell |upper routing strip|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
-BRAILLEX Tiny:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Report current character in review |l1|
-|Activate current navigator object |l2|
-|Scroll braille display back |left|
-|Scroll braille display forward |right|
-|Move braille display to previous line |up|
-|Move braille display to next line |dn|
-|Toggle braille tethered to |r2|
-|Move to containing object |r1+up|
-|Move to first contained object |r1+dn|
-|Move to previous object |r1+left|
-|Move to next object |r1+right|
-|Report text formatting under braille cell |upper routing strip|
-|Report title |l1+up|
-|Report status bar |l2+down|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
-BRAILLEX 2D Screen:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Report current character in review |l1|
-|Activate current navigator object |l2|
-|Toggle braille tethered to |r2|
-|Report text formatting under braille cell |upper routing strip|
-|Move braille display to previous line |up|
-|Scroll braille display back |left|
-|Scroll braille display forward |right|
-|Move braille display to next line |dn|
-|Move to next object |left2|
-|Move to containing object |up2|
-|Move to first contained object |dn2|
-|Move to previous object |right2|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### HumanWare BrailleNote {#HumanWareBrailleNote}
+### <target/> {#HumanWareBrailleNote}
 
-NVDA supports the BrailleNote notetakers from [Humanware](https://www.humanware.com) when acting as a display terminal for a screen reader.
-The following models are supported:
+<target/>
+<target/>
 
-* BrailleNote Classic (serial connection only)
-* BrailleNote PK (Serial and bluetooth connections)
-* BrailleNote MPower (Serial and bluetooth connections)
-* BrailleNote Apex (USB and Bluetooth connections)
+* <target/>
+* <target/>
+* <target/>
+* <target/>
 
-For BrailleNote Touch, please refer to  the [Brailliant BI Series / BrailleNote Touch](#HumanWareBrailliant) section.
+<target/>
 
-Except for BrailleNote PK, both braille (BT) and QWERTY (QT) keyboards are supported.
-For BrailleNote QT, PC keyboard emulation isn't supported.
-You can also enter braille dots using the QT keyboard.
-Please check the braille terminal section of the BrailleNote manual guide for details.
+<target/>
+<target/>
+<target/>
+<target/>
 
-If your device supports more than one type of connection, when connecting your BrailleNote to NVDA, you must set the braille terminal port in braille terminal options.
-Please check the BrailleNote manual for details.
-In NVDA, you may also need to set the port in the [Select Braille Display](#SelectBrailleDisplay) dialog.
-If you are connecting via USB or bluetooth, you can set the port to "Automatic", "USB" or "Bluetooth", depending on the available choices.
-If connecting using a legacy serial port (or a USB to serial converter) or if none of the previous options appear, you must explicitly choose the communication port to be used from the list of hardware ports.
+<target/>
+<target/>
+<target/>
+<target/>
+<target/>
 
-Before connecting your BrailleNote Apex using its USB client interface, you must install the drivers provided by HumanWare.
+<target/>
 
-On the BrailleNote Apex BT, you can use the scroll wheel located between dots 1 and 4 for various NVDA commands.
+<target/>
 The wheel consists of four directional dots, a center click button, and a wheel that spins clockwise or counterclockwise.
 
-Following are the BrailleNote command assignments for NVDA.
-Please check your BrailleNote's documentation to find where these keys are located.
+<target/>
+<target/>
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |back|
-|Scroll braille display forward |advance|
-|Move braille display to previous line |previous|
-|Move braille display to next line |next|
-|Route to braille cell |routing|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |NvDA menu |space+dot1+dot3+dot4+dot5 (space+n)|
-|Toggle braille tethered to |previous+next|
-|Up arrow key |space+dot1|
-|Down arrow key |space+dot4|
-|Left Arrow key |space+dot3|
-|Right arrow key |space+dot6|
-|Page up key |space+dot1+dot3|
-|Page down key |space+dot4+dot6|
-|Home key |space+dot1+dot2|
-|End key |space+dot4+dot5|
-|Control+home keys |space+dot1+dot2+dot3|
-|Control+end keys |space+dot4+dot5+dot6|
-|Space key |space|
-|Enter |space+dot8|
-|Backspace |space+dot7|
-|Tab key |space+dot2+dot3+dot4+dot5 (space+t)|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+tab keys |space+dot1+dot2+dot5+dot6|
-|Windows key |space+dot2+dot4+dot5+dot6 (space+w)|
-|Alt key |space+dot1+dot3+dot4 (space+m)|
-|Toggle input help |space+dot2+dot3+dot6 (space+lower h)|
+|<target/>|
+|<target/>|
+|<target/>|
 
-Following are commands assigned to BrailleNote QT when it is not in braille input mode.
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
 |NvDA menu |read+n|
-|Up arrow key |upArrow|
-|Down arrow key |downArrow|
-|Left Arrow key |leftArrow|
-|Right arrow key |rightArrow|
-|Page up key |function+upArrow|
-|Page down key |function+downArrow|
-|Home key |function+leftArrow|
-|End key |function+rightArrow|
-|Control+home keys |read+t|
-|Control+end keys |read+b|
-|Enter key |enter|
-|Backspace key |backspace|
-|Tab key |tab|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+tab keys |şift+tab|
-|Windows key |read+w|
-|Alt key |read+m|
-|Toggle input help |read+1|
+|<target/>|
+|<target/>|
+|<target/>|
 
-Following are commands assigned to the scroll wheel:
+<target/>
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Up arrow key |upArrow|
-|Down arrow key |downArrow|
-|Left Arrow key |leftArrow|
-|Right arrow key |rightArrow|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |Enter key |center button|
-|Tab key |scroll wheel clockwise|
+|<target/>|
 |şift+tab keys |scroll wheel counterclockwise|
 
 <!-- KC:endInclude -->
 
-### EcoBraille {#EcoBraille}
+### <target/> {#EcoBraille}
 
-NVDA supports EcoBraille displays from [ONCE](https://www.once.es/).
-The following models are supported:
+<target/>
+<target/>
 
-* EcoBraille 20
-* EcoBraille 40
-* EcoBraille 80
-* EcoBraille Plus
+* <target/>
+* <target/>
+* <target/>
+* <target/>
 
-In NVDA, you can set the serial port to which the display is connected in the [Select Braille Display](#SelectBrailleDisplay) dialog.
-These displays do not support NVDA's automatic background braille display detection functionality.
+<target/>
+<target/>
 
-Following are the key assignments for EcoBraille displays.
-Please see the [EcoBraille documentation](ftp://ftp.once.es/pub/utt/bibliotecnia/Lineas_Braille/ECO/) for descriptions of where these keys can be found.
+<target/>
+<target/>
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |T2|
-|Scroll braille display forward |T4|
-|Move braille display to previous line |T1|
-|Move braille display to next line |T5|
-|Route to braille cell |Routing|
-|Activate current navigator object |T3|
-|Switch to next review mode |F1|
-|Move to containing object |F2|
-|Switch to previous review mode |F3|
-|Move to previous object |F4|
-|Report current object |F5|
-|Move to next object |F6|
-|Move to focus object |F7|
-|Move to first contained object |F8|
-|Move System focus or caret to current review position |F9|
-|Report review cursor location |F0|
-|Toggle braille tethered to |A|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### SuperBraille {#SuperBraille}
+### <target/> {#SuperBraille}
 
-The SuperBraille device, mostly available in Taiwan, can be connected to by either USB or serial.
-As the SuperBraille does not have any physical typing keys or scrolling buttons, all input must be performed via a standard computer keyboard.
-Due to this, and to maintain compatibility with other screen readers in Taiwan, two key bindings for scrolling the braille display have been provided:
+<target/>
+<target/>
+<target/>
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |numpadMinus|
-|Scroll braille display forward |numpadPlus|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Eurobraille displays {#Eurobraille}
+### <target/> {#Eurobraille}
 
-The b.book, b.note, Esys, Esytime and Iris displays from Eurobraille are supported by NVDA.  
-These devices have a braille keyboard with 10 keys. 
-Please refer to the display's documentation for descriptions of these keys.
-Of the two keys placed like a space bar, the left key is corresponding to the backspace key and the right key to the space key.
+<target/>
+<target/>
+<target/>
+<target/>
 
-These devices are connected via USB and have one stand-alone USB keyboard. 
-It is possible to enable/disable this keyboard by toggling "HID Keyboard simulation" using an input gesture.
-The braille keyboard functions described directly below is when "HID Keyboard simulation" is disabled. 
+<target/>
+<target/>
+<target/>
 
-#### Braille keyboard functions {#EurobrailleBraille}
+#### <target/> {#EurobrailleBraille}
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Erase the last entered braille cell or character |`backspace`|
-|Translate any braille input and press the enter key |`backspace+space`|
-|Toggle `NVDA` key |`dot3+dot5+space`|
-|`insert` key |`dot1+dot3+dot5+space`, `dot3+dot4+dot5+space`|
-|`delete` key |`dot3+dot6+space`|
-|`home` key |`dot1+dot2+dot3+space`|
-|`end` key |`dot4+dot5+dot6+space`|
-|`leftArrow` key |`dot2+space`|
-|`rightArrow` key |`dot5+space`|
-|`upArrow` key |`dot1+space`|
-|`downArrow` key |`dot6+space`|
-|`pageUp` key |`dot1+dot3+space`|
-|`pageDown` key |`dot4+dot6+space`|
-|`numpad1` key |`dot1+dot6+backspace`|
-|`numpad2` key |`dot1+dot2+dot6+backspace`|
-|`numpad3` key |`dot1+dot4+dot6+backspace`|
-|`numpad4` key |`dot1+dot4+dot5+dot6+backspace`|
-|`numpad5` key |`dot1+dot5+dot6+backspace`|
-|`numpad6` key |`dot1+dot2+dot4+dot6+backspace`|
-|`numpad7` key |`dot1+dot2+dot4+dot5+dot6+backspace`|
-|`numpad8` key |`dot1+dot2+dot5+dot6+backspace`|
-|`numpad9` key |`dot2+dot4+dot6+backspace`|
-|`numpadInsert` key |`dot3+dot4+dot5+dot6+backspace`|
-|`numpadDecimal` key |`dot2+backspace`|
-|`numpadDivide` key |`dot3+dot4+backspace`|
-|`numpadMultiply` key |`dot3+dot5+backspace`|
-|`numpadMinus` key |`dot3+dot6+backspace`|
-|`numpadPlus` key |`dot2+dot3+dot5+backspace`|
-|`numpadEnter` key |`dot3+dot4+dot5+backspace`|
-|`escape` key |`dot1+dot2+dot4+dot5+space`, `l2`|
-|`tab` key |`dot2+dot5+dot6+space`, `l3`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |`şift+tab` keys |`dot2+dot3+dot5+space`|
-|`printScreen` key |`dot1+dot3+dot4+dot6+space`|
-|`pause` key |`dot1+dot4+space`|
-|`applications` key |`dot5+dot6+backspace`|
-|`f1` key |`dot1+backspace`|
-|`f2` key |`dot1+dot2+backspace`|
-|`f3` key |`dot1+dot4+backspace`|
-|`f4` key |`dot1+dot4+dot5+backspace`|
-|`f5` key |`dot1+dot5+backspace`|
-|`f6` key |`dot1+dot2+dot4+backspace`|
-|`f7` key |`dot1+dot2+dot4+dot5+backspace`|
-|`f8` key |`dot1+dot2+dot5+backspace`|
-|`f9` key |`dot2+dot4+backspace`|
-|`f10` key |`dot2+dot4+dot5+backspace`|
-|`f11` key |`dot1+dot3+backspace`|
-|`f12` key |`dot1+dot2+dot3+backspace`|
-|`windows` key |`dot1+dot2+dot4+dot5+dot6+space`|
-|Toggle `windows` key |`dot1+dot2+dot3+dot4+backspace`, `dot2+dot4+dot5+dot6+space`|
-|`capsLock` key |`dot7+backspace`, `dot8+backspace`|
-|`numLock` key |`dot3+backspace`, `dot6+backspace`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |`şift` key |`dot7+space`|
 |Toggle `şift` key |`dot1+dot7+space`, `dot4+dot7+space`|
-|`control` key |`dot7+dot8+space`|
-|Toggle `control` key |`dot1+dot7+dot8+space`, `dot4+dot7+dot8+space`|
-|`alt` key |`dot8+space`|
-|Toggle `alt` key |`dot1+dot8+space`, `dot4+dot8+space`|
-|Toggle HID Keyboard simulation |`switch1Left+joystick1Down`, `switch1Right+joystick1Down`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-#### b.book keyboard commands {#Eurobraillebbook}
+#### <target/> {#Eurobraillebbook}
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |`backward`|
-|Scroll braille display forward |`forward`|
-|Move to current focus |`backward+forward`|
-|Route to braille cell |`routing`|
-|`leftArrow` key |`joystick2Left`|
-|`rightArrow` key |`joystick2Right`|
-|`upArrow` key |`joystick2Up`|
-|`downArrow` key |`joystick2Down`|
-|`enter` key |`joystick2Center`|
-|`escape` key |`c1`|
-|`tab` key |`c2`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |Toggle `şift` key |`c3`|
-|Toggle `control` key |`c4`|
-|Toggle `alt` key |`c5`|
-|Toggle `NVDA` key |`c6`|
-|`control+Home` key |`c1+c2+c3`|
-|`control+End` key |`c4+c5+c6`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-#### b.note keyboard commands {#Eurobraillebnote}
+#### <target/> {#Eurobraillebnote}
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |`leftKeypadLeft`|
-|Scroll braille display forward |`leftKeypadRight`|
-|Route to braille cell |`routing`|
-|Report text formatting under braille cell |`doubleRouting`|
-|Move to next line in review |`leftKeypadDown`|
-|Switch to previous review mode |`leftKeypadLeft+leftKeypadUp`|
-|Switch to next review mode |`leftKeypadRight+leftKeypadDown`|
-|`leftArrow` key |`rightKeypadLeft`|
-|`rightArrow` key |`rightKeypadRight`|
-|`upArrow` key |`rightKeypadUp`|
-|`downArrow` key |`rightKeypadDown`|
-|`control+home` key |`rightKeypadLeft+rightKeypadUp`|
-|`control+end` key |`rightKeypadLeft+rightKeypadUp`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-#### Esys keyboard commands {#Eurobrailleesys}
+#### <target/> {#Eurobrailleesys}
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |`switch1Left`|
-|Scroll braille display forward |`switch1Right`|
-|Move to current focus |`switch1Center`|
-|Route to braille cell |`routing`|
-|Report text formatting under braille cell |`doubleRouting`|
-|Move to previous line in review |`joystick1Up`|
-|Move to next line in review |`joystick1Down`|
-|Move to previous character in review |`joystick1Left`|
-|Move to next character in review |`joystick1Right`|
-|`leftArrow` key |`joystick2Left`|
-|`rightArrow` key |`joystick2Right`|
-|`upArrow` key |`joystick2Up`|
-|`downArrow` key |`joystick2Down`|
-|`enter` key |`joystick2Center`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-#### Esytime keyboard commands {#EurobrailleEsytime}
+#### <target/> {#EurobrailleEsytime}
 
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |`l1`|
-|Scroll braille display forward |`l8`|
-|Move to current focus |`l1+l8`|
-|Route to braille cell |`routing`|
-|Report text formatting under braille cell |`doubleRouting`|
-|Move to previous line in review |`joystick1Up`|
-|Move to next line in review |`joystick1Down`|
-|Move to previous character in review |`joystick1Left`|
-|Move to next character in review |`joystick1Right`|
-|`leftArrow` key |`joystick2Left`|
-|`rightArrow` key |`joystick2Right`|
-|`upArrow` key |`joystick2Up`|
-|`downArrow` key |`joystick2Down`|
-|`enter` key |`joystick2Center`|
-|`escape` key |`l2`|
-|`tab` key |`l3`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |Toggle `şift` key |`l4`|
-|Toggle `control` key |`l5`|
-|Toggle `alt` key |`l6`|
-|Toggle `NVDA` key |`l7`|
-|`control+home` key |`l1+l2+l3`, `l2+l3+l4`|
-|`control+end` key |`l6+l7+l8`, `l5+l6+l7`|
-|Toggle HID Keyboard simulation |`l1+joystick1Down`, `l8+joystick1Down`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Nattiq nBraille Displays {#NattiqTechnologies}
+### <target/> {#NattiqTechnologies}
 
 NVDA, USB ile bağlandığında, [Nattiq Technologies](https://www.nattiq.com/) tarafından üretilen ekranları destekler.
 Windows 10 ve sonraki sürümleri, bağlandıktan sonra Braille Ekranlarını algılar, Windows'un eski sürümlerini kullanıyorsanız (Win10'un altında) USB sürücülerini yüklemeniz gerekebilir.
@@ -4838,17 +4918,17 @@ Aşağıda, NVDA ile Nattiq Technologies ekranları için temel atamalar verilmi
 Bu tuşların nerede bulunacağına ilişkin açıklamalar için lütfen braille ekran belgelerine bakın.
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |up|
-|Scroll braille display forward |down|
-|Move braille display to previous line |left|
-|Move braille display to next line |right|
-|Route to braille cell |routing|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### BRLTTY {#BRLTTY}
+### <target/> {#BRLTTY}
 
 [BRLTTY](https://www.brltty.com/) çok daha fazla farklı braille ekranı destekleyebilmek için kullanılan ayrı bir programdır.
 bunu kullanabilmek için,[BRLTTY for Windows](https://www.brltty.com/download.html) programını yüklemeniz gerekecektir.
@@ -4871,17 +4951,17 @@ Lütfen [BRLTTY tuş komutları listesine](http://mielke.cc/brltty/doc/KeyBindin
 |Braille ekranı önceki satıra götürme |`lnup` (bir satır yukarı git)|
 |Braille ekranı sonraki satıra götürme |`lndn` (bir satır aşağı git)|
 |imleci parmağın üzerinde bulunduğu Braille hücresine taşıma |`route` (imleci karektere götür)|
-|Toggle input help |`learn` (enter/leave command learn mode)|
-|Open the NVDA menu |`prefmenu` (enter/leave preferences menu)|
-|Revert configuration |`prefload` (restore preferences from disk)|
-|Save configuration |`prefsave` (save preferences to disk)|
-|Report time |`time` (show current date and time)|
-|Speak the line where the review cursor is located |`say_line` (speak current line)|
-|Say all using review cursor |`say_below` (speak from current line through bottom of screen)|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Tivomatic Caiku Albatross 46/80 {#Albatross}
+### <target/> {#Albatross}
 
 Tivomatic tarafından üretilen ve Finlandiya'da satışa sunulan Caiku Albatross cihazları USB veya seri olarak bağlanabilmektedir.
 Bu ekranları kullanmak için herhangi bir özel sürücünün yüklenmesi gerekmez.
@@ -4899,86 +4979,86 @@ Tuşların yeri ve tarifi için Braille ekranın dokümantasyonunu inceleyin.
 
 | Ad |Kısayol|
 |---|---|
-|Move to top line in review |`home1`, `home2`|
-|Move to bottom line in review |`end1`, `end2`|
-|Sets the navigator object to the current focus |`eCursor1`, `eCursor2`|
-|Move to current focus |`cursor1`, `cursor2`|
-|Moves the mouse pointer to the current navigator object |`home1+home2`|
-|Sets the navigator object to the current object under the mouse pointer and speaks it |`end1+end2`|
-|Moves focus to current navigator object |`eCursor1+eCursor2`|
-|Toggle braille tethered to |`cursor1+cursor2`|
-|Move braille display to previous line |`up1`, `up2`, `up3`|
-|Move braille display to next line |`down1`, `down2`, `down3`|
-|Scroll braille display back |`left`, `lWheelLeft`, `rWheelLeft`|
-|Scroll braille display forward |`right`, `lWheelRight`, `rWheelRight`|
-|Route to braille cell |`routing`|
-|Report text formatting under braille cell |`secondary routing`|
-|Toggle the way context information is presented in braille |`attribute1+attribute3`|
-|Cycles between speech modes |`attribute2+attribute4`|
-|Switches to the previous review mode (e.g. object, document or screen) |`f1`|
-|Switches to the next review mode (e.g. object, document or screen) |`f2`|
-|Moves the navigator object to the object containing it |`f3`|
-|Moves the navigator object to the first object inside it |`f4`|
-|Moves the navigator object to the previous object |`f5`|
-|Moves the navigator object to the next object |`f6`|
-|Reports the current navigator object |`f7`|
-|Reports information about the location of the text or object at the review cursor |`f8`|
-|Shows braille settings |`f1+home1`, `f9+home2`|
-|Reads status bar and moves navigator object into it |`f1+end1`, `f9+end2`|
-|Cycle the braille cursor shape |`f1+eCursor1`, `f9+eCursor2`|
-|Toggle the braille cursor |`f1+cursor1`, `f9+cursor2`|
-|Cycle the braille show messages mode |`f1+f2`, `f9+f10`|
-|Cycle the braille show selection state |`f1+f5`, `f9+f14`|
-|Cycle the "braille move system caret when routing review cursor" states |`f1+f3`, `f9+f11`|
-|Performs the default action on the current navigator object |`f7+f8`|
-|Reports date/time |`f9`|
-|Reports battery status and time remaining if AC is not plugged in |`f10`|
-|Reports title |`f11`|
-|Reports status bar |`f12`|
-|Reports the current line under the application cursor |`f13`|
-|Say all |`f14`|
-|Reports current character under review cursor |`f15`|
-|Reports the line of the current navigator object where the review cursor is situated |`f16`|
-|Speaks the word of the current navigator object where the review cursor is situated |`f15+f16`|
-|Moves the review cursor to the previous line of the current navigator object and speaks it |`lWheelUp`, `rWheelUp`|
-|Moves the review cursor to the next line of the current navigator object and speaks it |`lWheelDown`, `rWheelDown`|
-|`Windows+d` key (minimize all applications) |`attribute1`|
-|`Windows+e` key (this computer) |`attribute2`|
-|`Windows+b` key (focus system tray) |`attribute3`|
-|`Windows+i` key (Windows settings) |`attribute4`|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
-### Standard HID Braille displays {#HIDBraille}
+### <target/> {#HIDBraille}
 
-This is an experimental driver for the new Standard HID Braille Specification, agreed upon in 2018 by Microsoft, Google, Apple and several assistive technology companies including NV Access. 
-The hope is that all future Braille Display models created by any manufacturer, will use this standard protocol which will remove the need for manufacturer-specific Braille drivers.
+<target/>
+<target/>
 
-NVDA's automatic braille display detection will also recognize any display that supports this protocol.
+<target/>
 
-Following are the current key assignments for these displays.
+<target/>
 <!-- KC:beginInclude -->
 
-| Name |Key|
+| <target/>|
 |---|---|
-|Scroll braille display back |pan left or rocker up|
-|Scroll braille display forward |pan right or rocker down|
-|Route to braille cell |routing set 1|
-|Toggle braille tethered to |up+down|
-|upArrow key |joystick up, dpad up or space+dot1|
-|downArrow key |joystick down, dpad down or space+dot4|
-|leftArrow key |space+dot3, joystick left  or dpad left|
-|rightArrow key |space+dot6, joystick right or dpad right|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 |şift+tab key |space+dot1+dot3|
-|tab key |space+dot4+dot6|
-|alt key |space+dot1+dot3+dot4 (space+m)|
+|<target/>|
+|<target/>|
 |enter key |dot8, joystick center or dpad center|
 |escape key |space+dot1+dot5 (space+e)|
-|windows key |space+dot3+dot4|
-|alt+tab key |space+dot2+dot3+dot4+dot5 (space+t)|
-|NVDA Menu |space+dot1+dot3+dot4+dot5 (space+n)|
-|windows+d key (minimize all applications) |space+dot1+dot4+dot5 (space+d)|
-|Say all |space+dot1+dot2+dot3+dot4+dot5+dot6|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
+|<target/>|
 
 <!-- KC:endInclude -->
 
@@ -5002,8 +5082,8 @@ Güvenli mod şu özellikleri devre dışı bırakır:
 * `-c`  [komut satır seçeneğini kullanarak](#CommandLineOptions) konfigurasyonları yükleme
 * NVDA'yı güncelleme ve taşınabilir kopyalar oluşturma
 * [Eklenti Mağazası](#AddonsManager)
-*  [Python konsolu](#PythonConsole)
-*  [Log dosyasını göster](#LogViewer) ve günlük tutma
+* [Python konsolu](#PythonConsole)
+* [Log dosyasını göster](#LogViewer) ve günlük tutma
 * The [Braille Görüntüleyici](#BrailleViewer) ve [Konuşma Görüntüleyici](#SpeechViewer)
 * Kullanım kılavuzu veya katkıda bulunanlar dosyası gibi harici belgeleri NVDA menüsünden açma.
 
@@ -5043,7 +5123,7 @@ Bu, bir eklentinin herhangi bir probleme neden olup olmadığını anlamanıza y
 
 Bir örnek olarak, çalıştır iletişim kutusuna aşağıdaki komutu girerek NVDA'yı kapatabilirsiniz:
 
-    nvda -q
+    <target/>
 
 Komut satırı seçeneklerinin bazılarının uzun ve kısa versiyonları bulunurken; bazılarının yalnızca uzun versiyonları vardır.
 Kısa versiyonu olanlar için, aşağıdaki gibi onları birleştirebilirsiniz:
@@ -5107,4 +5187,4 @@ Bu kayıt defteri anahtarı altında aşağıdaki değerler ayarlanabilir:
 
 NVDA ile ilgili daha fazla bilgiye veya yardıma ihtiyaç duyarsanız, NVDA_URL adresini ziyaret edebilirsiniz.
 Burada, ek belgeleri, ve teknik destek ile açık kaynak kodlarını bulabilirsiniz.
-Bu sayfa ayrıca NVDA geliştirmesiyle ilgili olarak bilgi ve kaynaklar da sağlamaktadır. 
+Bu sayfa ayrıca NVDA geliştirmesiyle ilgili olarak bilgi ve kaynaklar da sağlamaktadır.

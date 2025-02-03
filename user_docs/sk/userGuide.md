@@ -39,18 +39,20 @@ Najvýznamnejšie prednosti programu:
 
 ### Systémové požiadavky {#SystemRequirements}
 
-#### Odporúčané systémové požiadavky {#MinimumSystemRequirements}
-* Operačné systémy: 64-bitové edície systémov Windows 10, Windows 11 a Window Server 2022
-  * Podporované sú AMD64 a ARM64 varianty operačného systému Windows.
-* Mali by ste mať aspoň 150 MB voľného miesta úložného priestoru.
-* Mali by ste mať aspoň 4 GB operačnej pamäte RAM.
-
 #### Minimálne systémové požiadavky {#MinimumSystemRequirements}
+
 * NVDA spustíte v 32 aj 64 bitových verziách systémov Windows 8.1, 10, Windows 11 a tiež v serverových edíciách Windows od verzie 2012 R2.
   * Podporované sú AMD64 a ARM64 varianty operačného systému Windows.
-  * Pozor: 32-bitové varianty operačného systému Windows nie sú viac aktívne podporované.
+  * Note that 32-bit operating systems are no longer under active support.
   * Pozor: Windows 8.1 a operačné systémy Windows Server staršie než verzia 2022 nie sú viac aktívne podporované.
-* Mali by ste mať aspoň 150 MB voľného miesta úložného priestoru
+* at least 500 MB of storage space.
+
+#### Recommended System Requirements {#RecommendedSystemRequirements}
+
+* Operating Systems: 64-bit editions of Windows 10, Windows 11, and Windows Server 2022.
+  * both AMD64 and ARM64 variants of Windows are supported.
+* at least 500 MB of storage space.
+* at least 4 GB of RAM.
 
 ### Medzinárodná podpora {#Internationalization}
 
@@ -110,8 +112,8 @@ Ak vás zaujímajú podrobnosti, Skontrolujte si [Systémové požiadavky](#Syst
 Tento zoznam krokov predpokladá, že máte základné znalosti navigácie  na webových stránkach.
 
 * Otvorte si internetový prehliadač (Stlačte kláves `Windows`, do vyhľadávania napíšte slovo "internet" bez úvodzoviek a stlačte `enter`)
-* Prejdite do časti download na stránke NV Access (Stlačte klávesy `alt+d`, do panela s adresou napíšte nasledujúcu adresu a stlačte `enter`): 
-https://www.nvaccess.org/download 
+* Prejdite do časti download na stránke NV Access (Stlačte klávesy `alt+d`, do panela s adresou napíšte nasledujúcu adresu a stlačte `enter`):
+https://www.nvaccess.org/download
 * Nájdite a aktivujte tlačidlo Download
 * Internetový prehliadač sa môže dožadovať akcie, ktorá sa vykoná po prevzatí a spustí preberanie súboru.
 * V závislosti od prehliadača sa súbor môže automaticky spustiť hneď po prevzatí.
@@ -136,7 +138,7 @@ Po úspešnom spustení už NVDA ozvučí celý proces inštalácie.
 1. Zobrazí sa okno inštalácie programu NVDA s licenčnými podmienkami.
 Ak si to želáte, licenciu si môžete čítať stláčaním klávesu `Šípka dolu`.
 1. Stlačením klávesu `Tab` prejdite na začiarkavacie políčko "Súhlasím" a začiarknite ho stlačením `Medzerníka`.
-1. Stláčajte `Tab` na prechádzanie po tlačidlách a požadovanú voľbu aktivujte stlačením `Enter`. 
+1. Stláčajte `Tab` na prechádzanie po tlačidlách a požadovanú voľbu aktivujte stlačením `Enter`.
 
 K dispozícii sú nasledujúce možnosti:
 
@@ -257,9 +259,9 @@ Priradené príkazy sa pri zapnutej nápovede vstupu nebudú spúšťať.
 |ďalšie nastavenie hlasového výstupu |`NVDA+ctrl+pravá šípka` |`NVDA+ctrl+shift+pravá šípka` |Prejde na nasledujúce dostupné nastavenie hlasového výstupu. Z posledného nastavenia NVDA automaticky prejde na prvé.|
 |Predchádzajúce nastavenie hlasového výstupu |`NVDA+ctrl+ľavá šípka` |`NVDA+ctrl+shift+ľavá šípka` |Prejde na predchádzajúce dostupné nastavenie hlasového výstupu. Z prvého NVDA automaticky prejde na posledné nastavenie.|
 |Zvýšiť hodnotu nastavenia hlasového výstupu |`NVDA+ctrl+šípka hore` |`NVDA+ctrl+shift+šípka hore` |Zvýši hodnotu aktuálne zameraného nastavenia hlasového výstupu. Napríklad zrýchli tempo, vyberie nasledujúci hlas, zosilní hlasitosť|
-| Zvýšiť hodnotu nastavenia hlasu po väčších krokoch | `NVDA+ctrl+pageUp` | `NVDA+shift+ctrl+pageUp` | Zvyšuje hodnotu nastavenia hlasového výstupu po väčších krokoch. Posuvníky sú posúvané po 20 percentách, výška hlasu napríklad po dvadsiatich krokoch|
+|Zvýšiť hodnotu nastavenia hlasu po väčších krokoch | `NVDA+ctrl+pageUp` | `NVDA+shift+ctrl+pageUp` | Zvyšuje hodnotu nastavenia hlasového výstupu po väčších krokoch. Posuvníky sú posúvané po 20 percentách, výška hlasu napríklad po dvadsiatich krokoch|
 |Znížiť hodnotu nastavenia hlasu |`NVDA+ctrl+šípka dolu` |`NVDA+ctrl+shift+šípka dolu` |Zníži hodnotu aktuálne zameraného nastavenia hlasového výstupu. Napríklad spomalí tempo, vyberie predchádzajúci hlas, stíši hlasitosť.|
-| Znížiť  hodnotu nastavenia hlasu po väčších krokoch | `NVDA+ctrl+pageWown` | `NVDA+shift+ctrl+pageDown` | znižuje  hodnotu nastavenia hlasového výstupu po väčších krokoch. Posuvníky sú posúvané po 20 percentách, výška hlasu napríklad po dvadsiatich krokoch|
+|Znížiť  hodnotu nastavenia hlasu po väčších krokoch | `NVDA+ctrl+pageWown` | `NVDA+shift+ctrl+pageDown` | znižuje  hodnotu nastavenia hlasového výstupu po väčších krokoch. Posuvníky sú posúvané po 20 percentách, výška hlasu napríklad po dvadsiatich krokoch|
 
 Môžete tiež nastaviť klávesové skratky, ktoré budú nastavovať prvú a poslednú hodnotu aktuálneho nastavenia v kruhu nastavení. Nastavenie vykonáte v dialógu [Klávesové skratky](#InputGestures), v kategórii reč.
 Ak napríklad budete na nastavení rýchlosti, budete môcť okamžite nastaviť hodnoty 0 alebo 100.
@@ -550,7 +552,7 @@ Nastavenie môžete tiež meniť v nastaveniach NVDA, kategória Dotyková obraz
 
 Základná akcia, ktorú môžete spustiť dotykom na obrazovku je oznámenie objektu zobrazeného v akomkoľvek bode obrazovky.
 Položením jedného prsta kdekoľvek na obrazovku spustíte túto akciu.
-Môžete tiež nechať prst pritlačený k obrazovke a postupným posúvaním po ploche obrazovky si nechať vyčítať prvky, cez ktoré Váš prst prechádza spolu s ich textom 
+Môžete tiež nechať prst pritlačený k obrazovke a postupným posúvaním po ploche obrazovky si nechať vyčítať prvky, cez ktoré Váš prst prechádza spolu s ich textom
 
 #### Dotykové gestá {#TouchGestures}
 
@@ -617,7 +619,7 @@ Pre vstup do ponuky NVDA odkiaľkoľvek zo systému Windows počas behu NVDA mô
 
 * Stlačte na klávesnici skratku `nvda+n`.
 * Dvakrát poklepte dvoma prstami na obrazovku.
-* Ponuku môžete vyvolať aj zo systémového panelu. Stlačte `windows+b`. `Šípkami` Vyhľadajte tlačidlo  NVDA a aktivujte ho klávesom `Enter`.	
+* Ponuku môžete vyvolať aj zo systémového panelu. Stlačte `windows+b`. `Šípkami` Vyhľadajte tlačidlo  NVDA a aktivujte ho klávesom `Enter`.
 * Môžete postupovať aj tak, že skratkou `windows+b` prejdete na systémový panel, `šípkami hore a dole` vyhľadáte tlačidlo NVDA a aktivujete kontextovú ponuku klávesom `aplikácie`. Tento sa zvyčajne nachádza vedľa klávesu pravý kontrol.
 Ak sa na klávesnici tlačidlo `aplikácie` nenachádza, môžete ju vyvolať skratkou `shift+f10`.
 * Ponuku NVDA  je možné vyvolať aj kliknutím pravým tlačidlom myši na ikone NVDA na systémovom panely.
@@ -852,7 +854,7 @@ Na navigáciu v texte je možné použiť nasledovné príkazy:
 
 Všimnite si: Pri týchto operáciách musí byť numerický blok vypnutý, aby skratky fungovali správne.
 
-Aby ste si mohli lepšie zapamätať priradenie klávesových skratiek všimnite si, že základné príkazy navigácie textom v rozložení pre desktop sú usporiadané do pomyselnej tabuľky tri krát tri, kde riadok, slovo, znak smerujú z hora dolu a predchádzajúci, aktuálny, nasledujúci zľava doprava. 
+Aby ste si mohli lepšie zapamätať priradenie klávesových skratiek všimnite si, že základné príkazy navigácie textom v rozložení pre desktop sú usporiadané do pomyselnej tabuľky tri krát tri, kde riadok, slovo, znak smerujú z hora dolu a predchádzajúci, aktuálny, nasledujúci zľava doprava.
 Toto rozloženie je ilustrované v nasledujúcej tabuľke:
 
 | . {.hideHeaderRow} |. |.|
@@ -1146,7 +1148,7 @@ Ak však chcete skopírovať celý odsek alebo celú tabuľku, táto funkcia mô
 
 NVDA umožňuje čítať matematický obsah a pohybovať sa v ňom, pričom poskytuje spätnú väzbu pomocou hlasového výstupu a tiež na brailovom riadku. Takýto obsah je možné sprístupniť vo webových prehliadačoch aj iných aplikáciách.
 Aby bolo možné sprostredkovať matematický obsah, je potrebné nainštalovať ďalšie matematické komponenty.
-V katalógu s doplnkami je dostupných viacero doplnkov, ktoré poskytujú podporu pre zobrazovanie a interpretáciu matematického obsahu, napríklad [MathCAT](https://nsoiffer.github.io/MathCAT/) a [Access8Math](https://github.com/tsengwoody/Access8Math). 
+V katalógu s doplnkami je dostupných viacero doplnkov, ktoré poskytujú podporu pre zobrazovanie a interpretáciu matematického obsahu, napríklad [MathCAT](https://nsoiffer.github.io/MathCAT/) a [Access8Math](https://github.com/tsengwoody/Access8Math).
 Podrobnosti o tom, ako nájsť a inštalovať doplnky sú uvedené v časti o [katalógu s doplnkami](#AddonsManager).
 NVDA tiež dokáže využívať [MathPlayer](https://info.wiris.com/mathplayer-info) od spoločnosti Wiris, ak je prítomný v systéme. Mathplayer sa však už nevyvíja.
 
@@ -1159,7 +1161,7 @@ Ak sú nainštalované príslušné komponenty, NVDA podporuje tieto typy obsahu
 NVDA dokáže čítať a pracovať s matematickými rovnicami v Microsoft Word 365/2016 od zostavy 14326.
 Upozorňujeme, že všetky doteraz zapísané rovnice je potrebné ručne konvertovať na office math.
 Vyberte požadované rovnice, v kontextovej ponuke zvoľte možnosti rovníc a aktivujte položku konvertovať na office math.
-Je potrebné používať aktuálnu verziu MathType. 
+Je potrebné používať aktuálnu verziu MathType.
 Microsoft Word podporuje lineárnu navigáciu v rovniciach linea a podporuje rôzne možnosti zápisu vrátane LateX.
 Podrobnosti nájdete v dokumente [Lineárne formátovanie rovníc s použitím UnicodeMath a LaTeX vo Worde (anglicky)](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8)
 * Microsoft Powerpoint a staršie verzie Microsoft Word:
@@ -1357,13 +1359,13 @@ Táto metóda veľmi dobre funguje napríklad pre klávesy Tab a podobne. Často
 Aby bolo možné emulovať klávesy, kde je potrebné súčasne stlačiť viacero kláves súčasne, NVDA umožňuje definovať skratky pre CTRL, alt, shift, windows, NVDA a prípadne priradiť kombinácie týchto kláves.
 Ak chcete použiť takéto preraďovače, najprv stlačte príslušné tlačidlo (alebo kombináciu tlačidiel), ktoré sú priradené ku klávesom.
 Potom stlačte písmeno, ktoré je súčasťou klávesovej skratky.
-Napríklad: Ak chcete použiť skratku ctrl+f, použite tlačidlo, ktoré odošle do systému Ctrl a následne stlačte f, 
+Napríklad: Ak chcete použiť skratku ctrl+f, použite tlačidlo, ktoré odošle do systému Ctrl a následne stlačte f,
 Ak chcete zadať ctrl+alt+t, použite buď samostatné tlačidlá pre stlačenie kláves ctrl a alt, v ľubovoľnom poradí, alebo jedno tlačidlo, ktoré automaticky stláča obe klávesy súčasne. Následne napíšte t.
 
 Ak nechtiac odošlete do systému kláves a chcete odoslanie zrušiť, stlačte tlačidlo alebo kombináciu znovu.
 
 Ak používate skratkopis, modifikačné klávesy sú prekladané ako použitie bodov 7+8.
-Navyše, tieto skratky nezahŕňajú znaky zapísané pred použitím príkazu. 
+Navyše, tieto skratky nezahŕňajú znaky zapísané pred použitím príkazu.
 Takže ak chcete stlačiť alt+2, pričom na zapísanie čísla 2 je potrebné použiť číslicový znak, najprv stlačte tlačidlo, ktorým do systému odošlete kláves alt, potom zapíšte číslicový znak a následne body 1 a 2.
 
 ## Zrak {#Vision}
@@ -1487,7 +1489,8 @@ V zozname prvkov môžete prezerať nadpisy, odkazy, komentáre a revízie dokum
 #### Čítanie komentárov {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-Ak si chcete prečítať komentár, na ktorom je systémový fokus, stlačte NVDA+alt+c.
+To report any comments at the current caret position, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 <!-- KC:endInclude -->
 Všetky komentáre spolu s revíziami si môžete prezerať aj v zozname prvkov, ak vyberiete ako prvok komentáre a zmeny.
 
@@ -1535,7 +1538,8 @@ Do požadovaného poľa sa presuniete klávesom enter, alebo aktivovaním tlači
 #### Čítanie poznámok {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-Ak si chcete prečítať poznámky  pre aktuálnu bunku, stlačte NVDA+alt+c.
+To report any notes for the currently focused cell, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 V aplikáciách Microsoft Office 2016, 365 a novších boli komentáre nahradené poznámkami.
 <!-- KC:endInclude -->
 Všetky poznámky   v aktuálnom hárku si môžete prezerať aj v zozname prvkov po stlačení nvda+F7.
@@ -1606,7 +1610,7 @@ Všimnite si: tieto skratky fungujú len ak máte vo Foobare nastavené predvole
 
 ### Poedit {#Poedit}
 
-NVDA ponúka nasledujúce funkcie pre program Poedit od verzie 3.4.
+NVDA offers enhanced support for Poedit 3.5 or newer.
 
 <!-- KC:beginInclude -->
 
@@ -2029,9 +2033,9 @@ Ak chcete zmeniť niektoré vlastnosti reči bez nutnosti otvárať dialóg nast
 |ďalšie nastavenie hlasového výstupu |NVDA+ctrl+pravá šípka |NVDA+ctrl+shift+pravá šípka |Prejde na nasledujúce dostupné nastavenie hlasového výstupu. Z posledného nastavenia NVDA automaticky prejde na prvé.|
 |Predchádzajúce nastavenie hlasového výstupu |NVDA+ctrl+ľavá šípka |NVDA+ctrl+shift+ľavá šípka |Prejde na predchádzajúce dostupné nastavenie hlasového výstupu. Z prvého NVDA automaticky prejde na posledné nastavenie.|
 |Zvýšiť hodnotu nastavenia hlasového výstupu |NVDA+ctrl+šípka hore |NVDA+ctrl+shift+šípka hore |Zvýši hodnotu aktuálne zameraného nastavenia hlasového výstupu. Napríklad zrýchli tempo, vyberie nasledujúci hlas, zosilní hlasitosť|
-| Zvýšiť hodnotu nastavenia hlasového výstupu po väčších krokoch | `NVDA+ctrl+pageUp` | `NVDA+shift+ctrl+pageUp` | Zvyšuje hodnotu nastavenia, na ktorom sa nachádzate. Napríklad pri nastavení hlasu prejde o dvadsať hlasov dopredu, pri nastavení posuvníkov prejde o dvadsať percent vyššie. |
+|Zvýšiť hodnotu nastavenia hlasového výstupu po väčších krokoch | `NVDA+ctrl+pageUp` | `NVDA+shift+ctrl+pageUp` | Zvyšuje hodnotu nastavenia, na ktorom sa nachádzate. Napríklad pri nastavení hlasu prejde o dvadsať hlasov dopredu, pri nastavení posuvníkov prejde o dvadsať percent vyššie.|
 |Znížiť hodnotu nastavenia hlasu |NVDA+ctrl+šípka dolu |NVDA+ctrl+shift+šípka dolu |Zníži hodnotu aktuálne zameraného nastavenia hlasového výstupu. Napríklad spomalí tempo, vyberie predchádzajúci hlas, stíši hlasitosť.|
-| znížiť  hodnotu nastavenia hlasového výstupu po väčších krokoch | `NVDA+ctrl+pageDown` | `NVDA+shift+ctrl+pageDown` | Znižuje  hodnotu nastavenia, na ktorom sa nachádzate. Napríklad pri nastavení hlasu prejde o dvadsať hlasov späť, pri nastavení posuvníkov prejde o dvadsať percent nižšie. |
+|znížiť  hodnotu nastavenia hlasového výstupu po väčších krokoch | `NVDA+ctrl+pageDown` | `NVDA+shift+ctrl+pageDown` | Znižuje  hodnotu nastavenia, na ktorom sa nachádzate. Napríklad pri nastavení hlasu prejde o dvadsať hlasov späť, pri nastavení posuvníkov prejde o dvadsať percent nižšie.|
 
 <!-- KC:endInclude -->
 
@@ -2133,11 +2137,6 @@ V tomto prípade nebude brailový riadok sledovať systémový a textový kurzor
 
 ##### Smerové tlačidlá posúvajú systémový aj prezerací kurzor {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|Predvolené |Nikdy|
-|Možnosti |Predvolené (Nikdy), Nikdy, Len ak je zviazaný automaticky, Vždy|
-
 Toto nastavenie určuje, či sa systémový kurzor posúva pri použití smerových tlačidiel na brailovom riadku.
 Predvolene je toto nastavenie nastavené na nikdy, takže pri stláčaní smerových tlačidiel sa systémový kurzor neposúva.
 
@@ -2153,6 +2152,11 @@ Táto možnosť je dostupná len vtedy, ak je možnosť "[Brailový kurzor zviaz
 
 Ak chcete toto nastavenie meniť kedykoľvek, priraďte klávesové skratku v [dialógu klávesové skratky](#InputGestures).
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Never), Never, Only when tethered automatically, Always|
+|Default |Never|
+
 ##### Čítať po odsekoch {#BrailleSettingsReadByParagraph}
 
 Ak je to začiarknuté, text v brailly bude zobrazený po odsekoch namiesto predvoleného zobrazenia po riadkoch.
@@ -2161,30 +2165,18 @@ Znamená to, že nie je nutné posúvať riadok na konci každého riadku, aj ak
 Toto umožní plynulé čítanie väčšieho množstva textu.
 Predvolene je to odčiarknuté.
 
-##### zabrániť deleniu slov keď je to možné {#BrailleSettingsWordWrap}
+##### Paragraph start marker {#BrailleParagraphStartMarkers}
 
-Ak je začiarknuté, slovo, ktoré je dlhé a nezmestí sa na riadok, nebude rozdelené.
-Namiesto toho ostane na konci riadka voľné miesto.
-Celé slovo bude presunuté na nasledujúci riadok.
-toto sa zvykne označovať ako "zalamovanie textu".
-Ak je však slovo také dlhé, že sa samo o sebe nezmestí na riadok, bude aj v takomto prípade rozdelené.
+If "Read by paragraph" is checked, the selected start marker will be displayed to indicate the start of a paragraph.
+This can be especially helpful in applications used to read large pieces of text, like structured documents or books.
+In such documents, knowing where paragraphs start may be useful to understand the structure of the content, or to set bookmarks or annotations based on paragraph position.
 
-Ak túto možnosť odčiarknete, zobrazí sa na konci riadka kúsok slova, ktorý sa ešte na riadok vojde.
-Zvyšok slova bude až na ďalšom riadku.
+The options include using two spaces as a subtle paragraph break, and the paragraph symbol, pilcrow (¶), as a more obvious one.
 
-Začiarknutím tejto možnosti docielite plynulejšie čítanie, na druhej strane budete musieť riadok posúvať častejšie.
-
-##### Normalizovať znaky unicode {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|Možnosti |Predvolené (Vypnuté), Zapnuté, Vypnuté|
-|Predvolené |Vypnuté|
-
-Keď je táto možnosť zapnutá, vykoná sa normalizácia unicode na texte, ktorý je zobrazovaný na braillovskom displeji.
-To je výhodné, keď narazíte na znaky v Braillovom písme, ktoré nie sú známe v konkrétnej brailovej tabuľke a ktoré majú kompatibilnú alternatívu, ako napríklad tučné znaky alebo znaky s kurzívou bežne používané v príspevkoch na sociálnych sieťach.
-Ďalšie výhody normalizácie znakov v kóde unicode sú podrobnejšie vysvetlené [v časti o rovnakom nastavení reči](#SpeechUnicodeNormalization).
-
-Ak chcete normalizáciu unicode prepínať odkiaľkoľvek, prosím priraďte si vlastnú skratku cez [dialóg klávesové skratky](#InputGestures).
+|Options |No paragraph start marker, Double space (  ), Pilcrow (¶)|
+|Default |No paragraph start marker|
 
 ##### prezentácia kontextu {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ ak si chcete prečítať celú kontextovú informáciu (že ste v zozname a tent
 
 Ak chcete toto nastavenie meniť kedykoľvek z klávesnice, môžete si k nemu priradiť klávesovú skratku v dialógu [Klávesové skratky](#InputGestures).
 
-##### Prerušiť reč počas posúvania {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Predvolené |Zapnuté|
-|Možnosti |Predvolené (Zapnuté), Zapnuté, Vypnuté|
-
-Toto nastavenie určuje, či má byť reč prerušená, ak posuniete brailový riadok vpred alebo späť.
-Príkazy, ktoré prechádzajú na predchádzajúci alebo nasledujúci riadok, vždy prerušia tok reči.
-
-Súčasné čítanie textu a počúvanie iného textu môže byť rušivé.
-Z tohto dôvodu je predvolene zapnuté prerušenie reči v prípade posúvania riadka.
-
-Ak túto možnosť vypnete, je možné počúvať hlas a čítať text zároveň.
-
 ##### Ukázať výber {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Predvolené |Povolené|
-|Možnosti |Predvolené (Povolené), Povolené, Zakázané|
 
 Určuje, či bude výber vyznačený na brailovom riadku bodmi 7 a 8.
 Predvolene je toto zapnuté a výber sa ukazuje.
@@ -2241,6 +2213,91 @@ Ukazovanie výberu ale môže byť rušivé pri čítaní.
 Vypnutie tejto možnosti môže zlepšiť a zrýchliť čitateľnosť textu.
 
 Ak chcete nastavenie meniť odkiaľkoľvek, vytvorte klávesovú skratku v [dialógu klávesové skratky](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
+
+##### Formatting display {#BrailleFormattingDisplay}
+
+This setting determines how NVDA will display text formatting in braille.
+This option only has an effect if NVDA is set to [display font attributes in braille](#DocumentFormattingFontAttributes).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| Options | Default (Liblouis), Liblouis, Tags |
+| Default | Liblouis |
+
+| Option | Behaviour |
+|---|---|
+| Liblouis | Use native Braille formatting. Note that this option will only indicate bold, italic and underlined text, and only if the selected braille table supports indicating these attributes. |
+| [Tags](#BrailleFormattingDisplayTags) | Use tags that describe how and where text formatting changes. |
+
+###### Tags {#BrailleFormattingDisplayTags}
+
+When "Formatting display" is set to "Tags", a formatting tag is displayed in braille when a change in formatting is detected.
+These tags start with ⣋ and end with ⣙.
+A formatting tag will contain one or more symbols which describe the text formatting.
+The following symbols are defined:
+
+| Symbol | Meaning |
+|---|---|
+| ⠃ ("b") | Start bold |
+| ⡃ ("b" with dot 7) | End bold |
+| ⠊ ("i") | Start italic |
+| ⡊ ("i" with dot 7) | End italic |
+| ⠥ ("u") | Start underline |
+| ⡥ ("u" with dot 7) | End underline |
+| ⠎ ("s")| Start strikethrough |
+| ⡎ ("s" with dot 7) | End strikethrough |
+
+##### Speak character when routing cursor in text {#BrailleSpeakOnRouting}
+
+If this is enabled, NVDA will automatically speak the character at the cursor when routing to it with braille cursor routing keys.
+
+To toggle this option from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+##### Avoid splitting words when possible {#BrailleSettingsWordWrap}
+
+If this is enabled, a word which is too large to fit at the end of the braille display will not be split.
+Instead, there will be some blank space at the end of the display.
+When you scroll the display, you will be able to read the entire word.
+This is sometimes called "word wrap".
+Note that if the word is too large to fit on the display even by itself, the word must still be split.
+
+If this is disabled, as much of the word as possible will be displayed, but the rest will be cut off.
+When you scroll the display, you will then be able to read the rest of the word.
+
+Enabling this may allow for more fluent reading, but generally requires you to scroll the display more.
+
+##### Unicode normalization {#BrailleUnicodeNormalization}
+
+When this option is enabled, unicode normalization is performed on the text that is brailled on the braille display.
+This is beneficial when coming across characters in braille that are unknown in a particular braille table and which have a compatible alternative, like the bold and italic characters commonly used on social media.
+Other benefits of unicode normalization are explained in greater detail in the [section for the equivalent speech setting](#SpeechUnicodeNormalization).
+
+To toggle Unicode normalization from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Disabled), Enabled, Disabled|
+|Default |Disabled|
+
+##### Interrupt speech while scrolling {#BrailleSettingsInterruptSpeech}
+
+This setting determines if speech should be interrupted when the Braille display is scrolled backwards/forwards.
+Previous/next line commands always interrupt speech.
+
+On-going speech might be a distraction while reading Braille.
+For this reason the option is enabled by default, interrupting speech when scrolling braille.
+
+Disabling this option allows speech to be heard while simultaneously reading Braille.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
 
 #### Nastavenie brailového riadka {#SelectBrailleDisplay}
 
@@ -2349,9 +2406,9 @@ Predvolene je táto funkcia vypnutá.
 Režimi oddelenia zvukov je možné prepínať skratkou.
 <!-- KC:beginInclude -->
 
-| Názov | Klávesová skratka | popis |
+| Názov | Klávesová skratka | popis|
 |---|---|---|
-| Prepnúť režim oddelenia zvuku | `NVDA+alt+s` | Prepína medzi dostupnými režimami oddelenia zvuku. |
+|Prepnúť režim oddelenia zvuku | `NVDA+alt+s` | Prepína medzi dostupnými režimami oddelenia zvuku.|
 
 <!-- KC:endInclude -->
 
@@ -2513,6 +2570,16 @@ táto možnosť je dostupná len vtedy, ak si začiarknete oznamovanie pravopisn
 
 Táto možnosť určuje, či bude NVDA spracúvať vstupy z aplikácií, akými sú klávesnica na obrazovke, alebo program prevodu reči na text.
 predvolene je možnosť začiarknutá. Niektorí používatelia ju môžu chcieť vypnúť, aby nedochádzalo k nesprávnemu zápisu znakov vo vietnamčine, napríklad cez program UniKey.
+
+##### Multiple key press timeout {#MultiPressTimeout}
+
+Some NVDA keyboard gestures perform different actions based upon how many times the same key is pressed in rapid succession.
+An example of this is the "Report current character of navigator object" command.
+This command reports the character if pressed once, a phonetic description of the character if pressed twice, and the numeric value of the character if pressed three times.
+This option configures the timeout after which an additional press of the same key will start a new gesture, rather than being taken as a subsequent press of the first one.
+For the example command, a too short timeout will cause two presses to report the current character twice, rather than the phonetic description.
+The default timeout is 500 ms, i.e. half a second.
+Increasing this timeout may be especially useful for people using sticky keys, or who have a physical disability.
 
 #### Myš {#MouseSettings}
 
@@ -2841,7 +2908,7 @@ Takto môžete nastaviť:
 * písmo
   * Názov písma
   * Veľkosť písma
-  * Vlastnosti písma
+  * Font attributes [(Off, Speech, Braille, Speech and braille)](#DocumentFormattingFontAttributes)
   * indexy
   * Zvýraznenie
   * vyznačený text
@@ -2879,6 +2946,17 @@ Takto môžete nastaviť:
   * pri kliknutí
 
 Ak chcete tieto nastavenia meniť bez nutnosti otvárať dialóg s nastaveniami, môžete si nastaviť  klávesové príkazy   v dialógu [Klávesové skratky](#InputGestures).
+
+##### Font attributes {#DocumentFormattingFontAttributes}
+
+This option allows you to select how certain font attributes, such as bold, italics, underline and strikethrough are reported.
+The font attributes combo box has four options:
+
+* Off: NVDA will not report these font attributes.
+* Speech: NVDA will announce when these font attributes change.
+* Braille: NVDA will display these attributes in braille.
+Exactly how they are displayed can be configured in [NVDA's braille settings](#BrailleFormattingDisplay).
+* Speech and braille: NVDA will report font attributes using both of the above methods.
 
 ##### Oznamovať zmeny formátovania pri pohybe kurzorom {#DocumentFormattingDetectFormatAfterCursor}
 
@@ -3034,7 +3112,7 @@ Implementácia rozhrania UI automation v programe Microsoft Excel sa stále zlep
 | . {.hideHeaderRow} |.|
 |---|---|
 |Možnosti |Predvolené (Zapnuté), Vypnuté, Zapnuté|
-|Predvolené|  Zapnuté |
+|Predvolené|  Zapnuté|
 
 Ak je toto zapnuté, NVDA má rýchlu odozvu aj v prípade, že dostáva množstvo udalostí cez rozhranie UIA, napríklad v oknách konzolových aplikácií a terminálov.
 Aby sa prejavili zmeny, je potrebné NVDA po zmene tohto nastavenia reštartovať.
@@ -3164,7 +3242,7 @@ Ak zistíte, že NVDA nesprávne sleduje kurzor, napríklad je o znak pozadu ale
 
 Umožňuje zapnúť oznamovanie priehľadných farieb. Toto je užitočné pre vývojárov doplnkov, ktorí sprístupňujú aplikácie tretích strán.
 Niektoré GDI aplikácie označujú text farbou na pozadí, čo sa nvda pokúša identifikovať pomocou display modelu.
-V niektorých situáciách môže byť pozadie priehľadné a text sa môže nachádzať v inom prvku. 
+V niektorých situáciách môže byť pozadie priehľadné a text sa môže nachádzať v inom prvku.
 Tiež je možné stretnúť sa s tým, že text je zobrazený s priehľadnou farbou, ale vizuálne je farba presná.
 
 ##### Na výstup pre reč a zvuky používať rozhranie WASAPI {#WASAPI}
@@ -4189,7 +4267,7 @@ Prosím, prečítajte si dokumentáciu dodanú spolu so zariadením  na zistenie
 |ctrl+shift+šípka vľavo |body2+8+medzera+f1|
 |ctrl+ľavá šípka |bod2+medzera|
 |shift+alt+ľavá šípka |bod2+bod7+F1|
-|`alt+ľavá šípka` |`bod2+bod7+medzera` |
+|`alt+ľavá šípka` |`bod2+bod7+medzera`|
 |šípka vpravo |bod 6+medzera, leftSideRightArrow|
 |ctrl+shift+šípka vpravo |body 58+medzera+f1|
 |ctrl+pravá šípka |bod5+medzera|
@@ -4300,6 +4378,8 @@ Umiestnenie a rozloženie tlačidiel nájdete v príručke k vášmu zariadeniu.
 |end |medzera+LJ down|
 |ctrl+home |backspace+LJ up|
 |ctrl+end |backspace+LJ down|
+
+<!-- KC:endInclude -->
 
 ### Nové modely riadkov Papenmeier BRAILLEX {#Papenmeier}
 
@@ -4951,7 +5031,7 @@ Popis umiestnenia tlačidiel je možné nájsť v dokumentácii k riadku.
 
 ### Riadky podporujúce HID štandard {#HIDBraille}
 
-Toto je experimentálny ovládač pre riadky podporujúce nový HID štandard, na ktorom sa v roku 2018 dohodli Microsoft, Google, Apple a viaceré spoločnosti dodávajúce asistívne technológie vrátane NV Access. 
+Toto je experimentálny ovládač pre riadky podporujúce nový HID štandard, na ktorom sa v roku 2018 dohodli Microsoft, Google, Apple a viaceré spoločnosti dodávajúce asistívne technológie vrátane NV Access.
 Cieľom je, aby všetky budúce brailové riadky podporovali tento štandard čím sa odstráni nutnosť mať pre každý riadok samostatný ovládač.
 
 NVDA dokáže automaticky rozpoznať, že váš riadok podporuje tento spôsob komunikácie.

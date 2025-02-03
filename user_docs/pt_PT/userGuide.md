@@ -12,7 +12,7 @@ Benvindo ao NVDA!
 
 O NonVisual Desktop Access (NVDA) é um leitor de ecrã, livre e de código aberto, para o sistema operativo Microsoft Windows.
 As informações do programa são fornecidas através de voz sintética e/ou Braille e permitem, às pessoas com deficiência visual, em igualdade de custos com os restantes indivíduos, aceder ao computador, que está a executar o Windows.
-O NVDA é desenvolvido pela [NV Access](https://www.nvaccess.org/), com contribuições da comunidade. 
+O NVDA é desenvolvido pela [NV Access](https://www.nvaccess.org/), com contribuições da comunidade.
 
 ### Características Gerais {#GeneralFeatures}
 
@@ -39,18 +39,20 @@ As características principais são:
 
 ### Requisitos do sistema {#SystemRequirements}
 
-#### Requisitos recomendados do sistema {#MinimumSystemRequirements}
-* Sistemas operativos: Versões de 64-bit do Windows 10, Windows 11 e Window Server 2022
-  * As variantes AMD64 e ARM64 do Windows são suportadas.
-* Pelo menos 150 MB de espaço de armazenamento.;
-* Pelo menos 4 GB de RAM.
-
 #### Requisitos mínimos do sistema {#MinimumSystemRequirements}
+
 * Sistemas operativos: Todas as versões, 32-bit ou 64-bit, do Windows 8.1, Windows 10, Windows 11 e todas as versões do Windows Server a partir da 2012 R2.
   * As variantes AMD64 e ARM64 do Windows são suportadas;
-  * Note que as versões de 32-bit dos sistemas operativos já não têm suporte activo;
+  * Note that 32-bit operating systems are no longer under active support.
   * Note que o Windows 8.1 e Windows Server versões anteriores a 2022 já não têm suporte activo.
-* Pelo menos 150 MB de espaço de armazenamento.
+* at least 500 MB of storage space.
+
+#### Recommended System Requirements {#RecommendedSystemRequirements}
+
+* Operating Systems: 64-bit editions of Windows 10, Windows 11, and Windows Server 2022.
+  * both AMD64 and ARM64 variants of Windows are supported.
+* at least 500 MB of storage space.
+* at least 4 GB of RAM.
 
 ### Internacionalização {#Internationalization}
 
@@ -61,7 +63,7 @@ Para além do Inglês, o NVDA está traduzido em 54 idiomas, incluindo: Africân
 
 Além de fornecer as mensagens e interface em diversos idiomas, o NVDA também pode permitir ao utilizador a leitura em qualquer idioma, desde que tenha um sintetizador de voz, que o possa falar.
 
-O NVDA inclui o [eSpeak NG](https://github.com/espeak-ng/espeak-ng), um sintetizador de voz livre, de código aberto e multi-idioma. 
+O NVDA inclui o [eSpeak NG](https://github.com/espeak-ng/espeak-ng), um sintetizador de voz livre, de código aberto e multi-idioma.
 
 Na secção [Sintetizadores de Voz Suportados](#SupportedSpeechSynths) pode ser encontrada informação sobre os sintetizadores de voz suportados pelo NVDA.
 
@@ -138,17 +140,17 @@ Pressione `Seta abaixo` para ler o acordo de licença, se desejar.
 1. Pressione `tab` para passar à caixa de verificação "Aceito" e pressione a `barra de espaços` para a marcar.
 1. Pressione `tab` para se mover através das opções, depois pressione `enter` na opção desejada.
 
-As opções são: 
+As opções são:
 
-* "Instalar o NVDA neste computador": Esta é a opção que a maioria dos utilizadores quer para uma fácil utilização do NVDA. 
+* "Instalar o NVDA neste computador": Esta é a opção que a maioria dos utilizadores quer para uma fácil utilização do NVDA.
 * "Criar uma cópia portátil": Isto permite que o NVDA seja configurado em qualquer pasta sem instalação.
 Isto é útil em computadores sem direitos de administrador, ou num cartão de memória para levar consigo.
 Quando seleccionada, o instalador percorre os passos para criar uma cópia portátil.
-O essencial a indicar ao NVDA é a pasta onde colocar a cópia portátil. 
+O essencial a indicar ao NVDA é a pasta onde colocar a cópia portátil.
 * "Continuar em execução": Isto mantém a cópia temporária do NVDA em execução.
 Isto é útil para testar as funcionalidades duma nova versão antes de a instalar.
 Quando seleccionada, a janela do instalador fecha-se e a cópia temporária do NVDA continua a correr até sair ou até o PC ser desligado.
-Note que as alterações às configurações não são guardadas. 
+Note que as alterações às configurações não são guardadas.
 * "Cancelar": Isto fecha o NVDA sem executar qualquer acção.
 
 Se planeia utilizar sempre o NVDA no computador, deve optar por instalar o NVDA.
@@ -209,7 +211,7 @@ A tecla modificadora do NVDA também pode ser definida para a tecla `capsLock`.
 
 Para aprender e praticar a localização das teclas, prima `nvda+1` para ligar a ajuda de comandos.
 Enquanto estiver no modo ajuda de comandos, a realização de qualquer comando (como pressionar uma tecla ou realizar um gesto de toque) irá relatar a acção e descrever o que faz (se houver alguma função associada.
-Os comandos reais não serão executados enquanto estiver no modo de ajuda de comandos. 
+Os comandos reais não serão executados enquanto estiver no modo de ajuda de comandos.
 
 #### Iniciar e terminar o NVDA {#StartingAndStoppingNVDA}
 
@@ -269,7 +271,7 @@ Quando estiver numa definição de voz, esta definirá a primeira ou a última v
 
 A lista completa das teclas de Navegação com uma única letra está na secção [Modo de Navegação](#BrowseMode) do guia do utilizador.
 
-| Comando | Teclado | Descrição |
+| Comando | Teclado | Descrição|
 |---|---|---|
 |Título |`h` |Avançar para o próximo título|
 |Título nível 1, 2 até 6 |`1`, `2` até `6` |Avançar para o próximo título no nível especificado|
@@ -511,7 +513,7 @@ E a  terceira permite-lhe definir se este diálogo de boas vindas aparecerá sem
 
 #### Estatísticas de utilização do NVDA {#UsageStatsDialog}
 
-Ao iniciar o NVDA pela primeira vez, aparecerá uma janela a perguntar se permite o envio de dados para a NV Access, enquanto usa o NVDA, para ajudar a melhorar o NVDA no futuro. 
+Ao iniciar o NVDA pela primeira vez, aparecerá uma janela a perguntar se permite o envio de dados para a NV Access, enquanto usa o NVDA, para ajudar a melhorar o NVDA no futuro.
 Pode ler mais sobre os dados recolhidos pela NV Access em ["Permitir que o projeto do NVDA recolha estatísticas de utilização do NVDA"](#GeneralSettingsGatherUsageStats).
 Nota: Ao escolher "Sim" ou "não", a opção será guardada e a janela nunca mais aparecerá, a menos que reinstale o NVDA.
 Contudo, pode, manualmente, activar ou desactivar o processo de recolha de dados na janela de configurações do NVDA, secção Geral. Para isso, marque ou desmarque a caixa de verificação ["Permitir que o projeto do NVDA recolha estatísticas de utilização do NVDA"](#GeneralSettingsGatherUsageStats).
@@ -539,7 +541,7 @@ Se o seu computador portátil não pode fazer isto, ou não lhe permite alternar
 ### Gestos de Toque do NVDA {#NVDATouchGestures}
 
 Se está a executar o NVDA num dispositivo com ecrã táctil (touch screen), pode também controlar o NVDA, directamente por comandos no ecrã.
-Enquanto o NVDA estiver em execução, e se a Interacção táctil estiver activada, toda a entrada por toques será interceptada por ele. 
+Enquanto o NVDA estiver em execução, e se a Interacção táctil estiver activada, toda a entrada por toques será interceptada por ele.
 Portanto, as acções que podem ser realizadas normalmente sem o NVDA não irão funcionar.
 <!-- KC:beginInclude -->
 Para alternar o suporte à Interacção táctil pressione NVDA+control+alt+t.
@@ -567,7 +569,7 @@ Tocar com dois dedos, ao mesmo tempo, é um toque de dois dedos, e assim, sucess
 Se o mesmo toque é realizado, uma ou mais vezes, em rápida sucessão, o NVDA irá, por outro lado, reconhecer um gesto especial de toque múltiplo.
 Tocar duas vezes resultará num toque duplo.
 Tocar três vezes resultará num toque triplo, e assim, sucessivamente.
-É claro que estes gestos, de toque múltiplo, também reconhecem quantos dedos foram usados, o que permite ser possível ter gestos como um toque triplo de dois dedos, ou um toque quádruplo, etc. 
+É claro que estes gestos, de toque múltiplo, também reconhecem quantos dedos foram usados, o que permite ser possível ter gestos como um toque triplo de dois dedos, ou um toque quádruplo, etc.
 
 ##### Varrimentos {#Flicks}
 
@@ -581,7 +583,7 @@ Assim, gestos, como varrer para cima, com dois dedos, ou varrer, com quatro dedo
 #### Modos de Toque {#TouchModes}
 
 Como existem muito mais comandos do NVDA do que gestos de toque possíveis, o NVDA tem vários modos de toque, entre os quais pode alternar, tornando disponíveis certos subconjuntos de comandos.
-Os dois modos que existem, por agora, são o modo de texto e o modo de objectos. 
+Os dois modos que existem, por agora, são o modo de texto e o modo de objectos.
 Certos comandos do NVDA, listados neste documento, poderão ter definido o modo de toque a que pertencem, indicado entre parêntesis, após o gesto de toque.
 Por exemplo: varrer para cima (modo de texto) significa que o comando será realizado, se varrer para cima, mas apenas enquanto estiver no modo de texto.
 Se o comando não tiver um modo associado, funcionará em qualquer deles.
@@ -904,7 +906,7 @@ Note que, em algumas aplicações mais recentes, o NVDA poderá não anunciar al
 ### Navegar com o Rato {#NavigatingWithTheMouse}
 
 Quando move o ponteiro do rato, por padrão, o NVDA anuncia o texto directamente sob ele, enquanto  vai sendo movido pelo ecrã.
-Quando suportado, o NVDA irá ler o parágrafo que engloba o texto, porém existem alguns controlos que podem apenas ser lidos por linha. 
+Quando suportado, o NVDA irá ler o parágrafo que engloba o texto, porém existem alguns controlos que podem apenas ser lidos por linha.
 
 O NVDA também pode ser configurado para anunciar o tipo de controlo ou o [objecto](#Objects) onde está actualmente o rato, conforme se movimente (ex. lista, botão etc.).
 Tal poderá ser útil para utilizadores totalmente cegos, porque, por vezes, o texto não é suficientemente explícito.
@@ -926,10 +928,10 @@ Apesar de um rato físico, ou um touchpad, terem de ser utilizados para navegar 
 |Bloquear o botão esquerdo do rato |Shift+Barra do bloco numérico |NVDA+control+Sinal de Mais |nenhum |Bloqueia o botão esquerdo do rato, na posição de  pressionado. Pressione novamente para desbloqueá-lo. Para arrastar o rato, pressione esta tecla de atalho para bloquear o botão esquerdo do rato, na posição de  pressionado e mova o rato quer seja fisicamente ou utilizando qualquer comando de movimento do rato|
 |Clicar com o botão direito do rato |Asterisco do bloco numérico |NVDA+Acento agudo |Tocar e manter |Clica uma vez com o botão direito do rato|
 |Bloquear o botão direito do rato |Shift+Asterisco do bloco numérico |NVDA+control+Acento agudo |nenhum |Bloqueia o botão direito do rato, na posição de pressionado. Pressione novamente para desbloqueá-lo. Para arrastar o rato, pressione esta tecla de atalho para bloquear o botão direito do rato, na posição de pressionado e mova o rato quer seja fisicamente ou utilizando qualquer comando de movimento do rato|
-|Deslocar para cima na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para cima na posição atual do |
-|Deslocar para baixo na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para baixo na posição atual do |
-|Deslocar para a esquerda na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para a esquerda na posição atual do |
-|Deslocar para a direita na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para a direita na posição atual do |
+|Deslocar para cima na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para cima na posição atual do|
+|Deslocar para baixo na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para baixo na posição atual do|
+|Deslocar para a esquerda na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para a esquerda na posição atual do|
+|Deslocar para a direita na posição do rato |nenhum |nenhum |nenhum |Desloca a roda do rato para a direita na posição atual do|
 |Mover o rato para o objecto de navegação actual |NVDA+Barra do bloco numérico |NVDA+shift+m |nenhum |Move o rato para a localização do objecto de navegação actual e do cursor de revisão|
 |Navegar para o objecto sob o rato |NVDA+Asterisco do bloco numérico |NVDA+shift+n |nenhum |Define o objecto de navegação para o objecto localizado na posição do rato|
 
@@ -981,7 +983,7 @@ Adicionalmente, poderá forçar, manualmente, o modo de foco e o mesmo continuar
 
 ### Navegação por Caracter {#SingleLetterNavigation}
 
-Quando em modo de navegação, para maior rapidez, o NVDA também fornece comandos de apenas um caracter que permitem saltar para determinados campos no documento. 
+Quando em modo de navegação, para maior rapidez, o NVDA também fornece comandos de apenas um caracter que permitem saltar para determinados campos no documento.
 Note que nem todos os comandos são suportados em todos os tipos de documentos.
 
 <!-- KC:beginInclude -->
@@ -1108,7 +1110,7 @@ Use os seguintes comandos para pesquisar:
 
 ### Objectos Embutidos {#ImbeddedObjects}
 
-As páginas podem incluir conteúdo enriquecido, através de tecnologias, tais como Oracle JAVA, HTML5, bem como aplicações e diálogos. 
+As páginas podem incluir conteúdo enriquecido, através de tecnologias, tais como Oracle JAVA, HTML5, bem como aplicações e diálogos.
 Quando estas são encontradas no modo de navegação, o NVDA anuncia "objecto embutido", "aplicação" ou "diálogo", respectivamente.
 Pode mover-se rapidamente para esses objectos, pressionando O ou Shift+O, os comandos de navegação por caracter.
 Pode pressionar Enter sobre esses objectos, para interagir com os mesmos.
@@ -1162,7 +1164,7 @@ Isto pode ser feito seleccionando-as e escolhendo Opções de equaçãos -> Conv
 Assegure-se que a sua versão do MathType é a última antes de executar esta operação.
 O Microsoft Word também proporciona navegação linear baseada em símbolos  através da equação, e suporta a entrada de matemática usando várias sintaxes, incluindo LateX.
 Para mais detalhes, veja [Equações de formato linear usando UnicodeMath e LaTeX no Word](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8)
-* Microsoft Powerpoint e versões antigas do Microsoft Word: 
+* Microsoft Powerpoint e versões antigas do Microsoft Word:
 O NVDA pode ler e navegar equaçõess MathType no Microsoft Powerpoint e Microsoft word.
 O "MathType" tem que estar instalado para que isto funcione.
 A versão Trial é suficiente.
@@ -1435,7 +1437,7 @@ O NVDA pode usá-lo para reconhecer texto de imagens ou de aplicações inacess�
 Pode configurar o idioma a utilizar na secção [OCR do Windows](#Win10OcrSettings) do diálogo [Configurações do NVDA](#NVDASettings).
 Idiomas adicionais podem ser instalados, abrindo o menu "Iniciar", escolhendo "configurações", seleccionando o separador "Hora e Idioma", depois "Região e Idioma", e, por fim, "Adicionar um idioma".
 
-Quando necessitar de monitorizar constantemente conteúdo sempre a mudar, como quando está a ver um vídeo com legendas, pode activar a opção "Actualizar periodicamente os conteúdos reconhecidos". 
+Quando necessitar de monitorizar constantemente conteúdo sempre a mudar, como quando está a ver um vídeo com legendas, pode activar a opção "Actualizar periodicamente os conteúdos reconhecidos".
 Isto pode ser feito na secção [OCR do Windows](#Win10OcrSettings) nas [configurações do NVDA](#NVDASettings).
 
 O OCR do Windows pode ser, total ou parcialmente, incompatível com as [Ajudas visuais do NVDA](#Vision) ou outras ajudas visuais externas. É necessário desactivá-las antes de executar um reconhecimento por OCR.
@@ -1487,7 +1489,8 @@ A Lista de Elementos pode apresentar títulos, links, anotações (que inclui co
 #### Anúncio de Comentários {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-Para anunciar qualquer comentário na posição actual do cursor de inserção, pressione NVDA+alt+c.
+To report any comments at the current caret position, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 <!-- KC:endInclude -->
 Todos os comentários ao documento, em conjunto com outros registos de alterações, podem também ser listados na Lista de Elementos do NVDA, seleccionando Anotações como Tipo.
 
@@ -1519,13 +1522,13 @@ Os vários tipos de informações disponíveis na Lista de Elementos são:
 
 * Gráficos: Lista todos os gráficos existentes na folha activa.
 Seleccionando um gráfico e pressionando Enter ou o botão "Mover Para", foca o gráfico para navegação e leitura com as setas.
-* Comentários: Lista todas as células da folha actual que contenham comentários. 
-Para cada célula, é mostrado o endereço e o comentário. 
+* Comentários: Lista todas as células da folha actual que contenham comentários.
+Para cada célula, é mostrado o endereço e o comentário.
 Pressionando Enter ou o botão "Mover para" num dos comentários listados, move directamente para essa célula.
 * Fórmulas: Lista todas as células da folha actual que contenham fórmulas.
 Para cada célula, é mostrado o endereço e a fórmula.
 Pressionando Enter ou o botão "Mover para" numa das fórmulas listadas, move directamente para essa célula.
-* Folhas: Lista todas as folhas do livro aberto. 
+* Folhas: Lista todas as folhas do livro aberto.
 Pressionando f2, numa folha listada, permitir-lhe-á renomear a folha.
 Pressionando Enter ou o botão "Mover Para", numa das folhas listadas, muda-se para essa folha.
 * Campos de formulários: Lista todos os campos de formulários presentes na folha actual.
@@ -1535,7 +1538,8 @@ Seleccionando um campo de formulário e pressionando Enter ou o botão "Mover pa
 #### Anunciar Notas {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-Para anunciar qualquer nota numa célula, pressionar NVDA+alt+c
+To report any notes for the currently focused cell, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 No Microsoft Excel 2016, 365 ou mais recente, os comentários foram renomeados para notas.
 <!-- KC:endInclude -->
 Todas as notas para a folha actual, podem ser listadas na Lista de Elementos do NVDA, pressionando NVDA+F7.
@@ -1606,7 +1610,7 @@ Nota: Os comandos acima apenas funcionam com a cadeia de caracteres de formataç
 
 ### Poedit {#Poedit}
 
-O NVDA oferece um suporte melhorado para o Poedit 3.4 ou superior.
+NVDA offers enhanced support for Poedit 3.5 or newer.
 
 <!-- KC:beginInclude -->
 
@@ -1676,7 +1680,7 @@ Na tabela de livros adicionados:
 
 O NVDA fornece suporte para a consola do Windows usada pela Linha de comandos, PowerShell, e Subsistema Windows para Linux.
 A janela da consola tem um tamanho fixo, tipicamente mais pequena que o buffer que contém a saída.
-À medida que mais texto é escrito, o conteúdo é deslocado para cima e parte do texto antigo deixa de ser visível. 
+À medida que mais texto é escrito, o conteúdo é deslocado para cima e parte do texto antigo deixa de ser visível.
 Nas versões do Windows anteriores ao Windows 11 22H2, o  texto que deixou de ser visível na janela não é acessível com os comandos de revisão de texto do NVDA.
 Portanto, é necessário deslocar o buffer para conseguir ler o texto.
 Nas versões mais recentes da consola e no Terminal, é possível rever todo o texto sem a necessidade de deslocar a janela.
@@ -2133,11 +2137,6 @@ Assim, o Braille não seguirá o foco e o cursor do sistema,.
 
 ##### Mover o cursor de revisão do sistema ao encaminhar o cursor de revisão {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|Opções |Predefinição (Nunca), Nunca, Apenas quando ligado automaticamente, Sempre|
-|Predefinição |Nunca|
-
 Esta opção determina se o cursor do sistema também deve ser movido com o premir de um botão de encaminhamento.
 Esta opção está definida para Nunca por predefinição, o que significa que o encaminhamento nunca moverá o cursor de revisão.
 
@@ -2153,6 +2152,11 @@ Esta opção só é mostrada se "[Ligação Braille](#BrailleTether)" estiver co
 
 Para alternar entre as várias opções de mover o cursor do sistema ao encaminhar o cursor de revisão a partir de qualquer lugar, atribua um comando personalizado utilizando o [diálogo Definir comandos](#InputGestures).
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Never), Never, Only when tethered automatically, Always|
+|Default |Never|
+
 ##### Ler por Parágrafo {#BrailleSettingsReadByParagraph}
 
 Se activada, o Braille será mostrado por parágrafos em vez de linhas.
@@ -2161,30 +2165,18 @@ Isto significa que não terá que deslocar o conteúdo no final de cada linha, m
 Tal poderá permitir uma leitura mais fluente de grandes quantidades de texto.
 Está desactivada por padrão.
 
-##### Evitar dividir palavras quando possível {#BrailleSettingsWordWrap}
+##### Paragraph start marker {#BrailleParagraphStartMarkers}
 
-Se esta opção estiver activada, uma palavra, que não seja possível representar totalmente no fim da linha, não será cortada.
-Em vez disso, haverá espaços em branco no fim da linha.
-Quando se deslocar para a próxima linha, poderá ler a palavra inteira.
-Esta funcionalidade também pode ser chamada "translineação".
-Se a palavra, sozinha, for maior que a linha, terá de ser dividida.
+If "Read by paragraph" is checked, the selected start marker will be displayed to indicate the start of a paragraph.
+This can be especially helpful in applications used to read large pieces of text, like structured documents or books.
+In such documents, knowing where paragraphs start may be useful to understand the structure of the content, or to set bookmarks or annotations based on paragraph position.
 
-Se esta opção estiver desactivada, será mostrado o máximo possível da palavra e o resto será cortado.
-Quando se deslocar para a próxima linha, poderá ler o resto da palavra.
+The options include using two spaces as a subtle paragraph break, and the paragraph symbol, pilcrow (¶), as a more obvious one.
 
-Se activar esta opção, poderá ter uma leitura mais fluída, mas geralmente obriga a mais movimentações da linha.
-
-##### Normalização Unicode {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|Opções |Padrão (Desactivado), Activado, Desactivado|
-|Padrão |Desactivado|
-
-Quando esta opção está activada, a normalização unicode é executada no texto que é apresentado em Braille no dispositivo Braille.
-Isto é benéfico quando se depara com caracteres em Braille que são desconhecidos numa determinada tabela Braille e que têm uma alternativa compatível, como os caracteres a negrito e itálico normalmente utilizados nas redes sociais.
-Outros benefícios da normalização unicode são explicados em maior detalhe na [secção para a definição de voz equivalente](#SpeechUnicodeNormalization).
-
-Para alternar a normalização Unicode a partir de qualquer lugar, atribua um gesto personalizado utilizando a [caixa de diálogo Gestos de entrada](#InputGestures).
+|Options |No paragraph start marker, Double space (  ), Pilcrow (¶)|
+|Default |No paragraph start marker|
 
 ##### Apresentação do contexto do foco {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ Assim, se quiser ler a informação de contexto, ou seja, que o item pertence a 
 
 Se quiser alterara Apresentação do contexto do Foco, rapidamente e em qualquer altura, por favor defina um comando através da opção [Definir comandos](#InputGestures).
 
-##### Interromper a voz enquanto move o texto {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Opções |Padrão (Activado), Activado, Desactivado|
-|Predefinição |Activado|
-
-Esta configuração determina se a voz deve ser interrompida quando o texto do dispositivo Braille é movido para trás ou para a frente.
-Os comandos de mover para a linha anterior ou seguinte interrompem sempre a voz.
-
-A leitura em voz pode ser uma distracção enquanto lê em Braille.
-Por este motivo, a opção está  activada por padrão, interrompendo a fala ao percorrer braile.
-
-Desactivar esta opção permite que a voz seja ouvida enquanto, simultaneamente, se lê em Braille.
-
 ##### Indicador de selecção {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Opções |Padrão (Activado), Activado, Desactivado|
-|Predefinição |Activado|
 
 Esta configuração determina se o indicador de selecção (pontos 7 e 8) é mostrado na linha Braille.
 A opção está activada por padrão, pelo que o indicador de selecção é mostrado.
@@ -2241,6 +2213,91 @@ O indicador de selecção pode ser uma distração durante a leitura.
 A desactivação desta opção pode melhorar a legibilidade.
 
 Para alternar entre mostrar ou não o indicador de selecção, a partir de qualquer lugar, atribua um comando personalizado utilizando a opção [Definir comandos](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
+
+##### Formatting display {#BrailleFormattingDisplay}
+
+This setting determines how NVDA will display text formatting in braille.
+This option only has an effect if NVDA is set to [display font attributes in braille](#DocumentFormattingFontAttributes).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| Options | Default (Liblouis), Liblouis, Tags |
+| Default | Liblouis |
+
+| Option | Behaviour |
+|---|---|
+| Liblouis | Use native Braille formatting. Note that this option will only indicate bold, italic and underlined text, and only if the selected braille table supports indicating these attributes. |
+| [Tags](#BrailleFormattingDisplayTags) | Use tags that describe how and where text formatting changes. |
+
+###### Tags {#BrailleFormattingDisplayTags}
+
+When "Formatting display" is set to "Tags", a formatting tag is displayed in braille when a change in formatting is detected.
+These tags start with ⣋ and end with ⣙.
+A formatting tag will contain one or more symbols which describe the text formatting.
+The following symbols are defined:
+
+| Symbol | Meaning |
+|---|---|
+| ⠃ ("b") | Start bold |
+| ⡃ ("b" with dot 7) | End bold |
+| ⠊ ("i") | Start italic |
+| ⡊ ("i" with dot 7) | End italic |
+| ⠥ ("u") | Start underline |
+| ⡥ ("u" with dot 7) | End underline |
+| ⠎ ("s")| Start strikethrough |
+| ⡎ ("s" with dot 7) | End strikethrough |
+
+##### Speak character when routing cursor in text {#BrailleSpeakOnRouting}
+
+If this is enabled, NVDA will automatically speak the character at the cursor when routing to it with braille cursor routing keys.
+
+To toggle this option from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+##### Avoid splitting words when possible {#BrailleSettingsWordWrap}
+
+If this is enabled, a word which is too large to fit at the end of the braille display will not be split.
+Instead, there will be some blank space at the end of the display.
+When you scroll the display, you will be able to read the entire word.
+This is sometimes called "word wrap".
+Note that if the word is too large to fit on the display even by itself, the word must still be split.
+
+If this is disabled, as much of the word as possible will be displayed, but the rest will be cut off.
+When you scroll the display, you will then be able to read the rest of the word.
+
+Enabling this may allow for more fluent reading, but generally requires you to scroll the display more.
+
+##### Unicode normalization {#BrailleUnicodeNormalization}
+
+When this option is enabled, unicode normalization is performed on the text that is brailled on the braille display.
+This is beneficial when coming across characters in braille that are unknown in a particular braille table and which have a compatible alternative, like the bold and italic characters commonly used on social media.
+Other benefits of unicode normalization are explained in greater detail in the [section for the equivalent speech setting](#SpeechUnicodeNormalization).
+
+To toggle Unicode normalization from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Disabled), Enabled, Disabled|
+|Default |Disabled|
+
+##### Interrupt speech while scrolling {#BrailleSettingsInterruptSpeech}
+
+This setting determines if speech should be interrupted when the Braille display is scrolled backwards/forwards.
+Previous/next line commands always interrupt speech.
+
+On-going speech might be a distraction while reading Braille.
+For this reason the option is enabled by default, interrupting speech when scrolling braille.
+
+Disabling this option allows speech to be heard while simultaneously reading Braille.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
 
 #### Seleccionar dispositivo Braille {#SelectBrailleDisplay}
 
@@ -2316,8 +2373,8 @@ Comando: `NVDA+shift+d`
 
 Esta opção permite definir se o NVDA deve diminuir o volume das outras aplicações, enquanto o NVDA está a falar ou sempre que o NVDA está em execução.
 
-* Sem diminuição: O NVDA nunca diminuirá os sons de outros programas. 
-* Diminuir quando a emitir voz ou sons: O NVDA diminuirá os sons de outras aplicações quando estiver a falar ou a emitir sons. Isto pode não funcionar com todos os sintetizadores. 
+* Sem diminuição: O NVDA nunca diminuirá os sons de outros programas.
+* Diminuir quando a emitir voz ou sons: O NVDA diminuirá os sons de outras aplicações quando estiver a falar ou a emitir sons. Isto pode não funcionar com todos os sintetizadores.
 * Diminuir sempre: O NVDA diminuirá todos os sons de outros programas enquanto estiver em execução.
 
 Esta opção só está disponível se o NVDA estiver instalado.
@@ -2511,8 +2568,18 @@ Esta opção só está disponível se a opção Anunciar erros ortográficos est
 
 ##### Tratar teclas enviadas por outras aplicações {#KeyboardSettingsHandleKeys}
 
-Esta opção permite controlar se o pressionar de teclas gerado por outras aplicações, tais como teclados no ecrã e softwares de reconhecimento de voz, devem ser processados pelo NVDA. 
+Esta opção permite controlar se o pressionar de teclas gerado por outras aplicações, tais como teclados no ecrã e softwares de reconhecimento de voz, devem ser processados pelo NVDA.
 Esta opção está activada por padrão, embora alguns utilizadores possam preferir desactivá-la, como os utilizadores do "Unikey typing software", pois causará incorrecções.
+
+##### Multiple key press timeout {#MultiPressTimeout}
+
+Some NVDA keyboard gestures perform different actions based upon how many times the same key is pressed in rapid succession.
+An example of this is the "Report current character of navigator object" command.
+This command reports the character if pressed once, a phonetic description of the character if pressed twice, and the numeric value of the character if pressed three times.
+This option configures the timeout after which an additional press of the same key will start a new gesture, rather than being taken as a subsequent press of the first one.
+For the example command, a too short timeout will cause two presses to report the current character twice, rather than the phonetic description.
+The default timeout is 500 ms, i.e. half a second.
+Increasing this timeout may be especially useful for people using sticky keys, or who have a physical disability.
 
 #### Configurações do rato {#MouseSettings}
 
@@ -2578,7 +2645,7 @@ Actualmente, esta secção contém as seguintes opções:
 Esta caixa de verificação activa o Suporte à Interacção táctil do NVDA.
 Se activado, pode usar os seus dedos para navegar e interagir com os itens no ecrã de um dispositivo com ecrã táctil.
 se desactivado, o suporte à Interacção táctil não funcionará como se o NVDA não estivesse em execução.
-Esta configuração também pode ser alternada usando NVDA+control+alt+t. 
+Esta configuração também pode ser alternada usando NVDA+control+alt+t.
 
 ##### Modo de Digitação Virtual {#TouchTypingMode}
 
@@ -2723,7 +2790,7 @@ Esta opção poderá ser útil para métodos de entrada coreanos ou japoneses.
 
 Alguns métodos de entrada, como Chinês novo fonético e novo ChangJie, têm uma cadeia de caracteres em leitura (Conhecida por vezes como uma cadeia de caracteres em pré-composição).
 Pode escolher se o NVDA deverá anunciar, ou não, novos caracteres, ao serem introduzidos nesta cadeia de caracteres em leitura.
-Esta opção está activada, por padrão. 
+Esta opção está activada, por padrão.
 Note Que alguns métodos de entrada mais antigos, como Chinês ChangJie, poderão não usar a cadeia de caracteres em leitura para conter caracteres em pré-composição usando, por outro lado, a cadeia de composição directamente. Por favor, veja a próxima opção para configurar o anúncio da composição.
 
 ##### Anunciar Alterações à Cadeia de caracteres em Composição {#InputCompositionCompositionStringChanges}
@@ -2762,7 +2829,7 @@ Note que esta opção não se aplica ao Microsoft Word ou Microsoft Outlook, que
 Se a opção estiver activa, então os elementos ficarão como aparecem visualmente
 Por exemplo, uma linha que visualmente contenha vários links será apresentada, em voz e Braille, numa única linha com vários links.
 Mas se estiver inactiva, os vários elementos serão colocados um em cada linha.
-Isto  será mais fácil de compreender ao navegar linha a linha, e tornará mais fácil a interacção para muitos utilizadores. 
+Isto  será mais fácil de compreender ao navegar linha a linha, e tornará mais fácil a interacção para muitos utilizadores.
 
 ##### Activar o modo de navegação no carregamento de páginas {#BrowseModeSettingsEnableOnPageLoad}
 
@@ -2833,7 +2900,7 @@ Activar esta opção pode melhorar o suporte em algumas páginas, com o contra d
 Comando: `NVDA+control+d`
 
 A maioria das opções desta secção permitem configurar qual é o tipo de formatação que pretende ouvir automaticamente, conforme se move com o cursor pelos documentos.
-Por exemplo, se seleccionar a caixa de verificação para anunciar o nome do tipo de letra, de cada vez que anda pelo texto e chega a um tipo de letra diferente, o nome do novo tipo de letra será anunciado. 
+Por exemplo, se seleccionar a caixa de verificação para anunciar o nome do tipo de letra, de cada vez que anda pelo texto e chega a um tipo de letra diferente, o nome do novo tipo de letra será anunciado.
 
 As várias opções estão organizadas em grupos.
 Pode configurar o anúncio de:
@@ -2841,7 +2908,7 @@ Pode configurar o anúncio de:
 * Tipo de letra:
   * Nome do tipo de letra
   * Tamanho do tipo de letra
-  * Atributos do tipo de letra
+  * Font attributes [(Off, Speech, Braille, Speech and braille)](#DocumentFormattingFontAttributes)
   * Subscrito e sobreescrito
   * Ênfase
   * Realçado (Texto marcado)
@@ -2879,6 +2946,17 @@ Pode configurar o anúncio de:
   * Se clicável
 
 Para alternar estas configurações a qualquer momento, por favor crie uma associação de teclas, usando a opção [Definir comandos](#InputGestures).
+
+##### Font attributes {#DocumentFormattingFontAttributes}
+
+This option allows you to select how certain font attributes, such as bold, italics, underline and strikethrough are reported.
+The font attributes combo box has four options:
+
+* Off: NVDA will not report these font attributes.
+* Speech: NVDA will announce when these font attributes change.
+* Braille: NVDA will display these attributes in braille.
+Exactly how they are displayed can be configured in [NVDA's braille settings](#BrailleFormattingDisplay).
+* Speech and braille: NVDA will report font attributes using both of the above methods.
 
 ##### Anunciar Alterações de Formatação Depois do Cursor {#DocumentFormattingDetectFormatAfterCursor}
 
@@ -3080,7 +3158,7 @@ Algumas dessas funcionalidades podem estar incompletas.
 Para "Anunciar sumário de quaisquer detalhes da nota no ponto de inserção", pressione NVDA+d.
 <!-- KC:endInclude -->
 
-Existem as seguintes opções: 
+Existem as seguintes opções:
 
 * "Anunciar 'tem detalhes' para anotações estruturadas": permite o anúncio se o controlo tiver mais detalhes.
 * "Anunciar sempre aria-description":
@@ -3158,7 +3236,7 @@ Esta funcionalidade é activada por padrão a partir do NVDA 2021.1.
 ##### Tempo limite dos movimentos do cursor (em ms) {#AdvancedSettingsCaretMoveTimeout}
 
 Esta opção permite configurar quantos milissegundos o NVDA irá aguardar até que o cursor (ponto de inserção) se mova nos controlos de texto editáveis.
-Se o NVDA parecer estar a seguir incorrectamente o cursor de inserção, por exemplo parecer sempre um caractere atrasado ou repetir linhas, pode tentar aumentar este valor. 
+Se o NVDA parecer estar a seguir incorrectamente o cursor de inserção, por exemplo parecer sempre um caractere atrasado ou repetir linhas, pode tentar aumentar este valor.
 
 ##### Anunciar transparência para cores {#ReportTransparentColors}
 
@@ -3220,7 +3298,7 @@ Os diálogos contém também os botões "Adicionar", "Editar", "Remover" e "Remo
 
 Para adicionar uma nova regra ao dicionário, pressione o botão "Adicionar", preencha os campos que aparecem na caixa de diálogo e pressione "OK".
 Verá então a sua nova regra na lista de regras.
-Porém, Para se assegurar que a sua regra é guardada, verifique que clica no botão "OK", para sair completamente do diálogo do dicionário, quando acabar de adicionar/editar regras. 
+Porém, Para se assegurar que a sua regra é guardada, verifique que clica no botão "OK", para sair completamente do diálogo do dicionário, quando acabar de adicionar/editar regras.
 
 As regras para os dicionários do NVDA permitem-lhe alterar uma sequência de caracteres por outra.
 Um exemplo simples passaria por ter o NVDA a anunciar a palavra "sapo", cada vez que tivesse de dizer a palavra "pássaro".
@@ -4003,20 +4081,20 @@ Por favor, consulte a documentação do seu dispositivo Braille para obter a des
 
 | Nome |Tecla de Atalho|
 |---|---|
-|Deslocar a linha braille para trás |`d2` |
-|Deslocar a linha braille para a frente |`d5` |
-|Mover a linha braille para a linha anterior |`d1` |
-|Mover a linha braille para a linha seguinte |`d3` |
-|Encaminhar |`routing` |
-|tecla `shift+tab` |`espaço+ponto 1+ponto 3` |
-|tecla `tab` |`espaço+ponto 4+ponto 6` |
+|Deslocar a linha braille para trás |`d2`|
+|Deslocar a linha braille para a frente |`d5`|
+|Mover a linha braille para a linha anterior |`d1`|
+|Mover a linha braille para a linha seguinte |`d3`|
+|Encaminhar |`routing`|
+|tecla `shift+tab` |`espaço+ponto 1+ponto 3`|
+|tecla `tab` |`espaço+ponto 4+ponto 6`|
 |tecla `alt` |`espaço+ponto 1+ponto 3+ponto 4` (`espaço+m`)|
 |tecla `escape` |`espaço+ponto 1+ponto 5` (`espaço+e`)|
-|tecla `windows` |`espaço+ponto 3+ponto 4` |
+|tecla `windows` |`espaço+ponto 3+ponto 4`|
 |teclas `alt+tab` |`espaço+ponto 2+ponto 3+ponto 4+ponto 5` (`espaço+t`)|
 |Menu NVDA |`espaço+ponto 1+ponto 3+ponto 4+ponto 5` (`espaço+n`)|
 |Teclas `Windows+d` (minimizar todos os aplicativos) |`espaço+ponto 1+ponto 4+ponto 5` (`espaço+d`)|
-|Leitura contínua |`espaço+ponto 1+ponto 2+ponto 3+ponto 4+ponto 5+ponto 6` |
+|Leitura contínua |`espaço+ponto 1+ponto 2+ponto 3+ponto 4+ponto 5+ponto 6`|
 
 Para dispositivos braille que tenham um joistick:
 
@@ -4300,6 +4378,8 @@ Por favor, consulte a documentação destes dispositivos Braille para obter a de
 |Tecla end |space+LJ down|
 |Teclas control+home |backspace+LJ up|
 |Teclas control+end |backspace+LJ down|
+
+<!-- KC:endInclude -->
 
 ### Papenmeier BRAILLEX (Modelos recentes) {#Papenmeier}
 
@@ -4874,7 +4954,7 @@ Por favor, consulte na documentação do BRLTTY as [tabelas de associação de t
 |Alternar ajuda de comandos |`learn` (Activar/desactivar a ajuda de comandos)|
 |Abrir menu NVDA |`prefmenu` (Abrir o menu do NVDA)|
 |Reverter para as últimas configurações |`prefload` (restaura as configurações guardadas)|
-|Guardar configurações |`prefsave` (Guarda as configurações) |
+|Guardar configurações |`prefsave` (Guarda as configurações)|
 |Anunciar hora e data |`time` (Mostrar data e hora actual)|
 |ler a linha do cursor de revisão |`say_line` (Ler linha actual do cursor de revisão)|
 |Ler tudo com cursor de revisão |`say_below` (Ler da posição actual até ao fim com cursor de revisão)|
@@ -4925,7 +5005,7 @@ Por favor, consulte a documentação destas linhas Braille para obter a descriç
 |Anunciar localização do cursor de revisão |`f8`|
 |Mostra as configurações em braile |`f1+home1`, `f9+home2`|
 |Lê a barra de estado e move o objeto de navegação para ela |`f1+end1`, `f9+end2`|
-|Alternar entre as formas do cursor Braile |`f1+eCursor1`, `f9+eCursor2` |
+|Alternar entre as formas do cursor Braile |`f1+eCursor1`, `f9+eCursor2`|
 |Alternar o cursor Braille |`f1+cursor1`, `f9+cursor2`|
 |Alternar modo Mostrar mensagens Braille |`f1+f2`, `f9+f10`|
 |Alternar o estado do Braille mostrar selecção |`f1+f5`, `f9+f14`|
@@ -4951,7 +5031,7 @@ Por favor, consulte a documentação destas linhas Braille para obter a descriç
 
 ### Dispositivos Braille com protocolo HID {#HIDBraille}
 
-Este é um driver experimental para o novo protocolo Braille HID, aprovado em 2018 por Microsoft, Google, Apple e várias entidades de tecnologia assistiva, incluindo a NV Access. 
+Este é um driver experimental para o novo protocolo Braille HID, aprovado em 2018 por Microsoft, Google, Apple e várias entidades de tecnologia assistiva, incluindo a NV Access.
 Espera-se que todos os dispositivos Braille futuros, desenvolvidos por qualquer fabricante utilize este protocolo, o que dispensará drivers específicos de cada fabricante.
 
 A detecção automática de dispositivos Braille do NVDA reconhecerá qualquer dispositivo que utilize este protocolo.

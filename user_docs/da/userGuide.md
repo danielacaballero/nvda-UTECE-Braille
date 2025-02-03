@@ -39,18 +39,20 @@ Af væsentlige funktioner kan nævnes:
 
 ### Systemkrav {#SystemRequirements}
 
-#### Anbefalede Systemkrav {#MinimumSystemRequirements}
-* Operativsystemer: 64-bit udgaver af Windows 10, Windows 11, og Windows Server 2022
-  * både AMD64 og ARM64 varianter af Windows understøttes.
-* mindst 150 MB lagerplads.
-* mindst 4 GB RAM.
-
 #### Minimum Systemkrav {#MinimumSystemRequirements}
+
 * Operativsystemer: alle 32-bit og 64-bit udgaver af Windows 8.1, Windows 10, Windows 11, og alle Server Operativsystemer fra og med Windows Server 2012 R2.
   * både AMD64 og ARM64 varianter af Windows understøttes.
-  * Bemærk, at 32-bit operativsystemer ikke længere er under aktiv support.
+  * Note that 32-bit operating systems are no longer under active support.
   * Bemærk, at Windows 8.1 og Windows Server versioner ældre end 2022 ikke længere er under aktiv support.
-* mindst 150 MB lagerplads.
+* at least 500 MB of storage space.
+
+#### Recommended System Requirements {#RecommendedSystemRequirements}
+
+* Operating Systems: 64-bit editions of Windows 10, Windows 11, and Windows Server 2022.
+  * both AMD64 and ARM64 variants of Windows are supported.
+* at least 500 MB of storage space.
+* at least 4 GB of RAM.
 
 ### Internationalisering {#Internationalization}
 
@@ -597,7 +599,7 @@ Når fokus befinder sig på et editfelt, kan du dobbelttrykke ikonet for berøri
 For tablets som Microsoft Surface Pro vil tastaturet altid være tilgængeligt, når disse tablets ikke er forbundet til en dock.
 For at afvise berøringstastaturet, kan du dobbelttrykke ikonet for berøringstastaturet igen eller bevæge dig væk fra editfeltet.
 
-Når berøringstastaturet vises på skærmen, kan du flytte en finger henover tasterne på tastaturet. Tastaturet befinder sig typisk i bunden af skærmen. Bevæg dig dernæst mellem tasterne med en finger. 
+Når berøringstastaturet vises på skærmen, kan du flytte en finger henover tasterne på tastaturet. Tastaturet befinder sig typisk i bunden af skærmen. Bevæg dig dernæst mellem tasterne med en finger.
 Når du finder den ønskede tast, skal du dobbelttrykke med en finger eller løfte din finger, afhængigt af dine indstillinger i [indstillingskategorien  Berøringsinteraktion](#TouchInteraction).
 
 ### Tastaturhjælp {#InputHelpMode}
@@ -618,7 +620,7 @@ For at komme til NVDA-menuen fra et hvilket som helst sted i Windows, mens NVDA 
 * Tryk på tasterne `NVDA+n` på tastaturet.
 * Udfør et 2-fingers dobbelttryk på touchskærmen.
 * Få adgang til systembakken ved at trykke på `Windows+b`, `pil ned` til NVDA-ikonet og trykke på `enter`.
-* Alternativt kan du få adgang til systembakken ved at trykke på `Windows+b`, `pil ned` til NVDA-ikonet og åbne genvejsmenuen ved at trykke på `applications`-tasten, som er placeret ved siden af højre kontroltast på de fleste tastaturer. 
+* Alternativt kan du få adgang til systembakken ved at trykke på `Windows+b`, `pil ned` til NVDA-ikonet og åbne genvejsmenuen ved at trykke på `applications`-tasten, som er placeret ved siden af højre kontroltast på de fleste tastaturer.
 På et tastatur uden en `applications`-tast skal du i stedet trykke på `shift+f10`.
 * Højreklik på NVDA-ikonet i Windows-systembakken.
 
@@ -1487,7 +1489,8 @@ Elementlisten kan vise overskrifter, links og annotationer, som omfatter komment
 #### Annoncering af kommentarer {#WordReportingComments}
 
 <!-- KC:beginInclude -->
-For at få oplæst en kommentar ved markørens position skal du trykke NVDA+alt+c.
+To report any comments at the current caret position, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 <!-- KC:endInclude -->
 Alle kommentarer i dokumentet vil, sammen med andre sporede ændringer, desuden blive vist i NVDAs elementliste, når du vælger annotationer som type.
 
@@ -1535,7 +1538,8 @@ Ved at vælge et formularfelt og derefter trykke på "Flyt til" knappen eller en
 #### Annoncering af noter {#ExcelReportingComments}
 
 <!-- KC:beginInclude -->
-For at få oplæst en note for den celle, som er i fokus, skal du trykke NVDA+alt+c.
+To report any notes for the currently focused cell, press `NVDA+alt+c`.
+Pressing twice shows the information in a browsable message.
 I Microsoft 2016, 365 og nyere er "Kommentarer" omdøbt til "Noter".
 <!-- KC:endInclude -->
 Du kan også få vist alle noter i projektarket i elementlisten ved at trykke NVDA+F7.
@@ -1606,7 +1610,7 @@ Bemærk: Ovenstående genveje virker kun, når statuslinjen i Foobar er formater
 
 ### Poedit {#Poedit}
 
-NVDA har følgende kommandoer til brug af Poedit 3.4 eller nyere.
+NVDA offers enhanced support for Poedit 3.5 or newer.
 
 <!-- KC:beginInclude -->
 
@@ -1936,7 +1940,7 @@ Bemærk, at denne indstilling kun er tilgængelig, når "[Unicode normalisering]
 
 ##### Benyt Unicode Consortium data (herunder emoji) under behandling af tegn og symboler {#SpeechSettingsCLDR}
 
-Når denne check box er valgt, vil NVDA benytte yderligere udtaleordbøger til udtale af symboler og tegn. 
+Når denne check box er valgt, vil NVDA benytte yderligere udtaleordbøger til udtale af symboler og tegn.
 Disse ordbøger indeholder symboler (særligt emoji) der er angivet af [Unicode Consortium](https://www.unicode.org/consortium/) som en del af deres [Common Locale Data Repository](http://cldr.unicode.org/).
 Hvis du ønsker, at NVDA skal udtale beskrivelser af emoji ved brug af denne data, skal indstillingen være slået til.
 Hvis du derimod bruger en talesyntese, der har denne funktionalitet indbygget, vil det evt. være nødvendigt at slå denne funktion fra.
@@ -2133,11 +2137,6 @@ Med denne indstilling ignorerer punkt systemfokus og systemmarkøren.
 
 ##### Flyt systemmarkør, når læsemarkøren flyttes med markørknapperne {#BrailleSettingsReviewRoutingMovesSystemCaret}
 
-| . {.hideHeaderRow} |.|
-|---|---|
-|Muligheder |Standard (aldrig), Aldrig, Kun når tøjring er indstillet til automatisk, Altid|
-|Standard |Aldrig|
-
 Denne indstilling afgør, om systemmarkøren også skal flyttes med markørknapperne.
 Denne indstilling er sat til Aldrig som standard, hvilket betyder, at markørknapperne aldrig vil flytte systemmarkøren, når du flytter gennemsynsmarkøren.
 
@@ -2153,6 +2152,11 @@ Denne mulighed vises kun, hvis "[punkt følger](#BrailleTether)" er sat til "Aut
 
 For at ændre denne indstilling fra hvor som helst, kan du tildele et tastetryk fra [dialogen "Håndter kommandoer..."](#InputGestures)
 
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Never), Never, Only when tethered automatically, Always|
+|Default |Never|
+
 ##### Læs i afsnit {#BrailleSettingsReadByParagraph}
 
 Hvis du slår denne indstilling til, vil du få vist punkt et afsnit ad gangen i stedet for en linje ad gangen.
@@ -2161,30 +2165,18 @@ Det betyder, at du ikke behøver at rulle med displayet for enden af hver linje,
 Det kan give mulighed for en mere flydende læseoplevelse, når der er tale om store mængder tekst.
 Som standard er dette slået fra.
 
-##### Undgå at opdele ord hvis muligt {#BrailleSettingsWordWrap}
+##### Paragraph start marker {#BrailleParagraphStartMarkers}
 
-Hvis denne indstilling er slået til, vil et ord, som er for langt til at være for enden af en punktlinje, ikke blive opdelt.
-I stedet vil der optræde nogle blanke tegn for enden af displayet.
-Når du ruller displayet videre, kan du læse hele ordet.
-Dette kaldes nogle gange for "ombrydning af ord".
-Bemærk, at hvis ordet er for langt til at være på displayet overhovedet, bliver det stadig opdelt.
+If "Read by paragraph" is checked, the selected start marker will be displayed to indicate the start of a paragraph.
+This can be especially helpful in applications used to read large pieces of text, like structured documents or books.
+In such documents, knowing where paragraphs start may be useful to understand the structure of the content, or to set bookmarks or annotations based on paragraph position.
 
-Hvis indstillingen er slået fra, vil så meget af ordet som muligt blive vist, men resten vil blive skåret væk.
-Når du så ruller displayet videre, kan du læse resten af ordet.
+The options include using two spaces as a subtle paragraph break, and the paragraph symbol, pilcrow (¶), as a more obvious one.
 
-Hvis du slår denne indstilling til, kan det give en mere flydende læsning, men generelt medfører det, at du skal skifte linje på displayet hyppigere.
-
-##### Unicode-normalisering {#BrailleUnicodeNormalization}
 | . {.hideHeaderRow} |.|
 |---|---|
-|Muligheder |Standard (Deaktiveret), Aktiveret, Deaktiveret|
-|Standard |Deaktiveret|
-
-Når denne indstilling er aktiveret, udføres unicode-normalisering på den tekst, der vises på dit punktdisplay.
-Dette er gavnligt, når man støder på tegn i punktskrift, der er ukendte i en bestemt punktskrifttabel og som har et kompatibelt alternativ, såsom de fede og kursiverede tegn, der ofte bruges på sociale medier.
-Andre fordele ved unicode-normalisering er forklaret mere detaljeret i [afsnittet for den tilsvarende taleindstilling](#SpeechUnicodeNormalization).
-
-For at aktivere eller deaktivere unicode-normalisering fra ethvert sted, bedes du tildele en brugerdefineret kommando ved hjælp af [Input Gestures dialogen](#InputGestures).
+|Options |No paragraph start marker, Double space (  ), Pilcrow (¶)|
+|Default |No paragraph start marker|
 
 ##### fokuskontekstpræsentation {#BrailleSettingsFocusContextPresentation}
 
@@ -2213,27 +2205,7 @@ For at du skal kunne læse konteksten (dvs. at du er på en liste, og at listen 
 
 Hvis du vil skifte fokuskontekstpræsentation fra hvor som helst, skal du tildele en brugerdefineret bevægelse eller et tastetryk ved hjælp af [dialogboksen Håndter Kommandoer](#InputGestures).
 
-##### Afbryd talen, mens du panorerer {#BrailleSettingsInterruptSpeech}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Muligheder |Aktiveret, deaktiveret|
-|Standard |Aktiveret|
-
-Denne indstilling bestemmer, om talen skal afbrydes, når Braille-displayet rulles tilbage/fremad.
-Forrige/næste linje kommandoer afbryder altid tale.
-
-Igangværende tale kan være en distraktion, mens du læser punktskrift.
-Af denne grund er indstillingen aktiveret som standard, hvilket afbryder tale, når du panorerer dit display.
-
-Deaktivering af denne indstilling gør det muligt at høre tale, mens du læser punktskrift.
-
 ##### Vis valgmarkør {#BrailleSettingsShowSelection}
-
-| . {.hideHeaderRow} |.|
-|---|---|
-|Muligheder |Standard (Aktiveret), Aktiveret, deaktiveret|
-|Standard |Aktiveret|
 
 Denne indstilling bestemmer, om valgmarkøren (punkter 7 og 8) skal vises på punktdisplayet.
 Indstillingen er som standard aktiveret, så valgmarkøren vises.
@@ -2241,6 +2213,91 @@ Valgmarkøren kan være distraherende under læsning.
 Hvis du deaktiverer denne indstilling, kan læsbarheden forbedres.
 
 For at ændre denne indstilling fra et hvilket som helst sted, skal du tildele et brugerdefineret tastetryk ved hjælp af [dialogen Håndter kommandoer](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
+
+##### Formatting display {#BrailleFormattingDisplay}
+
+This setting determines how NVDA will display text formatting in braille.
+This option only has an effect if NVDA is set to [display font attributes in braille](#DocumentFormattingFontAttributes).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+| Options | Default (Liblouis), Liblouis, Tags |
+| Default | Liblouis |
+
+| Option | Behaviour |
+|---|---|
+| Liblouis | Use native Braille formatting. Note that this option will only indicate bold, italic and underlined text, and only if the selected braille table supports indicating these attributes. |
+| [Tags](#BrailleFormattingDisplayTags) | Use tags that describe how and where text formatting changes. |
+
+###### Tags {#BrailleFormattingDisplayTags}
+
+When "Formatting display" is set to "Tags", a formatting tag is displayed in braille when a change in formatting is detected.
+These tags start with ⣋ and end with ⣙.
+A formatting tag will contain one or more symbols which describe the text formatting.
+The following symbols are defined:
+
+| Symbol | Meaning |
+|---|---|
+| ⠃ ("b") | Start bold |
+| ⡃ ("b" with dot 7) | End bold |
+| ⠊ ("i") | Start italic |
+| ⡊ ("i" with dot 7) | End italic |
+| ⠥ ("u") | Start underline |
+| ⡥ ("u" with dot 7) | End underline |
+| ⠎ ("s")| Start strikethrough |
+| ⡎ ("s" with dot 7) | End strikethrough |
+
+##### Speak character when routing cursor in text {#BrailleSpeakOnRouting}
+
+If this is enabled, NVDA will automatically speak the character at the cursor when routing to it with braille cursor routing keys.
+
+To toggle this option from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+##### Avoid splitting words when possible {#BrailleSettingsWordWrap}
+
+If this is enabled, a word which is too large to fit at the end of the braille display will not be split.
+Instead, there will be some blank space at the end of the display.
+When you scroll the display, you will be able to read the entire word.
+This is sometimes called "word wrap".
+Note that if the word is too large to fit on the display even by itself, the word must still be split.
+
+If this is disabled, as much of the word as possible will be displayed, but the rest will be cut off.
+When you scroll the display, you will then be able to read the rest of the word.
+
+Enabling this may allow for more fluent reading, but generally requires you to scroll the display more.
+
+##### Unicode normalization {#BrailleUnicodeNormalization}
+
+When this option is enabled, unicode normalization is performed on the text that is brailled on the braille display.
+This is beneficial when coming across characters in braille that are unknown in a particular braille table and which have a compatible alternative, like the bold and italic characters commonly used on social media.
+Other benefits of unicode normalization are explained in greater detail in the [section for the equivalent speech setting](#SpeechUnicodeNormalization).
+
+To toggle Unicode normalization from anywhere, please assign a custom gesture using the [Input Gestures dialog](#InputGestures).
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Disabled), Enabled, Disabled|
+|Default |Disabled|
+
+##### Interrupt speech while scrolling {#BrailleSettingsInterruptSpeech}
+
+This setting determines if speech should be interrupted when the Braille display is scrolled backwards/forwards.
+Previous/next line commands always interrupt speech.
+
+On-going speech might be a distraction while reading Braille.
+For this reason the option is enabled by default, interrupting speech when scrolling braille.
+
+Disabling this option allows speech to be heard while simultaneously reading Braille.
+
+| . {.hideHeaderRow} |.|
+|---|---|
+|Options |Default (Enabled), Enabled, Disabled|
+|Default |Enabled|
 
 #### Vælg punktdisplay {#SelectBrailleDisplay}
 
@@ -2316,7 +2373,7 @@ Tast: `NVDA+shift+D`
 
 Med denne  indstilling kan du vælge, om NVDA skal sænke lydstyrken af andre applikationer, når NVDA taler, eller om NVDA konstant skal sænke lydstyrken imens NVDA kører.
 
-* Ingen lyddæmpning: NVDA vil aldrig dæmpe lydstyrken af andre lydkilder. 
+* Ingen lyddæmpning: NVDA vil aldrig dæmpe lydstyrken af andre lydkilder.
 * Dæmp, når der udsendes tale og lyde: NVDA vil kun dæmpe lyden, hvis NVDA afspiller lyde eller taler. Dette virker muligvis ikke for alle talesynteser.
 * Altid dæmp: NVDA vil sænke lyden fra alle andre lydkilder, så længe NVDA kører.
 
@@ -2513,6 +2570,16 @@ Denne indstilling er kun tilgængelig hvis "Annoncér stavefejl" indstillingen e
 
 Med denne indstilling kan du vælge, om NVDA skal behandle tastetryk, der bliver genereret af andre programmer som fx. skærmtastaturer eller talegenkendelsesprogrammer.
 Denne indstilling er slået til som standard, men nogle brugere vil måske foretrække at slå den fra, fx. hvis man skriver vietnamesisk med UniKey. I dette tilfælde kan det forårsage indtastning af forkerte bogstaver.
+
+##### Multiple key press timeout {#MultiPressTimeout}
+
+Some NVDA keyboard gestures perform different actions based upon how many times the same key is pressed in rapid succession.
+An example of this is the "Report current character of navigator object" command.
+This command reports the character if pressed once, a phonetic description of the character if pressed twice, and the numeric value of the character if pressed three times.
+This option configures the timeout after which an additional press of the same key will start a new gesture, rather than being taken as a subsequent press of the first one.
+For the example command, a too short timeout will cause two presses to report the current character twice, rather than the phonetic description.
+The default timeout is 500 ms, i.e. half a second.
+Increasing this timeout may be especially useful for people using sticky keys, or who have a physical disability.
 
 #### Mus {#MouseSettings}
 
@@ -2839,13 +2906,13 @@ Indstillingerne for dokumentformatering er organiseret i grupper.
 Du kan tilpasse annoncering af:
 
 * Skrifttype
-  * Navn på skrifttype 
-  * Størrelse på skrifttype 
-  * Skrifttypeattributter
+  * Navn på skrifttype
+  * Størrelse på skrifttype
+  * Font attributes [(Off, Speech, Braille, Speech and braille)](#DocumentFormattingFontAttributes)
   * hævet og sænket skrift
   * fremhævelse
   * Fremhævet (markeret) tekst
-  * Typografi 
+  * Typografi
   * Farve
 * Dokumentinformation
   * Kommentarer
@@ -2880,13 +2947,24 @@ Du kan tilpasse annoncering af:
 
 For at slå disse indstillinger til eller fra, uanset hvor du befinder dig, kan du knytte en bevægelse eller et tastetryk til indstillingen med [dialogen Håndter kommandoer](#InputGestures).
 
+##### Font attributes {#DocumentFormattingFontAttributes}
+
+This option allows you to select how certain font attributes, such as bold, italics, underline and strikethrough are reported.
+The font attributes combo box has four options:
+
+* Off: NVDA will not report these font attributes.
+* Speech: NVDA will announce when these font attributes change.
+* Braille: NVDA will display these attributes in braille.
+Exactly how they are displayed can be configured in [NVDA's braille settings](#BrailleFormattingDisplay).
+* Speech and braille: NVDA will report font attributes using both of the above methods.
+
 ##### Rapportér ændringer i formatering efter markøren {#DocumentFormattingDetectFormatAfterCursor}
 
-Hvis denne indstilling er slået til, betyder det at NVDA forsøger at spore alle ændringer i formateringen på en linje, når den rapportérers, selvom dette måtte sænke NVDAs hastighed.   
+Hvis denne indstilling er slået til, betyder det at NVDA forsøger at spore alle ændringer i formateringen på en linje, når den rapportérers, selvom dette måtte sænke NVDAs hastighed.
 
 NVDA vil som standard spore ændringer i formateringen på markørens eller den ubegrænsede markørs position og af og til også på resten af linjen, med mindre hastigheden derved reduceres.
 
-Slå denne funktion til ved korrekturlæsning af dokumenter i programmer som Wordpad, hvor formatering har betydning.  
+Slå denne funktion til ved korrekturlæsning af dokumenter i programmer som Wordpad, hvor formatering har betydning.
 
 ##### Rapportering af linjeindrykning {#DocumentFormattingSettingsLineIndentation}
 
@@ -3165,7 +3243,7 @@ Hvis du opdager, at NVDA har problemer med at følge systemmarkøren (f.eks. hvi
 Denne indstilling lader NVDA oplyse, når farver er gennemsigtige. Dette er brugbart, hvis man er ved at udvikle en tilføjelse eller et app-modul, der har til hensigt at forbedre brugeroplevelsen for tredjepartsprogrammer.
 Nogle GDI-applikationer vil fremhæve tekst med en baggrundsfarve. NVDA (via display model) vil forsøge at oplyse farven.
 I nogle tilfælde kan det være, at tekstens baggrund er fuldstændig gennemsigtig, hvor selve teksten befinder sig i lag på et andet gui-element.
-Med flere historisk populære GUI API'er kan teksten gengives med en gennemsigtig baggrund, men visuelt er baggrundsfarven nøjagtig. 
+Med flere historisk populære GUI API'er kan teksten gengives med en gennemsigtig baggrund, men visuelt er baggrundsfarven nøjagtig.
 
 ##### Brug WASAPI til lydoutput {#WASAPI}
 
@@ -3205,7 +3283,7 @@ Udover [NVDAs indstillingsdialog](#NVDASettings), indeholder menuen "Opsætning"
 
 #### Udtaleordbøger {#SpeechDictionaries}
 
-Menuen Udtaleordbøger, som findes i menuen Opsætning, indeholder dialogbokse, der giver mulighed for at styre,  hvordan NVDA udtaler bestemte ord eller tekstbidder. 
+Menuen Udtaleordbøger, som findes i menuen Opsætning, indeholder dialogbokse, der giver mulighed for at styre,  hvordan NVDA udtaler bestemte ord eller tekstbidder.
 Der er i øjeblikket 3 typer af udtaleordbøger.
 Disse er:
 
@@ -3640,7 +3718,7 @@ Denne funktion benyttes ofte, når du skal flytte markøren eller udføre en han
 Dette kan eksempelvis være nyttigt, når du skal bekræfte om NVDA er i stand til at flytte til en bestemt celle.
 For at forhindre at NVDA utilsigtet flytter til celler, vil kommandoen være forsinket.
 Musen skal holdes over cellen, indtil cellen bliver grøn.
-Cellen starter som en lysegul farve, overgår til orange og bliver pludselig grøn. 
+Cellen starter som en lysegul farve, overgår til orange og bliver pludselig grøn.
 
 For at aktivere og deaktivere punktviseren fra hvor som helst, kan du tildele en kommando til funktionen   i [dialogen "Håndter Kommandoer"](#InputGestures).
 
@@ -3703,10 +3781,10 @@ Talesyntesen [eSpeak NG](https://github.com/espeak-ng/espeak-ng) er bygget direk
 I Windows 8.1, vil NVDA benytte eSpeak NG som standard ([Windows OneCore](#OneCore) benyttes i Windows 10 og nyere).
 Eftersom denne talesyntese er bygget ind i NVDA, er den et godt valg til de situationer, hvor NVDA skal afvikles fra en USB-pen eller fra en cd på flere forskellige systemer.
 
-Hver af de stemmer, som følger med eSpeak NG, taler forskellige sprog. 
+Hver af de stemmer, som følger med eSpeak NG, taler forskellige sprog.
 Der findes mere end 43 forskellige sprog i eSpeak NG.
 
-Der findes også mange forskellige varianter, der kan vælges for at ændre, hvordan den enkelte stemme lyder. 
+Der findes også mange forskellige varianter, der kan vælges for at ændre, hvordan den enkelte stemme lyder.
 
 ### Microsoft Speech API version 4 (SAPI 4) {#SAPI4}
 
@@ -4301,6 +4379,8 @@ Se venligst dokumentationen til dit display for at finde ud af, hvor du kan find
 |Ctrl+hjem |backspace+LJ op|
 |Ctrl+end |backspace+LJ ned|
 
+<!-- KC:endInclude -->
+
 ### Papenmeier BRAILLEX Nyere modeller {#Papenmeier}
 
 Følgende punktdisplays er understøttede:
@@ -4650,11 +4730,11 @@ På grund af dette, og for at bevare kompatibiliteten mellem andre skærmlæsere
 ### Eurobraille displays {#Eurobraille}
 
 b.book, b.note, Esys, Esytime og Iris displays fra Eurobraille understøttes af NVDA.
-Disse enheder har et braille tastatur med 10 taster. 
+Disse enheder har et braille tastatur med 10 taster.
 Læs venligst dokumentationen for det pågældende display for en beskrivelse af disse taster.
 Af de to taster placeret som et mellemrum, svarer den venstre tast til backspace tasten og den højre tast til mellemrumstasten.
 
-Forbundet via USB, har disse enheder et uafhængigt usb tastatur. 
+Forbundet via USB, har disse enheder et uafhængigt usb tastatur.
 Det er muligt at aktivere/deaktivere dette tastatur med en tastaturkommando.
 Funktionaliteten beskrevet nedenfor kan benyttes, når HID Braille ikke er aktiv.
 
