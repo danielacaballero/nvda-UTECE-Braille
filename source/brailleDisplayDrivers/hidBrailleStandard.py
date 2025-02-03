@@ -99,7 +99,7 @@ class HidBrailleDriver(braille.BrailleDisplayDriver):
 				continue
 			# Try talking to the display.
 			try:
-				self._dev = hwIo.hid.Hid(port, onReceive=self._hidOnReceive)
+				self._dev = hwIo.hid.Hid(port, onReceive=self._hidOnReceive, exclusive=False)
 			except EnvironmentError:
 				log.debugWarning("", exc_info=True)
 				continue  # Couldn't connect.

@@ -145,6 +145,8 @@ class Hid(IoBase):
 		"""
 		if _isDebug():
 			log.debug("Opening device %s" % path)
+
+		print("LOOK IM IN THE HID CODE IM SO COOL")
 		handle = CreateFile(
 			path,
 			winKernel.GENERIC_READ | winKernel.GENERIC_WRITE,
